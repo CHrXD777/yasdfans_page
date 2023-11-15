@@ -1,0 +1,51 @@
+<div class="sidebar">
+    <h2 class="title">友情链接</h2>
+    <p class="description">--欢迎加链=v=--</p>
+    <a href="https://www.ephesus.top/roguelike">◉巨强无比中国第一rl图书馆：Archive RL Silencess</a>
+    <a href="http://nuduseng.com/">◉怒独僧的个人主页</a>
+    <a href="https://像素点.cn/BACCAE">◉链接3</a>
+    <h2 class="title">买我一咖啡</h2>
+    <p class="description">--支持你喜欢的作者或本小站--</p>
+</div>
+<div id="header">
+    <header>
+        <p id="pagetitle">Roguelike fans CN</p>
+        <!--<h1 class="pagetitle">Roguelike Fans CN</h1>-->
+        <pre id="pagetitle_ascii">{{ .Site.Params.ascii_art | safeHTML }}</pre>
+        <p class="description">--类rogue游戏 中文分享站--</p>
+    </header>
+    <!--
+    <nav>
+        <a href="./index.html">主页</a>
+        <a href="./about.html">关于</a>
+        <a href="./posts.html">文章</a>
+        <a href="./gallery.html">画廊</a>
+        <a href="./findgames.html">寻找游戏</a>
+        <a href="./findgroups.html">我群呢？</a>
+    </nav>
+    -->
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+</div>
+<!--
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+        {{ if .Pre }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+</div>
+-->

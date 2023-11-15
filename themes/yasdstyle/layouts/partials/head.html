@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <script type="text/javascript" src="/js/shader-web-background.js"></script>
+    <script type="x-shader/x-fragment" id="image">
+      precision highp float;
+  
+      uniform float iTime;
+  
+      void main() {
+        gl_FragColor = vec4(
+          mod(gl_FragCoord.x / 256., 1.),
+          mod((gl_FragCoord.x + gl_FragCoord.y - iTime * 40.) / 256. , 1.),
+          mod(gl_FragCoord.y / 256., 1.),
+          1.
+        );
+      }
+    </script>
+    <script>
+        shaderWebBackground.shade({
+            shaders: {
+                image: {
+                    uniforms: {
+                        iTime: (gl, loc) => gl.uniform1f(loc, performance.now() / 1000)
+                    }
+                }
+            }
+        });
+    </script>
+</head>

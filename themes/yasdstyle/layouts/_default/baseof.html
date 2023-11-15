@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <p id="topbar">^^^去顶部^^^</p>
+    <div id="mainpage">
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+    </div>
+    {{- partial "footer.html" . -}}
+    <script src=/js/scrollToTop.js></script>
+</body>
+
+</html>

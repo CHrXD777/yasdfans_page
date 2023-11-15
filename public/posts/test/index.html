@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roguelike Fans CN</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap">
+    <script type="text/javascript" src="./shader-web-background1.js"></script>
+    <script type="x-shader/x-fragment" id="image">
+      precision highp float;
+  
+      uniform float iTime;
+  
+      void main() {
+        gl_FragColor = vec4(
+          mod(gl_FragCoord.x / 256., 1.),
+          mod((gl_FragCoord.x + gl_FragCoord.y - iTime * 40.) / 256. , 1.),
+          mod(gl_FragCoord.y / 256., 1.),
+          1.
+        );
+      }
+    </script>
+    <script>
+        shaderWebBackground.shade({
+            shaders: {
+                image: {
+                    uniforms: {
+                        iTime: (gl, loc) => gl.uniform1f(loc, performance.now() / 1000)
+                    }
+                }
+            }
+        });
+    </script>
+
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+    </nav>
+</div><div id="content">
+<h1>My First Post</h1>
+
+
+<i data-feather="calendar"></i>
+<time datetime="2020-01-26">Jan 26, 2020</time>
+
+<i data-feather="tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="http://example.org/tags/foo">foo</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="http://example.org/tags/bar">bar</a>
+
+
+<br><br>
+<p>当然，我将生成一个简单的Markdown测试文档，避免使用可能会影响我的输出效果的语法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Markdown Test Document
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This is a simple markdown test document. It includes various elements commonly used in markdown.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Headers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Header 3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#### Header 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##### Header 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">###### Header 6
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Emphasis
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">*This text will be italic*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**This text will be bold**</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Lists
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Unordered List
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Item 1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Item 2
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Item 2.1
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">-</span> Item 2.2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Item 3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Ordered List
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Item 1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Item 2
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">1.</span> Item 2.1
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">2.</span> Item 2.2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Item 3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Links
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">Visit OpenAI</span>](<span style="color:#a6e22e">https://www.openai.com/</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Images
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>![<span style="color:#f92672">Image Alt Text</span>](<span style="color:#a6e22e">https://via.placeholder.com/150</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Blockquotes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">This is a blockquote.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">It can span multiple lines.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Inline code: <span style="color:#e6db74">`printf(&#34;Hello, World!&#34;);`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Code block:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>```python
+</span></span><span style="display:flex;"><span>def hello_world():
+</span></span><span style="display:flex;"><span>    print(&#34;Hello, World!&#34;)
+</span></span></code></pre></div><h2 id="horizontal-rule">Horizontal Rule</h2>
+<hr>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Header 1</th>
+<th style="text-align:center">Header 2</th>
+<th style="text-align:right">Header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cell 1</td>
+<td style="text-align:center">Cell 2</td>
+<td style="text-align:right">Cell 3</td>
+</tr>
+<tr>
+<td>Cell 4</td>
+<td style="text-align:center">Cell 5</td>
+<td style="text-align:right">Cell 6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="task-lists">Task Lists</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Task 1</li>
+<li><input disabled="" type="checkbox"> Task 2</li>
+<li><input disabled="" type="checkbox"> Task 3</li>
+</ul>
+<h2 id="math">Math</h2>
+<p>Inline math: $E=mc^2$</p>
+<p>Display math:</p>
+<p>$$
+\int_{-\infty}^{\infty} e^{-x^2} ,dx = \sqrt{\pi}
+$$</p>
+<pre tabindex="0"><code>
+你可以将这个Markdown文档保存为`.md`文件，然后查看它在Markdown解析器中的效果。
+</code></pre>
+
+        </div><footer>
+    &copy; 2023 Roguelike fans CN . All rights unreserved(CC0).
+</footer></body>
+</html>

@@ -1,0 +1,49 @@
+baseURL = 'http://yasd.fans/'
+languageCode = 'zh-cn'
+title = 'YASD-Roguelike fans CN'
+theme = "yasdstyle"
+
+[menu]
+  [[menu.main]]
+    name = "主页"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "关于"
+    pre = "about"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "文章"
+    pre = "文章"
+    url = "/posts/"
+    weight = 3
+  [[menu.main]]
+    name = "画廊"
+    pre = "画廊"
+    url = "/gallery/"
+    weight = 4
+  [[menu.main]]
+    name = "寻找游戏"
+    pre = "findgames"
+    url = "/findgames/"
+    weight = 5
+  [[menu.main]]
+    name = "我群呢？"
+    pre = "findgroups"
+    url = "/findgroups/"
+    weight = 6
+[params]
+    ascii_art =''' __    __   ______        ____          ____      
+/\ \  /\ \ /\  _  \      /\  _`\       /\  _`\    
+\ `\`\\/'/ \ \ \L\ \     \ \,\L\_\     \ \ \/\ \  
+ `\ `\ /'   \ \  __ \     \/_\__ \      \ \ \ \ \ 
+   `\ \ \ et \ \ \/\ \nother/\ \L\ \tupid\ \ \_\ \eath
+     \ \_\    \ \_\ \_\     \ `\____\     \ \____/
+      \/_/     \/_/\/_/      \/_____/      \/___/ '''
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
