@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    
-    
-    
-    <title>YASD-Roguelike fans CN | Tags</title>
-    <script type="text/javascript" src="/js/shader-web-background.js"></script>
-    <script type="x-shader/x-fragment" id="image">
+  <meta name="generator" content="Hugo 0.111.3">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css">
+  
+  <link rel="stylesheet" type="text/css" id="links" href="/css/pc_style.css">
+  <script type="text/javascript" id="swb_src" src="/js/shader-web-background.js"></script>
+  <script>
+    window.onload = function () {
+      var sc = document.getElementById("links");
+       
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        
+        
+        sc.setAttribute("href", "/css/m_style.css"); 
+         
+        console.log("This is a mobile device.");
+        
+      } else {
+        
+        
+        sc.setAttribute("href", "/css/pc_style.css"); 
+         
+        console.log("This is a desktop device.")
+        
+      }
+    }
+  </script>
+  
+  
+  <title>YASD-Roguelike fans CN | Tags</title>
+  <script type="x-shader/x-fragment" id="image">
       precision highp float;
   
       uniform float iTime;
@@ -28,23 +45,25 @@
         );
       }
     </script>
-    <script>
-        shaderWebBackground.shade({
-            shaders: {
-                image: {
-                    uniforms: {
-                        iTime: (gl, loc) => gl.uniform1f(loc, performance.now() / 1000)
-                    }
-                }
-            }
-        });
-    </script>
+  <script>
+    shaderWebBackground.shade({
+      shaders: {
+        image: {
+          uniforms: {
+            iTime: (gl, loc) => gl.uniform1f(loc, performance.now() / 1000)
+          }
+        }
+      }
+    });
+  </script>
 </head><body>
     <p id="topbar">^^^去顶部^^^</p>
+    <div class="nav-toggle">&#9776;</div>
+    <div class="sidebar-toggle">&#9829;</div>
     <div id="mainpage"><div class="sidebar">
     <h2 class="title">友情链接</h2>
     <p class="description">--欢迎加链=v=--</p>
-    <a href="https://www.ephesus.top/roguelike">◉巨强无比中国第一rl图书馆：Archive RL Silencess</a>
+    <a href="https://www.ephesus.top/roguelike">◉最强中文rl图书馆: Archive RL Silencess</a>
     <a href="http://nuduseng.com/">◉怒独僧的个人主页</a>
     <a href="https://像素点.cn/BACCAE">◉链接3</a>
     <h2 class="title">买我一咖啡</h2>
@@ -52,7 +71,7 @@
 </div>
 <div id="header">
     <header>
-        <p id="pagetitle">Roguelike fans CN</p>
+        <h1 id="pagetitle">Roguelike fans CN</h1>
         
         <pre id="pagetitle_ascii"> __    __   ______        ____          ____      
 /\ \  /\ \ /\  _  \      /\  _`\       /\  _`\    
@@ -62,8 +81,8 @@
      \ \_\    \ \_\ \_\     \ `\____\     \ \____/
       \/_/     \/_/\/_/      \/_____/      \/___/ </pre>
         <p class="description">--类rogue游戏 中文分享站--</p>
+        <p id="m_separator">###############################</p>
     </header>
-    
     <nav id="nav" class="nav justify-content-center">
         
         <a class="nav-link" href="/">
@@ -97,8 +116,7 @@
         </a>
         
     </nav>
-</div>
-<div id="content">
+</div><div id="content">
 <h1 class="title">文章</h1>
 <p class="description">--攻略、分享--</p>
 
@@ -107,6 +125,16 @@
     </div><footer id="footer">
     &copy; 2023 Roguelike fans CN . All rights unreserved(CC0).
 </footer><script src=/js/scrollToTop.js></script>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+          document.querySelector('nav').classList.toggle('active');
+        });
+      </script>
+      <script>
+        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
+          document.querySelector('.sidebar').classList.toggle('active');
+        });
+      </script>
 </body>
 
 </html>

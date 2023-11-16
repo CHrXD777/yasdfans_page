@@ -1,6 +1,6 @@
 @font-face {
-    font-family:MapleMonoSC;
-    src:url("/fonts/MapleMono-Regular.woff2");
+    font-family: MapleMonoSC;
+    src: url("/fonts/MapleMono-Regular.woff2");
 }
 
 body {
@@ -165,4 +165,23 @@ a:hover {
     /* 保持图片比例并覆盖整个区域，可能会裁剪部分图像 */
     margin: 10px 0;
     cursor: pointer;
+}
+
+/* 汉堡菜单样式 */
+.nav-toggle,
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+}
+
+.sidebar-toggle {
+    top: 80px;
+    right: 23px;
+}
+
+#m_separator {
+    display: none;
 }
