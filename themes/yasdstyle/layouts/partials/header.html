@@ -11,9 +11,11 @@
     <header>
         <h1 id="pagetitle">Roguelike fans CN</h1>
         <!--<h1 class="pagetitle">Roguelike Fans CN</h1>-->
+        <div id="ascii_box">
         <pre id="pagetitle_ascii">{{ .Site.Params.ascii_art | safeHTML }}</pre>
+        </div>
         <p class="description">--类rogue游戏 中文分享站--</p>
-        <p id="m_separator">###############################</p>
+        <p id="m_separator">################################</p>
     </header>
     <nav id="nav" class="nav justify-content-center">
         {{ range .Site.Menus.main }}

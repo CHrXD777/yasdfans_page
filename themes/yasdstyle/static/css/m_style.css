@@ -144,6 +144,7 @@ nav a:visited {
 
 a:link {
     text-decoration: none;
+
 }
 
 a:visited {
@@ -183,22 +184,27 @@ a:hover {
 .sidebar-toggle {
     display: none;
     position: fixed;
-    top: 60px;
+    top: 40px;
     right: 20px;
     z-index: 2;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #6a6a6a;
 }
 
 .sidebar-toggle {
-    top: 100px;
-    right: 23px;
+    top: 80px;
+    right: 20px;
 }
 /*移动端适配样式*/
 /* ASCII 标题样式移动端适配 */
+/*
 #pagetitle_ascii {
     word-wrap: break-word;
     white-space: pre-wrap;
 }
-
+*/
 .nav-toggle {
     display: block;
 }
@@ -245,6 +251,7 @@ nav a {
     transition: 0.3s;
     padding-top: 60px;
     padding-left: 10%;
+    z-index: 1;
 }
 
 .sidebar.active {
@@ -258,12 +265,27 @@ nav a {
 
 #m_separator {
     display: block;
-    font-size: large;
+    font-size: 16px;
     color: #a85400;
     text-align: center;
+}
+
+#pagetitle {
+    font-size: larger;
 }
 
 #content {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#ascii_box {
+    font-size: 10px;
+    transform: scale(0.83333);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+a{
+    color: unset;
 }
