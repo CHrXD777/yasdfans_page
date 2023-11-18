@@ -2,10 +2,14 @@
   <meta name="generator" content="Hugo 0.111.3">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css">
-  <!-- 添加媒体查询 JavaScript -->
+  <!-- 媒体查询 JavaScript -->
   <link rel="stylesheet" type="text/css" id="links" href="/css/pc_style.css">
-  <script type="text/javascript" id="swb_src" src="/js/shader-web-background.js"></script>
+  <script type="text/javascript" id="swb_src" src="/js/shader-web-background1.js"></script>
   <script>
     window.onload = function () {
       var sc = document.getElementById("links");
@@ -30,29 +34,5 @@
   {{ $title := print .Site.Title " | " .Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
-  <script type="x-shader/x-fragment" id="image">
-      precision highp float;
-  
-      uniform float iTime;
-  
-      void main() {
-        gl_FragColor = vec4(
-          mod(gl_FragCoord.x / 256., 1.),
-          mod((gl_FragCoord.x + gl_FragCoord.y - iTime * 40.) / 256. , 1.),
-          mod(gl_FragCoord.y / 256., 1.),
-          1.
-        );
-      }
-    </script>
-  <script>
-    shaderWebBackground.shade({
-      shaders: {
-        image: {
-          uniforms: {
-            iTime: (gl, loc) => gl.uniform1f(loc, performance.now() / 1000)
-          }
-        }
-      }
-    });
-  </script>
+  {{- partial "shader.html" . -}}
 </head>

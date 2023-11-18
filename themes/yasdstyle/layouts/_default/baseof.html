@@ -3,20 +3,28 @@
 {{- partial "head.html" . -}}
 
 <body>
-    <p id="topbar">^^^去顶部^^^</p>
+    <p id="topbar">^TOP^</p>
     <div class="nav-toggle">&#9776;</div>
     <div class="sidebar-toggle">&#9783;</div>
     <div id="mainpage">
-        {{- partial "header.html" . -}}
+    {{- partial "header.html" . -}}
+    <div id="container_sidebar">
         <div id="content">
             {{- block "main" . }}{{- end }}
         </div>
+        {{- partial "sidebar.html" . -}}
+    </div>
     </div>
     {{- partial "footer.html" . -}}
+    <!--响应回到顶部按钮-->
     <script src=/js/scrollToTop.js></script>
+    <!--移动端响应折叠导航栏按钮-->
     <script>
         document.querySelector('.nav-toggle').addEventListener('click', function () {
           document.querySelector('nav').classList.toggle('active');
+        });
+        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
+          document.querySelector('.sidebar').classList.toggle('active');
         });
         // 页面点击事件
         document.addEventListener('click', function (event) {
@@ -24,20 +32,11 @@
           if (!event.target.closest('nav, .nav-toggle')) {
               document.querySelector('nav').classList.remove('active');
           }
-      });
-      </script>
-      <script>
-        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
-          document.querySelector('.sidebar').classList.toggle('active');
-        });
-        // 页面点击事件
-        document.addEventListener('click', function (event) {
-          // 检查点击的区域是否在导航栏以外
           if (!event.target.closest('.sidebar, .sidebar-toggle')) {
-              document.querySelector('.sidebar').classList.remove('active');
-          }
+            document.querySelector('.sidebar').classList.remove('active');
+        }
       });
-      </script>
+    </script>
 </body>
 
 </html>

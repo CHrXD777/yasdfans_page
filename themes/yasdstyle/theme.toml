@@ -4,14 +4,14 @@
 name = "Yasdstyle"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+description = "A roguelike style Hugo theme"
+homepage = "http://yasd.fans/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
+  name = "Ravsoch"
   homepage = ""
 
 # If porting an existing theme
