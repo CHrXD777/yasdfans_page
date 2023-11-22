@@ -1,0 +1,194 @@
+@font-face {
+    font-family: MapleMonoSC;
+    src: url("/fonts/MapleMono-Regular.woff2");
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "MapleMonoSC";
+    font-size: larger;
+    color: #6a6a6a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #a85400;
+    font-family: "Noto Serif SC";
+}
+
+header {
+    font-size: large;
+    text-align: left;
+}
+
+.description {
+    /*font-size: medium;*/
+    margin-top: 0%;
+}
+
+.title {
+    margin-bottom: 0%;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+#pagetitle {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0%;
+    margin-top: 0em;
+    color: #a85400;
+}
+
+#pagetitle_ascii {
+    color: #a85400;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin: 0;
+    font-family: MapleMonoSC;
+    font-size: medium;
+}
+
+#mainpage {
+    margin: auto;
+    width: 50%;
+    background-color: #000;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+#topbar {
+    position: fixed;
+    width: 100%;
+    background-color: #a85400;
+    color: white;
+    margin: 0%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+nav {
+    background-color: #333;
+    padding: 0px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background-color: #3ac139;
+    color: #000;
+}
+
+nav a:visited {
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 75%;
+    width: 15%;
+    font-size: medium;
+    background-color: black;
+    padding: 40px;
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #6a6a6a;
+}
+
+.sidebar a:hover {
+    color: #3ac139;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(107, 75, 75);
+}
+
+a:hover {
+    color: #3ac139;
+}
+
+.btn {
+    color: #fff;
+    background-color: #a85400;
+    padding: 3px;
+    font-weight: bolder;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 240px;
+    /* 设置缩略图的宽度 */
+    height: 160px;
+    /* 设置缩略图的高度 */
+    object-fit: cover;
+    /* 保持图片比例并覆盖整个区域，可能会裁剪部分图像 */
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* 汉堡菜单样式 */
+.nav-toggle,
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+}
+
+.sidebar-toggle {
+    top: 80px;
+    right: 23px;
+}
+
+#m_separator {
+    display: none;
+}
+
+a{
+    color: unset;
+}

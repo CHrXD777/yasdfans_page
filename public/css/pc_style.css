@@ -3,13 +3,11 @@
     src: url("/fonts/MapleMono-Regular.woff2");
 }
 
+/* 通用样式 */
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
     font-family: "MapleMonoSC";
-    font-size: larger;
     color: #6a6a6a;
+    background-color: black;
 }
 
 h1,
@@ -19,131 +17,99 @@ h4,
 h5,
 h6 {
     color: #a85400;
-    font-family: "Noto Serif SC";
-}
-
-header {
-    font-size: large;
-    text-align: left;
-}
-
-.description {
-    /*font-size: medium;*/
-    margin-top: 0%;
-}
-
-.title {
-    margin-bottom: 0%;
-}
-
-#footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-    margin-bottom: 5%;
-}
-
-#pagetitle {
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 0%;
-    margin-top: 0em;
-    color: #a85400;
-}
-
-#pagetitle_ascii {
-    color: #a85400;
-    padding-bottom: 0%;
-    padding-top: 0%;
-    margin: 0;
-    font-family: MapleMonoSC;
-    font-size: medium;
-}
-
-#mainpage {
-    margin: auto;
-    width: 50%;
-    background-color: #000;
-    padding: 40px;
-    padding-top: 20px;
-}
-
-#topbar {
-    position: fixed;
-    width: 100%;
-    background-color: #a85400;
-    color: white;
-    margin: 0%;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
-    display: none;
-    z-index: 2;
-}
-
-nav {
-    background-color: #333;
-    padding: 0px;
-    margin: auto;
-    overflow: hidden;
-}
-
-nav a {
-    float: left;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-}
-
-nav a:hover {
-    background-color: #3ac139;
-    color: #000;
-}
-
-nav a:visited {
-    color: white;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 75%;
-    width: 15%;
-    font-size: medium;
-    background-color: black;
-    padding: 40px;
-}
-
-.sidebar h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    font-size: larger;
-}
-
-.sidebar a {
-    display: block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #6a6a6a;
-}
-
-.sidebar a:hover {
-    color: #3ac139;
-}
-
-a:link {
-    text-decoration: none;
+    font-family: 'Noto Serif SC', serif;
 }
 
 a:visited {
     color: rgb(107, 75, 75);
 }
 
-a:hover {
-    color: #3ac139;
+.sidebar a:hover {
+    color:Lime;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+.sidebar {
+    flex: 20%;
+    padding: 20px;
+}
+.sidebar h3 {
+   margin-bottom: 0%;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #6a6a6a;
+}
+
+.description {
+    /*font-size: medium;*/
+    margin-top: 0%;
+    border-bottom: 2px solid #333;
+}
+/* 主要页面设置 */
+#mainpage {
+    margin: 0 5%;
+}
+#container_sidebar {
+    display: flex;
+}
+#header {
+    color: #a85400;
+}
+#header .description {
+    color: #6a6a6a;
+    font-size: 18px;
+}
+#content {
+    flex: 80%;
+    padding: 20px;
+}
+
+#ascii_box {
+    text-align: center;
+}
+#titleDiscription {
+    text-align: center;
+}
+#topbar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: #a85400;
+    margin: 0%;
+    padding: 5px;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    border-bottom-style: dashed;
+}
+
+nav {
+    font-family: 'Noto Serif SC', serif;
+    background-color: #a85400;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: Lime;
+    background-color: black;
 }
 
 .btn {
@@ -152,7 +118,6 @@ a:hover {
     padding: 3px;
     font-weight: bolder;
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +135,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* 汉堡菜单样式 */
+/* 适配准备 */
 .nav-toggle,
 .sidebar-toggle {
     display: none;
@@ -178,17 +143,15 @@ a:hover {
     top: 40px;
     right: 20px;
     z-index: 2;
+    color: #fff;
 }
-
 .sidebar-toggle {
     top: 80px;
     right: 23px;
 }
 
-#m_separator {
-    display: none;
-}
-
-a{
+a {
     color: unset;
 }
+
+/* 移动端适配 */

@@ -35,14 +35,15 @@ theme = "yasdstyle"
     url = "/findgroups/"
     weight = 6
 [params]
-    ascii_art =''' __    __   ______        ____          ____      
-/\ \  /\ \ /\  _  \      /\  _`\       /\  _`\    
-\ `\`\\/'/ \ \ \L\ \     \ \,\L\_\     \ \ \/\ \  
- `\ `\ /'   \ \  __ \     \/_\__ \      \ \ \ \ \ 
-   `\ \ \ et \ \ \/\ \nother/\ \L\ \tupid\ \ \_\ \eath
-     \ \_\    \ \_\ \_\     \ `\____\     \ \____/
-      \/_/     \/_/\/_/      \/_____/      \/___/ '''
-
+    ascii_art =''' ╔═════════════════════════╗
+║#<font color=Lime>__</font>####<font color=Lime>__</font>##<font color=Lime>______</font>########<font color=Lime>____</font>##########<font color=Lime>____</font>##########║
+║<font color=Lime>/\ \</font>##<font color=Lime>/\ \/\  _  \</font>######<font color=Lime>/\  _`\</font>#######<font color=Lime>/\  _`\</font>########║
+║<font color=Lime>\ `\`\\/'/\ \ \L\ \</font>#####<font color=Lime>\ \,\L\_\</font>#####<font color=Lime>\ \ \/\ \</font>######║
+║#<font color=Lime>`\ `\ /'</font>##<font color=Lime>\ \  __ \</font>#####<font color=Lime>\/_\__ \</font>######<font color=Lime>\ \ \</font>#<font color=Lime>\ \</font>#####║
+║###<font color=Lime>`\ \ \et</font>#<font color=Lime>\ \ \/\ \nother/\ \L\ \tupid\ \ \_\ \eath</font>║
+║#####<font color=Lime>\ \_\</font>###<font color=Lime>\ \_\ \_\</font>#####<font color=Lime>\ `\____\</font>#####<font color=Lime>\ \____/</font>####║
+║######<font color=Lime>\/_/</font>####<font color=Lime>\/_/\/_/</font>######<font color=Lime>\/_____/</font>######<font color=Lime>\/___/</font>#####║
+ ╚═════════════════════════╝'''
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

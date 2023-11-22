@@ -6,16 +6,16 @@
         <div id="ascii_box">
         <pre id="pagetitle_ascii">{{ .Site.Params.ascii_art | safeHTML }}</pre>
         </div>
-        <p class="description">--类rogue游戏 中文分享站--</p>
+        <p id="titleDiscription" class="description">--类rogue游戏 中文分享站--</p>
         <!-- <p id="m_separator">################################</p> -->
     </header>
     <nav id="nav" class="nav">
         {{ range .Site.Menus.main }}
         <a class="nav-link" href="{{ .URL }}">
         {{ $text := print .Name | safeHTML }}
-        {{ $text }}
+        ▶{{ $text }}◀
         </a>
         {{ end }}
     </nav>
-    <p class="description" id="pc_separator">-</p>
+    <p class="description" id="pc_separator">·</p>
 </div>

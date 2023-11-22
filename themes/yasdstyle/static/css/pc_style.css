@@ -17,15 +17,15 @@ h4,
 h5,
 h6 {
     color: #a85400;
-    font-family: "Noto Serif SC";
+    font-family: 'Noto Serif SC', serif;
 }
 
 a:visited {
     color: rgb(107, 75, 75);
 }
 
-a:hover {
-    color: #3ac139;
+.sidebar a:hover {
+    color:Lime;
 }
 
 footer {
@@ -72,6 +72,12 @@ footer {
     padding: 20px;
 }
 
+#ascii_box {
+    text-align: center;
+}
+#titleDiscription {
+    text-align: center;
+}
 #topbar {
     position: fixed;
     width: 100%;
@@ -88,13 +94,13 @@ footer {
 }
 
 nav {
+    font-family: 'Noto Serif SC', serif;
     background-color: #a85400;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: large;
 }
 
 nav a:visited {
@@ -102,7 +108,8 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #3ac139;
+    color: Lime;
+    background-color: black;
 }
 
 .btn {
@@ -143,7 +150,7 @@ nav a:hover {
     right: 23px;
 }
 
-a{
+a {
     color: unset;
 }
 
