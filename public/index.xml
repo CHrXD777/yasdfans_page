@@ -5,6 +5,7 @@
     <link>http://yasd.fans/</link>
     <description>Recent content on YASD-Roguelike fans CN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://yasd.fans/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 15 Nov 2023 14:47:50 +0800</lastBuildDate><atom:link href="http://yasd.fans/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
