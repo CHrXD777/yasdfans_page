@@ -6,8 +6,8 @@
 /* 通用样式 */
 body {
     font-family: "MapleMonoSC";
-    color: #6a6a6a;
-    background-color: black;
+    color: #9f9f9f;
+    background-color: #262335;
 }
 
 h1,
@@ -16,7 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: #a85400;
+    /* color: #a85400; */
+    color: #5c448a;
     font-family: 'Noto Serif SC', serif;
 }
 
@@ -25,7 +26,7 @@ a:visited {
 }
 
 .sidebar a:hover {
-    color:Lime;
+    color: #a85400;
 }
 
 footer {
@@ -45,13 +46,13 @@ footer {
 .sidebar a {
     display: block;
     margin-bottom: 10px;
-    color: #6a6a6a;
+    color: #9f9f9f;
 }
 
 .description {
     /*font-size: medium;*/
     margin-top: 0%;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid rgb(80, 80, 80);
 }
 /* 主要页面设置 */
 #mainpage {
@@ -64,7 +65,7 @@ footer {
     color: #a85400;
 }
 #header .description {
-    color: #6a6a6a;
+    color: #9f9f9f;
     font-size: 18px;
 }
 #content {
@@ -74,6 +75,7 @@ footer {
 
 #ascii_box {
     text-align: center;
+    font-family: "MapleMonoSC";
 }
 #titleDiscription {
     text-align: center;
@@ -95,21 +97,21 @@ footer {
 
 nav {
     font-family: 'Noto Serif SC', serif;
-    background-color: #a85400;
+    background-color: #392b51;
 }
 
 nav a {
-    color: white;
+    color: #9f9f9f;
     text-decoration: none;
 }
 
 nav a:visited {
-    color: white;
+    color: #9f9f9f;
 }
 
 nav a:hover {
-    color: Lime;
-    background-color: black;
+    color: #a85400;
+    background-color: #241b2f;
 }
 
 .btn {

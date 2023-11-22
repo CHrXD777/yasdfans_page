@@ -1,10 +1,16 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+
 {{ with .Params.description }}
 <p class="description">{{ . }}</p>
 {{ end }}
+
+{{ with .Params.author }}
+<span>|作者：{{ . }}</span>
+{{ end }}
 <!--<i data-feather="calendar"></i>-->
-<time class="calendar" datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+<time class="calendar" datetime="{{ $dateTime }}">|发布时间：{{ .PublishDate.Format $dateFormat }}</time>
+
 {{ with .Params.tags }}
 <!--<i data-feather="tag"></i>-->
 {{ range . }}
