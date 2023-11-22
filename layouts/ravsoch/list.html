@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1 class="title">文章</h1>
-<p class="description">--分享--</p>
+<p class="description">--应该算文章吧--</p>
 {{ range .Pages.ByPublishDate.Reverse }}
 <p>
     <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>

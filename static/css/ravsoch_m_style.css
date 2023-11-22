@@ -61,9 +61,7 @@ footer {
 #container_sidebar {
     display: flex;
 }
-#header {
-    color: #a85400;
-}
+
 #header .description {
     color: #9f9f9f;
     font-size: 18px;
@@ -84,7 +82,7 @@ footer {
     position: fixed;
     width: 100%;
     background-color: black;
-    color: #a85400;
+    color: #5c448a;
     margin: 0%;
     padding: 5px;
     top: 0;
