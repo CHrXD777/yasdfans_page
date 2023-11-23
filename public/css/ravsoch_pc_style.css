@@ -3,6 +3,14 @@
     src: url("/fonts/MapleMono-Regular.woff2");
 }
 
+:root{       
+    --bg-col: #262335;
+    --highlight: #5c448a;
+    --font-col: #9f9f9f;
+    --a-visited: rgb(107, 75, 75);
+    --a-hover: #a85400;
+} 
+
 /* 通用样式 */
 body {
     font-family: "MapleMonoSC";
@@ -53,7 +61,7 @@ footer {
 .description {
     /*font-size: medium;*/
     margin-top: 0%;
-    border-bottom: 2px solid rgb(80, 80, 80);
+    border-bottom: 2px solid #7f7f7f;
 }
 /* 主要页面设置 */
 #mainpage {
@@ -62,9 +70,7 @@ footer {
 #container_sidebar {
     display: flex;
 }
-#header {
-    color: #a85400;
-}
+
 #header .description {
     color: #9f9f9f;
     font-size: 18px;
@@ -75,6 +81,7 @@ footer {
 }
 
 #ascii_box {
+    color: #a85400;
     text-align: center;
     font-family: "MapleMonoSC";
 }
@@ -150,7 +157,7 @@ nav a:hover {
 }
 .sidebar-toggle {
     top: 80px;
-    right: 23px;
+    right: 20px;
 }
 
 a {

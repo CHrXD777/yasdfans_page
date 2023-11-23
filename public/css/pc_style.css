@@ -2,12 +2,19 @@
     font-family: MapleMonoSC;
     src: url("/fonts/MapleMono-Regular.woff2");
 }
+:root{       
+    --bg-col: black;
+    --highlight: #a85400;
+    --font-col: #6a6a6a;
+    --a-visited: rgb(107, 75, 75);
+    --a-hover: Lime;
+} 
 
 /* 通用样式 */
 body {
     font-family: "MapleMonoSC";
-    color: #6a6a6a;
-    background-color: black;
+    color: var(--font-col);
+    background-color: var(--bg-col);
 }
 
 h1,
@@ -16,16 +23,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: #a85400;
+    color: var(--highlight);
     font-family: 'Noto Serif SC', serif;
 }
 
 a:visited {
-    color: rgb(107, 75, 75);
+    color: var(--a-visited);
 }
 
 .sidebar a:hover {
-    color:Lime;
+    color:var(--a-hover);
 }
 
 footer {
@@ -45,7 +52,7 @@ footer {
 .sidebar a {
     display: block;
     margin-bottom: 10px;
-    color: #6a6a6a;
+    color: var(--font-col);
 }
 
 .description {
@@ -61,10 +68,10 @@ footer {
     display: flex;
 }
 #header {
-    color: #a85400;
+    color: var(--highlight);
 }
 #header .description {
-    color: #6a6a6a;
+    color: var(--font-col);
     font-size: 18px;
 }
 #content {
@@ -81,8 +88,8 @@ footer {
 #topbar {
     position: fixed;
     width: 100%;
-    background-color: black;
-    color: #a85400;
+    background-color: var(--bg-col);
+    color: var(--highlight);
     margin: 0%;
     padding: 5px;
     top: 0;
@@ -95,7 +102,7 @@ footer {
 
 nav {
     font-family: 'Noto Serif SC', serif;
-    background-color: #a85400;
+    background-color: var(--highlight);
 }
 
 nav a {
@@ -108,13 +115,13 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: Lime;
-    background-color: black;
+    color: var(--a-hover);
+    background-color: var(--bg-col);
 }
 
 .btn {
     color: #fff;
-    background-color: #a85400;
+    background-color: var(--bg-col);
     padding: 3px;
     font-weight: bolder;
 }

@@ -8,6 +8,7 @@ body {
     font-family: "MapleMonoSC";
     color: #9f9f9f;
     background-color: #262335;
+    margin: 0%;
 }
 
 h1,
@@ -52,7 +53,7 @@ footer {
 .description {
     /*font-size: medium;*/
     margin-top: 0%;
-    border-bottom: 2px solid rgb(80, 80, 80);
+    border-bottom: 2px solid #7f7f7f;
 }
 /* 主要页面设置 */
 #mainpage {
@@ -74,6 +75,7 @@ footer {
 #ascii_box {
     text-align: center;
     font-family: "MapleMonoSC";
+    color: #a85400;
 }
 #titleDiscription {
     text-align: center;
@@ -147,7 +149,7 @@ nav a:hover {
 }
 .sidebar-toggle {
     top: 80px;
-    right: 23px;
+    right: 20px;
 }
 
 a {
@@ -160,16 +162,6 @@ a {
 }
 .sidebar-toggle {
     display: block;
-}
-nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 70%;
-    height: 100%;
-    background-color: #333;
-    transition: 0.3s;
-    padding-top: 60px;
 }
 
 nav.active {
@@ -186,11 +178,11 @@ nav a {
 
 .sidebar {
     position: fixed;
-    width: 80%;
+    width: 70%;
     height: 100%;
     top: 0;
     right: -120%;
-    background-color: #333;
+    background-color: #392b51;
     transition: 0.3s;
     padding-top: 60px;
     padding-left: 10%;
@@ -199,7 +191,7 @@ nav a {
 
 .sidebar.active {
     right: 0;
-    width: 70%;
+    width: 60%;
 }
 
 nav {
@@ -208,7 +200,7 @@ nav {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #392b51;
     transition: 0.3s;
     padding-top: 60px;
     z-index: 3;
@@ -220,8 +212,7 @@ nav.active {
 }
 
 #ascii_box {
-    font-size: 9px;
-    transform: scale(0.93333);
+
     transform-origin: 0 0;
     white-space: nowrap;
 }
