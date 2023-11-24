@@ -15,10 +15,10 @@
     
     
     
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap1.min.css"> -->
     <!-- 媒体查询 JavaScript -->
     <link rel="stylesheet" type="text/css" id="links" href="/css/ravsoch_pc_style.css">
-    <script type="text/javascript" id="swb_src" src="/js/shader-web-background1.js"></script>
+    <!-- <script type="text/javascript" id="swb_src" src="/js/shader-web-background1.js"></script> -->
     <script>
       window.onload = function () {
         var sc = document.getElementById("links");
@@ -43,7 +43,7 @@
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
-    {{- partial "shader.html" . -}}
+    <!-- {{- partial "shader.html" . -}} -->
   </head>
 <body>
     <p id="topbar">^TOP^</p>
@@ -90,7 +90,7 @@ _  _, _// /_/ /__ |/ /_(__  )/ /_/ /
             <a href="https://www.ephesus.top/roguelike">◉最强中文rl图书馆: Archive RL Silencess</a>
             <a href="http://nuduseng.com/">◉怒独僧的个人主页</a>
             <a href="https://像素点.cn/BACCAE">◉像素点</a>
-            <a href="http://121.40.130.165:5230/explore">◉站长废话仓库</a>
+            <a href="/ravsoch/memos/">◉废话仓库</a>
           <h3 class="title">买我一咖啡</h2>
             <p class="description">--❤--</p>
       </div>
