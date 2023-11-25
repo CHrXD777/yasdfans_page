@@ -2,7 +2,7 @@
 title: "投稿说明"
 author: "Ravso"
 date: 2023-11-23T02:15:22+08:00
-draft: true
+draft: false
 ---
 
 ## 内容
