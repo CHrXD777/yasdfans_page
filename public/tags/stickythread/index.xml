@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stickythread on YASD-Roguelike fans CN</title>
+    <link>http://yasd.fans/tags/stickythread/</link>
+    <description>Recent content in Stickythread on YASD-Roguelike fans CN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 Dec 2023 02:12:50 +0800</lastBuildDate><atom:link href="http://yasd.fans/tags/stickythread/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>置顶测试</title>
+      <link>http://yasd.fans/posts/test2/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      
+      <guid>http://yasd.fans/posts/test2/</guid>
+      <description>置顶测试</description>
+    </item>
+    
+  </channel>
+</rss>

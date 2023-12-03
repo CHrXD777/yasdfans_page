@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://yasd.fans/posts/resource_dev/</loc>
+    <lastmod>2023-12-04T02:37:20+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/posts/resource/</loc>
+    <lastmod>2023-12-04T02:37:20+08:00</lastmod>
+  </url><url>
     <loc>http://yasd.fans/contribution/roadwarden_zh/</loc>
+    <lastmod>2023-12-04T02:12:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/tags/stickythread/</loc>
     <lastmod>2023-12-04T02:12:50+08:00</lastmod>
   </url><url>
     <loc>http://yasd.fans/tags/</loc>
     <lastmod>2023-12-04T02:12:50+08:00</lastmod>
   </url><url>
     <loc>http://yasd.fans/tags/timeline/</loc>
+    <lastmod>2023-12-04T02:12:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/posts/test2/</loc>
     <lastmod>2023-12-04T02:12:50+08:00</lastmod>
   </url><url>
     <loc>http://yasd.fans/ravsoch/</loc>

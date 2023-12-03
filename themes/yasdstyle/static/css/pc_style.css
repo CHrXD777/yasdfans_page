@@ -54,7 +54,14 @@ footer {
     margin-bottom: 10px;
     color: var(--font-col);
 }
-
+.titlewithdescription {
+    margin-bottom: 0%;
+}
+.listblock {
+    padding: 5px 10px 10px 10px;
+    background-color: rgb(30, 30, 30);
+    margin: 20px 10px;
+}
 .description {
     /*font-size: medium;*/
     margin-top: 0%;

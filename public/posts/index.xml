@@ -8,6 +8,33 @@
     <language>zh-cn</language>
     <lastBuildDate>Wed, 15 Nov 2023 16:15:08 +0800</lastBuildDate><atom:link href="http://yasd.fans/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>RL开发资源页面</title>
+      <link>http://yasd.fans/posts/resource_dev/</link>
+      <pubDate>Mon, 04 Dec 2023 02:37:20 +0800</pubDate>
+      
+      <guid>http://yasd.fans/posts/resource_dev/</guid>
+      <description>RL游戏开发的资源仓库，主要来源于Reddit/r/Roguelikedev</description>
+    </item>
+    
+    <item>
+      <title>RL资源页面</title>
+      <link>http://yasd.fans/posts/resource/</link>
+      <pubDate>Mon, 04 Dec 2023 02:37:20 +0800</pubDate>
+      
+      <guid>http://yasd.fans/posts/resource/</guid>
+      <description>各种RL游戏的资源仓库</description>
+    </item>
+    
+    <item>
+      <title>置顶测试</title>
+      <link>http://yasd.fans/posts/test2/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      
+      <guid>http://yasd.fans/posts/test2/</guid>
+      <description>置顶测试</description>
+    </item>
+    
+    <item>
       <title>小站正在搭建中...</title>
       <link>http://yasd.fans/posts/test/</link>
       <pubDate>Wed, 15 Nov 2023 16:15:08 +0800</pubDate>
