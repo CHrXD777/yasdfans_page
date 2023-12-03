@@ -1,5 +1,15 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
-</div>
+  <h1 class="title">资讯</h1>
+  <p class="description">--RL NEWS!--</p>
+  {{ $selectedTags := slice "timeline" "news" }}
+  
+  {{ range where .Site.RegularPages "Params.tags" "intersect" $selectedTags }}
+    <p>
+      <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <a class="summary" href="{{ .RelPermalink }}">
+        <p>▶{{ .Summary }}</p>
+      </a>
+      <div class="description">{{ partial "metadata.html" . }} </div>
+    </p>
+  {{ end }}
 {{ end }}

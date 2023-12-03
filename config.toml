@@ -30,10 +30,15 @@ theme = "yasdstyle"
     url = "/findgames/"
     weight = 5
   [[menu.main]]
+    name = "社区贡献"
+    pre = "contribution"
+    url = "/contribution/"
+    weight = 5
+  [[menu.main]]
     name = "我群呢？"
     pre = "findgroups"
     url = "/findgroups/"
-    weight = 6
+    weight = 7
 [params]
     ascii_art =''' ╔═════════════════════════╗
 ║#<font color=Lime>__</font>####<font color=Lime>__</font>##<font color=Lime>______</font>########<font color=Lime>____</font>##########<font color=Lime>____</font>##########║

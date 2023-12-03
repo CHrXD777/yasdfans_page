@@ -6,7 +6,7 @@ description: --游戏截图、ASCII艺术--
 ---
 
 <div class="gallery">
-    <a data-fancybox="gallery" href="/Gallery/tomeNET-1.jpg">
+    <a data-fancybox="gallery" data-caption="发布：admin|来源：Tome Net" href="/Gallery/tomeNET-1.jpg">
         <img src="/Gallery/tomeNET-1.jpg" alt="tomeNET-2">
     </a>
     <a data-fancybox="gallery" href="/Gallery/tomeNET-2.png">

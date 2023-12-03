@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ravsoches on YASD-Roguelike fans CN</title>
+    <link>http://yasd.fans/ravsoch/</link>
+    <description>Recent content in Ravsoches on YASD-Roguelike fans CN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 27 Nov 2023 21:33:50 +0800</lastBuildDate><atom:link href="http://yasd.fans/ravsoch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ravsoch&#39;s Memos</title>
+      <link>http://yasd.fans/ravsoch/memos/</link>
+      <pubDate>Fri, 24 Nov 2023 16:00:44 +0800</pubDate>
+      
+      <guid>http://yasd.fans/ravsoch/memos/</guid>
+      <description>如果无法加载，请关闭https保护或访问这里</description>
+    </item>
+    
+    <item>
+      <title>Ravsoch的页面</title>
+      <link>http://yasd.fans/ravsoch/0/</link>
+      <pubDate>Wed, 15 Nov 2023 16:15:08 +0800</pubDate>
+      
+      <guid>http://yasd.fans/ravsoch/0/</guid>
+      <description>关于 看个乐呵得了， 所有内容cc0，想怎么用怎么用， 尽量每周更点完整的东西， </description>
+    </item>
+    
+    <item>
+      <title>画廊</title>
+      <link>http://yasd.fans/ravsoch/gallery/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      
+      <guid>http://yasd.fans/ravsoch/gallery/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

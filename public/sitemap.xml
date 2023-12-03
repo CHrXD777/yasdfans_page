@@ -2,14 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://yasd.fans/contribution/roadwarden_zh/</loc>
+    <lastmod>2023-12-04T02:12:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/tags/</loc>
+    <lastmod>2023-12-04T02:12:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/tags/timeline/</loc>
+    <lastmod>2023-12-04T02:12:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/</loc>
+    <lastmod>2023-11-27T21:33:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/posts/computergraphics/</loc>
+    <lastmod>2023-11-27T21:33:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/posts/synthwave/</loc>
+    <lastmod>2023-11-27T21:32:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/posts/visualarts/</loc>
+    <lastmod>2023-11-27T21:30:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/memos/</loc>
+    <lastmod>2023-11-24T16:00:44+08:00</lastmod>
+  </url><url>
     <loc>http://yasd.fans/</loc>
-    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
+    <lastmod>2023-11-23T02:15:22+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/about/detail/</loc>
+    <lastmod>2023-11-23T02:15:22+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/posts/</loc>
+    <lastmod>2023-11-15T16:15:08+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/0/</loc>
+    <lastmod>2023-11-15T16:15:08+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/posts/test/</loc>
+    <lastmod>2023-11-15T16:15:08+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/posts/</loc>
+    <lastmod>2023-11-15T16:15:08+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/posts/test/</loc>
+    <lastmod>2023-11-15T16:15:08+08:00</lastmod>
   </url><url>
     <loc>http://yasd.fans/about/</loc>
     <lastmod>2023-11-15T14:47:50+08:00</lastmod>
   </url><url>
-    <loc>http://yasd.fans/categories/</loc>
+    <loc>http://yasd.fans/findgroups/</loc>
+    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
   </url><url>
-    <loc>http://yasd.fans/tags/</loc>
+    <loc>http://yasd.fans/findgames/</loc>
+    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/gallery/</loc>
+    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/ravsoch/gallery/</loc>
+    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/contribution/</loc>
+    <lastmod>2023-11-15T14:47:50+08:00</lastmod>
+  </url><url>
+    <loc>http://yasd.fans/categories/</loc>
   </url>
 </urlset>

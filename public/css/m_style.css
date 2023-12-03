@@ -66,6 +66,18 @@ footer {
 #header .description {
     color: #6a6a6a;
     font-size: 18px;
+    text-align: center;
+}
+#pagetitle {
+    font-size: 24px;
+}
+#pagetitle_ascii {
+    margin: 0%;
+}
+
+#ascii_box {
+    text-align: center;
+    font-size: 12px;
 }
 #content {
     flex: 80%;
@@ -163,7 +175,7 @@ nav {
     left: -100%;
     width: 70%;
     height: 100%;
-    background-color: #333;
+    background-color: #212121;
     transition: 0.3s;
     padding-top: 60px;
 }
@@ -177,7 +189,8 @@ nav a {
     float: none;
     display: block;
     text-align: left;
-    padding: 20px 30px;
+    padding: 20px 20px;
+    font-size: small;
 }
 
 .sidebar {
@@ -186,7 +199,7 @@ nav a {
     height: 100%;
     top: 0;
     right: -120%;
-    background-color: #333;
+    background-color: #212121;
     transition: 0.3s;
     padding-top: 60px;
     padding-left: 10%;
@@ -195,7 +208,7 @@ nav a {
 
 .sidebar.active {
     right: 0;
-    width: 70%;
+    width: 50%;
 }
 
 nav {

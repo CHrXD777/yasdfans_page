@@ -74,6 +74,13 @@ footer {
     color: var(--font-col);
     font-size: 18px;
 }
+#pagetitle {
+    font-size: 24px;
+    margin: 0%;
+}
+#pagetitle_ascii {
+    margin: 0%;
+}
 #content {
     flex: 80%;
     padding: 20px;
@@ -81,6 +88,7 @@ footer {
 
 #ascii_box {
     text-align: center;
+    font-size: 12px;
 }
 #titleDiscription {
     text-align: center;
@@ -141,7 +149,9 @@ nav a:hover {
     margin: 10px 0;
     cursor: pointer;
 }
-
+.img_description {
+    text-align: center;
+}
 /* 适配准备 */
 .nav-toggle,
 .sidebar-toggle {

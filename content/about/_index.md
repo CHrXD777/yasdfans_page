@@ -8,8 +8,9 @@ description: --关于与说明--
 ### 投稿
 
 + 小站接受关于Roguelike内容的所有投稿，包括文章、新闻、图片。[详细的投稿说明](/about/detail/)
-+ 投稿内容版权为CC0或仅著名。
-+ 投稿请联系小站管理员或编辑邮件发送至投稿邮箱，<mark>注明版权声明</mark>。
++ 原创内容投稿 版权为CC0或仅著名(CC-BY)。
++ 转载内容投稿 版权为CC协议，注明协议与来源，通过[CC许可证选择器](https://chooser-beta.creativecommons.org/)选择合适的许可证。
++ 投稿请联系小站管理员或编辑邮件发送至投稿邮箱。
 
 ### 寻找游戏
 
@@ -26,5 +27,5 @@ description: --关于与说明--
 
 + 因小站内容皆为投稿，管理员可能无法正确审核内容是否为转载，如有侵犯版权，请联系管理员删除。
 + 管理员联系方式：<br/>
-  <mark>QQ：2483044528</mark>
-+ 投稿邮箱：<mark>yasd.fans@outlook.com<mark>
+  QQ：2483044528
++ 投稿邮箱：yasd.fans@outlook.com
