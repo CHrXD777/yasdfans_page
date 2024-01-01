@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Roguelike fans CN</title>
+    <link>https://yasd.fans/tags/</link>
+    <description>Recent content in Tags on Roguelike fans CN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Dec 2023 02:12:50 +0800</lastBuildDate>
+    <atom:link href="https://yasd.fans/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stickythread</title>
+      <link>https://yasd.fans/tags/Stickythread/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      <guid>https://yasd.fans/tags/Stickythread/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>timeline</title>
+      <link>https://yasd.fans/tags/timeline/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      <guid>https://yasd.fans/tags/timeline/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

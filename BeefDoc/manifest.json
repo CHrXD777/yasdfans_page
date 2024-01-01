@@ -1,0 +1,15 @@
+{
+  "name": "Beef编程语言中文文档",
+  "short_name": "Beef编程语言中文文档",
+  "start_url": "/BeefDoc/",
+  "scope": "/BeefDoc/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/BeefDoc/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

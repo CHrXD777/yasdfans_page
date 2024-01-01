@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Menus on Ravsoch主页</title>
+    <link>https://yasd.fans/ravsoch/menu/</link>
+    <description>Recent content in Menus on Ravsoch主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://yasd.fans/ravsoch/menu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yasd.fans/ravsoch/menu/site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/menu/site/</guid>
+      <description> 导 航 文章列表 链 接 [友情链接] [买我一咖啡] ◉支付二维码 [资源] </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>介绍 on Ravsoch主页</title>
+    <link>https://yasd.fans/ravsoch/</link>
+    <description>Recent content in 介绍 on Ravsoch主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Nov 2023 21:33:50 +0800</lastBuildDate>
+    <atom:link href="https://yasd.fans/ravsoch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机图形学</title>
+      <link>https://yasd.fans/ravsoch/posts/ComputerGraphics/</link>
+      <pubDate>Mon, 27 Nov 2023 21:33:50 +0800</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/ComputerGraphics/</guid>
+      <description>关于我对计算机图形学的研究及作品（Demoscene、shader）</description>
+    </item>
+    <item>
+      <title>合成器音乐</title>
+      <link>https://yasd.fans/ravsoch/posts/Synthwave/</link>
+      <pubDate>Mon, 27 Nov 2023 21:32:50 +0800</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/Synthwave/</guid>
+      <description>关于我创作的合成器音乐</description>
+    </item>
+    <item>
+      <title>视觉艺术</title>
+      <link>https://yasd.fans/ravsoch/posts/VisualArts/</link>
+      <pubDate>Mon, 27 Nov 2023 21:30:50 +0800</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/VisualArts/</guid>
+      <description>关于我创作的视觉艺术</description>
+    </item>
+    <item>
+      <title>测试页面</title>
+      <link>https://yasd.fans/ravsoch/posts/test/</link>
+      <pubDate>Wed, 15 Nov 2023 16:15:08 +0800</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/test/</guid>
+      <description>测试md中的格式渲染至html的显示效果</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://yasd.fans/ravsoch/menu/site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/menu/site/</guid>
+      <description> 导 航 文章列表 链 接 [友情链接] [买我一咖啡] ◉支付二维码 [资源] </description>
+    </item>
+  </channel>
+</rss>

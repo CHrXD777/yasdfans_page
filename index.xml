@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>介绍 on Roguelike fans CN</title>
+    <link>https://yasd.fans/</link>
+    <description>Recent content in 介绍 on Roguelike fans CN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Dec 2023 02:37:20 +0800</lastBuildDate>
+    <atom:link href="https://yasd.fans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RL开发资源页面</title>
+      <link>https://yasd.fans/posts/resource_dev/</link>
+      <pubDate>Mon, 04 Dec 2023 02:37:20 +0800</pubDate>
+      <guid>https://yasd.fans/posts/resource_dev/</guid>
+      <description>RL游戏开发的资源仓库，主要来源于Reddit/r/Roguelikedev</description>
+    </item>
+    <item>
+      <title>RL资源页面</title>
+      <link>https://yasd.fans/posts/resource/</link>
+      <pubDate>Mon, 04 Dec 2023 02:37:20 +0800</pubDate>
+      <guid>https://yasd.fans/posts/resource/</guid>
+      <description>各种RL游戏的资源仓库</description>
+    </item>
+    <item>
+      <title>Roadwarden汉化</title>
+      <link>https://yasd.fans/posts/roadwarden_zh/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/roadwarden_zh/</guid>
+      <description>文字冒险游戏Roadwarden的非官方汉化</description>
+    </item>
+    <item>
+      <title>置顶测试</title>
+      <link>https://yasd.fans/posts/test2/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/test2/</guid>
+      <description>置顶测试</description>
+    </item>
+    <item>
+      <title>投稿说明</title>
+      <link>https://yasd.fans/posts/about_detail/</link>
+      <pubDate>Thu, 23 Nov 2023 02:15:22 +0800</pubDate>
+      <guid>https://yasd.fans/posts/about_detail/</guid>
+      <description>关于投稿的详细说明</description>
+    </item>
+    <item>
+      <title>小站正在搭建中...</title>
+      <link>https://yasd.fans/posts/test/</link>
+      <pubDate>Wed, 15 Nov 2023 16:15:08 +0800</pubDate>
+      <guid>https://yasd.fans/posts/test/</guid>
+      <description> ;) # </description>
+    </item>
+    <item>
+      <title>我群呢？</title>
+      <link>https://yasd.fans/posts/findgroups/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/findgroups/</guid>
+      <description> 群列表： # Roguelike fans: 144321649 xxx群：xxxxxxx xxx群：xxxxxxx </description>
+    </item>
+    <item>
+      <title>检索</title>
+      <link>https://yasd.fans/posts/findgames/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/findgames/</guid>
+      <description>找到喜欢的游戏了？到网盘搜搜看！（表中可能会标记上资源是否在网盘中;提取码:yasd）</description>
+    </item>
+    <item>
+      <title>画廊</title>
+      <link>https://yasd.fans/gallery/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      <guid>https://yasd.fans/gallery/</guid>
+      <description>&#xD;</description>
+    </item>
+    <item>
+      <title>画廊</title>
+      <link>https://yasd.fans/posts/gallery/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/gallery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>社区贡献</title>
+      <link>https://yasd.fans/posts/contribution/</link>
+      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
+      <guid>https://yasd.fans/posts/contribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://yasd.fans/menu/site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/menu/site/</guid>
+      <description> 导 航 文章时间线 画 廊 寻找游戏 社区贡献 我群呢？ 链 接 [友情链接] ◉最强中文rl图书馆: Archive RL Silencess ◉怒独僧的个人主页 ◉站长个人主页 ◉Beef编程语言中文文档 [买我一咖啡] ◉支付二维码 [资源] ◉RL游戏资源 ◉RL游戏开发资源 </description>
+    </item>
+  </channel>
+</rss>

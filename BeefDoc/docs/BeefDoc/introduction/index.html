@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" 介绍 # Beef🥩编程语言概述 # Beef 是一种以性能为导向的静态编译编程语言。该语言和环境注重开发者的生产力，特别关注于开发、调试和维护 Beef 应用的整体愉悦性。目标受众是注重性能的开发者，他们看重简洁、代码可读性、快速开发迭代和良好的调试能力。
+设计目标 # 高性能执行 无 GC 或引用计数开销 最小化运行时 编译（无 JIT 延迟） 内存控制 广泛支持自定义分配器 增强对栈内存的控制 与 C 和 C&#43;&#43; 低摩擦互操作 静态或动态链接到常规 C/C&#43;&#43; 库 支持 C/C&#43;&#43; 结构布局和调用约定 在清晰性、可读性或可发现性方面，更倾向于冗长而非简洁 支持流畅的迭代开发 快速的增量编译和链接 运行时代码编译（代码热交换），包括数据布局更改 针对目标受众（C 家族）的熟悉语法和编程范式 良好的调试能力 生成标准的调试信息（PDB/DWARF） 强调调试版本的良好执行速度 适合基于 IDE 的工作流程 作为服务的编译器 快速而可靠的自动完成结果 快速而可信的可重构性（例如：重命名符号） 利用 LLVM 基础设施 经过严格测试的后端优化器 ThinLTO 链接时优化支持 ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="介绍" />
+<meta property="og:description" content=" 介绍 # Beef🥩编程语言概述 # Beef 是一种以性能为导向的静态编译编程语言。该语言和环境注重开发者的生产力，特别关注于开发、调试和维护 Beef 应用的整体愉悦性。目标受众是注重性能的开发者，他们看重简洁、代码可读性、快速开发迭代和良好的调试能力。
+设计目标 # 高性能执行 无 GC 或引用计数开销 最小化运行时 编译（无 JIT 延迟） 内存控制 广泛支持自定义分配器 增强对栈内存的控制 与 C 和 C&#43;&#43; 低摩擦互操作 静态或动态链接到常规 C/C&#43;&#43; 库 支持 C/C&#43;&#43; 结构布局和调用约定 在清晰性、可读性或可发现性方面，更倾向于冗长而非简洁 支持流畅的迭代开发 快速的增量编译和链接 运行时代码编译（代码热交换），包括数据布局更改 针对目标受众（C 家族）的熟悉语法和编程范式 良好的调试能力 生成标准的调试信息（PDB/DWARF） 强调调试版本的良好执行速度 适合基于 IDE 的工作流程 作为服务的编译器 快速而可靠的自动完成结果 快速而可信的可重构性（例如：重命名符号） 利用 LLVM 基础设施 经过严格测试的后端优化器 ThinLTO 链接时优化支持 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasd.fans/BeefDoc/docs/BeefDoc/introduction/" /><meta property="article:section" content="docs" />
+
+
+
+<title>介绍 | Beef编程语言中文文档</title>
+<link rel="manifest" href="/BeefDoc/manifest.json">
+<link rel="icon" href="/BeefDoc/favicon.png" >
+<link rel="stylesheet" href="/BeefDoc/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/BeefDoc/flexsearch.min.js"></script>
+  <script defer src="/BeefDoc/en.search.min.a94f9bac22e0a8a96f79fc30ce1a0339980f0a76b89c3ca1646464f0e8074af9.js" integrity="sha256-qU&#43;brCLgqKlvefwwzhoDOZgPCna4nDyhZGRk8OgHSvk=" crossorigin="anonymous"></script>
+
+  <script defer src="/BeefDoc/sw.min.89b13a7b7522b220877004dab47a2b42357ef552aa5f44e9edd3b7f2fb33ed38.js" integrity="sha256-ibE6e3UisiCHcATatHorQjV&#43;9VKqX0Tp7dO38vsz7Tg=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/BeefDoc/"><img src="/BeefDoc/logo.png" alt="Logo" /><span>Beef编程语言中文文档</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>目录</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/introduction/" class="active">介绍</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/License/" class="">许可证</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-82b6b8e8badf47122f2da9c56cfaf61f" class="toggle"  />
+    <label for="section-82b6b8e8badf47122f2da9c56cfaf61f" class="flex justify-between">
+      <a href="/BeefDoc/docs/BeefDoc/GettingStart/" class="">入门</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/Install/" class="">安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/" class="">从源代码构建</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/BeefDoc/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/CHrXD777/yasdfans_page/tree/main/BeefDoc"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+<span>🥩© 2023 Ravsoch . All rights reserved.</span>
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/BeefDoc/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>介绍</strong>
+
+  <label for="toc-control">
+    
+    <img src="/BeefDoc/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#介绍">介绍</a>
+      <ul>
+        <li><a href="#beef编程语言概述">Beef🥩编程语言概述</a>
+          <ul>
+            <li><a href="#设计目标">设计目标</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="介绍">
+  介绍
+  <a class="anchor" href="#%e4%bb%8b%e7%bb%8d">#</a>
+</h1>
+<h2 id="beef编程语言概述">
+  Beef🥩编程语言概述
+  <a class="anchor" href="#beef%e7%bc%96%e7%a8%8b%e8%af%ad%e8%a8%80%e6%a6%82%e8%bf%b0">#</a>
+</h2>
+<p>Beef 是一种以性能为导向的静态编译编程语言。该语言和环境注重开发者的生产力，特别关注于开发、调试和维护 Beef 应用的整体愉悦性。目标受众是注重性能的开发者，他们看重简洁、代码可读性、快速开发迭代和良好的调试能力。</p>
+<h3 id="设计目标">
+  设计目标
+  <a class="anchor" href="#%e8%ae%be%e8%ae%a1%e7%9b%ae%e6%a0%87">#</a>
+</h3>
+<ul>
+<li>高性能执行
+无 GC 或引用计数开销
+最小化运行时
+编译（无 JIT 延迟）</li>
+<li>内存控制
+广泛支持自定义分配器
+增强对栈内存的控制</li>
+<li>与 C 和 C++ 低摩擦互操作
+静态或动态链接到常规 C/C++ 库
+支持 C/C++ 结构布局和调用约定</li>
+<li>在清晰性、可读性或可发现性方面，更倾向于冗长而非简洁</li>
+<li>支持流畅的迭代开发
+快速的增量编译和链接
+运行时代码编译（代码热交换），包括数据布局更改</li>
+<li>针对目标受众（C 家族）的熟悉语法和编程范式</li>
+<li>良好的调试能力
+生成标准的调试信息（PDB/DWARF）
+强调调试版本的良好执行速度</li>
+<li>适合基于 IDE 的工作流程
+作为服务的编译器
+快速而可靠的自动完成结果
+快速而可信的可重构性（例如：重命名符号）</li>
+<li>利用 LLVM 基础设施
+经过严格测试的后端优化器
+ThinLTO 链接时优化支持</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/BeefDoc/introduction.md" target="_blank" rel="noopener">
+      <img src="/BeefDoc/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#介绍">介绍</a>
+      <ul>
+        <li><a href="#beef编程语言概述">Beef🥩编程语言概述</a>
+          <ul>
+            <li><a href="#设计目标">设计目标</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

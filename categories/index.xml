@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Roguelike fans CN</title>
+    <link>https://yasd.fans/categories/</link>
+    <description>Recent content in Categories on Roguelike fans CN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Dec 2023 02:12:50 +0800</lastBuildDate>
+    <atom:link href="https://yasd.fans/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>社区贡献</title>
+      <link>https://yasd.fans/categories/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/</link>
+      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
+      <guid>https://yasd.fans/categories/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

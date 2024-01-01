@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Beef编程语言中文文档</title>
+    <link>https://yasd.fans/BeefDoc/</link>
+    <description>Recent content in Introduction on Beef编程语言中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yasd.fans/BeefDoc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>介绍</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/introduction/</guid>
+      <description> 介绍 # Beef🥩编程语言概述 # Beef 是一种以性能为导向的静态编译编程语言。该语言和环境注重开发者的生产力，特别关注于开发、调试和维护 Beef 应用的整体愉悦性。目标受众是注重性能的开发者，他们看重简洁、代码可读性、快速开发迭代和良好的调试能力。&#xA;设计目标 # 高性能执行 无 GC 或引用计数开销 最小化运行时 编译（无 JIT 延迟） 内存控制 广泛支持自定义分配器 增强对栈内存的控制 与 C 和 C++ 低摩擦互操作 静态或动态链接到常规 C/C++ 库 支持 C/C++ 结构布局和调用约定 在清晰性、可读性或可发现性方面，更倾向于冗长而非简洁 支持流畅的迭代开发 快速的增量编译和链接 运行时代码编译（代码热交换），包括数据布局更改 针对目标受众（C 家族）的熟悉语法和编程范式 良好的调试能力 生成标准的调试信息（PDB/DWARF） 强调调试版本的良好执行速度 适合基于 IDE 的工作流程 作为服务的编译器 快速而可靠的自动完成结果 快速而可信的可重构性（例如：重命名符号） 利用 LLVM 基础设施 经过严格测试的后端优化器 ThinLTO 链接时优化支持 </description>
+    </item>
+    <item>
+      <title>安装</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/Install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/Install/</guid>
+      <description>安装 # 稳定版本 # 版本：0.43.3 发布日期：2022 年 9 月 7 日&#xA;Windows 64 位： 下载</description>
+    </item>
+    <item>
+      <title>从源代码构建</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/</guid>
+      <description>从源代码构建 # 构建概述 # 在具有可用的二进制发行版的平台上（例如 Windows），不需要从源代码构建 Beef。&#xA;源代码可在 https://github.com/beefytech/Beef 获取。&#xA;引导过程 # Beef 编译器的核心是用 C++ 编写的，而 IDE 和命令行 BeefBuild 构建系统是用 Beef 本身编写的。出于引导目的，Beef 包含一个最小的引导编译器，其唯一任务是执行初始的 BeefBuild 构建，然后执行自身的“正确”构建。&#xA;在 Windows 上构建 # 要求 # Visual Studio 2017 或更高版本的 Microsoft C++ 构建工具。您可以从 https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022 安装 Microsoft Visual C++ Build Tools 或整个 Visual Studio 套件。 Platform Toolset 141 (VS2017) Windows SDK 10.0.17763.0 CMake 3.15 或更新版本 Python 3.6 或更新版本 Git 命令行工具 构建步骤 # 执行 bin/build.bat 请注意，这将首先下载并构建 LLVM，这需要一些时间。构建结果将位于 IDE/dist 目录中。</description>
+    </item>
+    <item>
+      <title>许可证</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/License/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/License/</guid>
+      <description>MIT 许可证&#xA;版权所有 © 2019 BeefyTech&#xA;特此免费授予获得本软件及其相关文档文件（以下简称“软件”）副本的任何人，无需支付费用，可以在没有限制的情况下处理本软件，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或销售软件的副本，以及允许被提供软件的人这样做，但须符合以下条件：&#xA;在所有副本或实质性部分的软件中必须包含上述版权声明和本许可声明。&#xA;本软件按“原样”提供，不提供任何形式的明示或暗示的保证，包括但不限于对适销性、特定用途的适用性和非侵权性的保证。在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任承担责任，无论是在合同、侵权或其他方面，由于或与软件或使用或其他交往有关，或与软件有关，或与软件有关，或与软件有关，或与软件有关，或与软件有关，或与软件有关。</description>
+    </item>
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://yasd.fans/BeefDoc/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/posts/creating-a-new-theme/</guid>
+      <description>Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&#xA;We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://yasd.fans/BeefDoc/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static # Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like&#xA;▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become&#xA;▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://yasd.fans/BeefDoc/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.&#xA;This document is a brief primer on using Go templates.</description>
+    </item>
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://yasd.fans/BeefDoc/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at Install Hugo&#xA;Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:</description>
+    </item>
+  </channel>
+</rss>
