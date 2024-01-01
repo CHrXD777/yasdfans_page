@@ -1,7 +1,9 @@
 # yasdfans_page
 
-roguelike游戏资源咨询小站
+roguelike游戏资源资讯小站
 roguelike game resources and consultation site
+
+合并了yasdfans、我的主页、beef编程语言中文文档到一个站点中
 
 画饼：
 1. 为网站选定几个内容主题，希望有更多投稿
