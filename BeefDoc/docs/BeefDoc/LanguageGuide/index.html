@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="语言指南 # 语言指南概述 # Beef 生态系统由语言、核心库和 Beef 工具（包括集成开发环境）组成。尽管这三个部分紧密协作，但本部分文档仅专门介绍语言。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="笔记" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="语言指南" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://yasd.fans/BeefDoc/posts/" />
+<meta property="og:url" content="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/" />
 
-<title>笔记 | Beef编程语言中文文档</title>
+<title>语言指南 | Beef编程语言中文文档</title>
 <link rel="manifest" href="/BeefDoc/manifest.json">
 <link rel="icon" href="/BeefDoc/favicon.png" >
 <link rel="stylesheet" href="/BeefDoc/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
@@ -19,7 +19,7 @@
   <script defer src="/BeefDoc/en.search.min.a281027d2709f376cce96e5294fd13cd456b5edc56d7194f79cd9796f640dd1c.js" integrity="sha256-ooECfScJ83bM6W5SlP0TzUVrXtxW1xlPec2XlvZA3Rw=" crossorigin="anonymous"></script>
 
   <script defer src="/BeefDoc/sw.min.89b13a7b7522b220877004dab47a2b42357ef552aa5f44e9edd3b7f2fb33ed38.js" integrity="sha256-ibE6e3UisiCHcATatHorQjV&#43;9VKqX0Tp7dO38vsz7Tg=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://yasd.fans/BeefDoc/posts/index.xml" title="Beef编程语言中文文档" />
+<link rel="alternate" type="application/rss+xml" href="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/index.xml" title="Beef编程语言中文文档" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -157,9 +157,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle"  />
+    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle" checked />
     <label for="section-20251dc04252ec6d9a90f1df2b4d865b" class="flex justify-between">
-      <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/" class="">语言指南</a>
+      <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/" class="active">语言指南</a>
     </label>
   
 
@@ -275,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/BeefDoc/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>笔记</strong>
+  <strong>语言指南</strong>
 
   <label for="toc-control">
     
@@ -288,29 +288,17 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#语言指南">语言指南</a>
       <ul>
-      
+        <li><a href="#语言指南概述">语言指南概述</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
 
   </aside>
@@ -320,29 +308,16 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/BeefDoc/posts/MemoryManagement/">笔记 | 内存管理</a>
-    </h2>
-    
-  <h5>January 2, 2024</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p> 笔记 | 内存管理 # 
-    </p>
-  </article>
-  
-
-  
+  <article class="markdown book-article"><h1 id="语言指南">
+  语言指南
+  <a class="anchor" href="#%e8%af%ad%e8%a8%80%e6%8c%87%e5%8d%97">#</a>
+</h1>
+<h2 id="语言指南概述">
+  语言指南概述
+  <a class="anchor" href="#%e8%af%ad%e8%a8%80%e6%8c%87%e5%8d%97%e6%a6%82%e8%bf%b0">#</a>
+</h2>
+<p>Beef 生态系统由语言、核心库和 Beef 工具（包括集成开发环境）组成。尽管这三个部分紧密协作，但本部分文档仅专门介绍语言。</p>
+</article>
  
       
 
@@ -354,7 +329,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/posts/_index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/BeefDoc/LanguageGuide/_index.md" target="_blank" rel="noopener">
       <img src="/BeefDoc/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -374,6 +349,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -383,29 +362,17 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#语言指南">语言指南</a>
       <ul>
-      
+        <li><a href="#语言指南概述">语言指南概述</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
  
       </div>

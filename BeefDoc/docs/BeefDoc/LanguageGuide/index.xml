@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>语言指南 on Beef编程语言中文文档</title>
+    <link>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/</link>
+    <description>Recent content in 语言指南 on Beef编程语言中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基础知识</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/</guid>
+      <description>基础知识 # 编译模型 # 牛肉编译上下文是一个工作区(workspace)，由多个项目(projects)组成。一个项目可以是一个库，也可以是一个二进制文件，如可执行文件或 dll。对源代码进行解析，通过有限的预处理器进行编译，并为引用的类型和方法创建对象文件集，然后将其链接到目标二进制文件中。工作区范围的编译模式允许每个工作区设置影响特定方法或类型组的编译，即使代码包含在引用的第三方库中，也能修改预处理器和编译设置（即：优化级别）。&#xA;支持增量编译，通过依赖关系图只重建可能受影响的对象，并通过后台缓存避免重建无功能变化的对象。为创建可重现的编译，可禁用增量编译。&#xA;Beef 支持多种编译器后端，包括 LLVM 和自定义的 &amp;ldquo;增强调试&amp;rdquo;（Og+）后端，后者执行了一些代码优化，但不会对调试性产生不利影响，而且与 LLVM 相比，在发布调试信息方面也有一些改进。&#xA;支持多种链接器，包括系统链接器和可用于链接时优化构建（LLVM LTO/ThinLTO）的 LLVM 链接器。</description>
+    </item>
+    <item>
+      <title>安全特性</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/</guid>
+      <description>安全特性 # Beef 支持多种可选的安全特性，其中许多特性可在 &amp;ldquo;混合安全 &amp;ldquo;编译时对指定代码组禁用（即：性能关键型代码可禁用某些检查，而性能关键型较低或测试较少的代码则可使用更多安全检查）。&#xA;默认情况下，在调试版本中会对所有代码启用以下检查，而在发布版本中则会禁用这些检查。&#xA;边界检查 # 边界检查是在数组、集合、跨度和字符串的标准库中实现的。在许多情况下，它们是通过一个执行边界检查的 [Checked] 访问器和另一个不进行边界检查的 [Unchecked] 访问器来实现的。这样就可以在调用时选择边界检查，而不是在整个集合范围内决定。&#xA;// 禁用此特定索引的边界检查&#xD;int val = arr[[Unchecked]i]; // 在此方法中不做任何检查&#xD;[DisableChecks]&#xD;void Calculate()&#xD;{&#xD;int val = arr[i];&#xD;} 动态类型转换检查 # 在运行时会捕捉到将对象显式转换为无效派生类型的情况。&#xA;可通过调试内存管理器实时检测内存泄漏。运行时将持续跟踪可触及的内存，如果内存不再可触及但未被正确释放，则会立即报告为泄漏，并同时报告分配发生的代码位置。这种分配跟踪的堆栈跟踪深度是可调的。 双重释放/释放后使用&#xA;启用调试内存管理器后，被请求释放的对象将被标记为 &amp;ldquo;已释放&amp;rdquo;，但内存不会被实际回收，直到不再有对其占用内存的引用。在内存被标记为释放后，任何使用内存的尝试都会立即失败，被释放对象的值及其分配堆栈跟踪都将有效，并在调试器中可见。</description>
+    </item>
+    <item>
+      <title>内存管理</title>
+      <link>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/</guid>
+      <description>内存管理 # 内存分配 # 内存分配可以放在堆栈、全局分配器或自定义分配器上。堆栈分配使用 &amp;ldquo;scope &amp;ldquo;关键字，它可以指定从当前作用域（即代码块）到整个方法作用域（甚至在循环中）的范围。&#xA;static void Test(StreamReader fs)&#xD;{&#xD;let strList = scope List&amp;lt;String&amp;gt;();&#xD;for (let line in fs.Lines)&#xD;{&#xD;/* 该字符串的范围是整个方法 */&#xD;let lineStr = scope:: String(line);&#xD;strList.Add(lineStr);&#xD;}&#xD;strList.Sort();&#xD;}&#xD;static void Test(StreamReader fs)&#xD;{&#xD;Sort:&#xD;{&#xD;let strList = scope List&amp;lt;String&amp;gt;();&#xD;for (let line in fs.Lines)&#xD;{&#xD;/* 该字符串的范围是 &amp;#34;Sort&amp;#34; 范围 */&#xD;let lineStr = scope:Sort String(line);&#xD;strList.Add(lineStr);&#xD;}&#xD;strList.Sort();&#xD;}&#xD;} 作用域分配会动态增加堆栈大小，因此必须确保有足够的堆栈空间用于给定的计算，就像递归方法必须确保递归深度不会耗尽堆栈一样。</description>
+    </item>
+  </channel>
+</rss>

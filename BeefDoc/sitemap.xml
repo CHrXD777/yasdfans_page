@@ -4,63 +4,36 @@
   <url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/introduction/</loc>
   </url><url>
+    <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/</loc>
+  </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/Install/</loc>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/</loc>
+  </url><url>
+    <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/</loc>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/License/</loc>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/GettingStart/</loc>
   </url><url>
-    <loc>https://yasd.fans/BeefDoc/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/</loc>
   </url><url>
-    <loc>https://yasd.fans/BeefDoc/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/</loc>
   </url><url>
-    <loc>https://yasd.fans/BeefDoc/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://yasd.fans/BeefDoc/posts/MemoryManagement/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yasd.fans/BeefDoc/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://yasd.fans/BeefDoc/posts/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/categories/Development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yasd.fans/BeefDoc/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/</loc>
+  </url><url>
+    <loc>https://yasd.fans/BeefDoc/tags/</loc>
   </url><url>
     <loc>https://yasd.fans/BeefDoc/docs/BeefDoc/</loc>
   </url>

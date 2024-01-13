@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="内存管理 # 内存分配 # 内存分配可以放在堆栈、全局分配器或自定义分配器上。堆栈分配使用 &ldquo;scope &ldquo;关键字，它可以指定从当前作用域（即代码块）到整个方法作用域（甚至在循环中）的范围。
+static void Test(StreamReader fs){let strList = scope List&lt;String&gt;();for (let line in fs.Lines){/* 该字符串的范围是整个方法 */let lineStr = scope:: String(line);strList.Add(lineStr);}strList.Sort();}static void Test(StreamReader fs){Sort:{let strList = scope List&lt;String&gt;();for (let line in fs.Lines){/* 该字符串的范围是 &#34;Sort&#34; 范围 */let lineStr = scope:Sort String(line);strList.Add(lineStr);}strList.Sort();}} 作用域分配会动态增加堆栈大小，因此必须确保有足够的堆栈空间用于给定的计算，就像递归方法必须确保递归深度不会耗尽堆栈一样。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="内存管理" />
+<meta property="og:description" content="内存管理 # 内存分配 # 内存分配可以放在堆栈、全局分配器或自定义分配器上。堆栈分配使用 &ldquo;scope &ldquo;关键字，它可以指定从当前作用域（即代码块）到整个方法作用域（甚至在循环中）的范围。
+static void Test(StreamReader fs){let strList = scope List&lt;String&gt;();for (let line in fs.Lines){/* 该字符串的范围是整个方法 */let lineStr = scope:: String(line);strList.Add(lineStr);}strList.Sort();}static void Test(StreamReader fs){Sort:{let strList = scope List&lt;String&gt;();for (let line in fs.Lines){/* 该字符串的范围是 &#34;Sort&#34; 范围 */let lineStr = scope:Sort String(line);strList.Add(lineStr);}strList.Sort();}} 作用域分配会动态增加堆栈大小，因此必须确保有足够的堆栈空间用于给定的计算，就像递归方法必须确保递归深度不会耗尽堆栈一样。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/" /><meta property="article:section" content="docs" />
+
+
+
+<title>内存管理 | Beef编程语言中文文档</title>
+<link rel="manifest" href="/BeefDoc/manifest.json">
+<link rel="icon" href="/BeefDoc/favicon.png" >
+<link rel="stylesheet" href="/BeefDoc/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/BeefDoc/flexsearch.min.js"></script>
+  <script defer src="/BeefDoc/en.search.min.a281027d2709f376cce96e5294fd13cd456b5edc56d7194f79cd9796f640dd1c.js" integrity="sha256-ooECfScJ83bM6W5SlP0TzUVrXtxW1xlPec2XlvZA3Rw=" crossorigin="anonymous"></script>
+
+  <script defer src="/BeefDoc/sw.min.89b13a7b7522b220877004dab47a2b42357ef552aa5f44e9edd3b7f2fb33ed38.js" integrity="sha256-ibE6e3UisiCHcATatHorQjV&#43;9VKqX0Tp7dO38vsz7Tg=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/BeefDoc/"><img src="/BeefDoc/logo.png" alt="Logo" /><span>Beef编程语言中文文档</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>目录</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/introduction/" class="">介绍</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/License/" class="">许可证</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-82b6b8e8badf47122f2da9c56cfaf61f" class="toggle"  />
+    <label for="section-82b6b8e8badf47122f2da9c56cfaf61f" class="flex justify-between">
+      <a href="/BeefDoc/docs/BeefDoc/GettingStart/" class="">入门</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/Install/" class="">安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/" class="">从源代码构建</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle" checked />
+    <label for="section-20251dc04252ec6d9a90f1df2b4d865b" class="flex justify-between">
+      <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/" class="">语言指南</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/" class="">基础知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/" class="">安全特性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/" class="active">内存管理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/BeefDoc/posts/"  >
+        笔记
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/CHrXD777/yasdfans_page/tree/main/BeefDoc"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+<span>🥩© 2023 Ravsoch . All rights reserved.</span>
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/BeefDoc/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>内存管理</strong>
+
+  <label for="toc-control">
+    
+    <img src="/BeefDoc/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#内存管理">内存管理</a>
+      <ul>
+        <li><a href="#内存分配">内存分配</a></li>
+        <li><a href="#全局分配器">全局分配器</a></li>
+        <li><a href="#释放内存">释放内存</a></li>
+        <li><a href="#追加分配">追加分配</a></li>
+        <li><a href="#装箱">装箱</a></li>
+        <li><a href="#变体">变体</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="内存管理">
+  内存管理
+  <a class="anchor" href="#%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86">#</a>
+</h1>
+<h2 id="内存分配">
+  内存分配
+  <a class="anchor" href="#%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d">#</a>
+</h2>
+<p>内存分配可以放在堆栈、全局分配器或自定义分配器上。堆栈分配使用 &ldquo;scope &ldquo;关键字，它可以指定从当前作用域（即代码块）到整个方法作用域（甚至在循环中）的范围。</p>
+<pre tabindex="0"><code>static void Test(StreamReader fs)
+{
+    let strList = scope List&lt;String&gt;();
+    for (let line in fs.Lines)
+    {
+        /* 该字符串的范围是整个方法 */
+        let lineStr = scope:: String(line);
+        strList.Add(lineStr);
+    }
+    strList.Sort();
+}
+
+static void Test(StreamReader fs)
+{
+    Sort:
+    {
+        let strList = scope List&lt;String&gt;();
+        for (let line in fs.Lines)
+        {
+            /* 该字符串的范围是 &#34;Sort&#34; 范围 */
+            let lineStr = scope:Sort String(line);
+            strList.Add(lineStr);
+        }
+        strList.Sort();
+    }
+}
+</code></pre><p>作用域分配会动态增加堆栈大小，因此必须确保有足够的堆栈空间用于给定的计算，就像递归方法必须确保递归深度不会耗尽堆栈一样。</p>
+<p>通过全局分配器进行的分配使用 &ldquo;new &ldquo;关键字。</p>
+<pre tabindex="0"><code>String AllocGlobalString(int len)
+{
+    return new String(len);
+}
+</code></pre><p>通过自定义分配器进行分配时，需要使用 &ldquo;new &ldquo;关键字并指定自定义分配器实例。</p>
+<pre tabindex="0"><code>String AllocCustomString(int len)
+{
+    return new:customAllocator String(len);
+}
+</code></pre><p>自定义分配器至少只能实现一个 Alloc 方法，但也可以添加一个 AllocTyped 方法，以添加特定类型的分配逻辑。内存通过 Free 方法释放。</p>
+<pre tabindex="0"><code>struct ArenaAlloc
+{
+    public void* Alloc(int size, int align)
+    {
+        return Internal.StdMalloc(size);
+    }
+
+    public void* AllocTyped(Type type, int size, int align)
+    {
+        void* data = Alloc(size, align);
+        if (type.HasDestructor)
+            MarkRequiresDeletion(data);
+        return data;
+    }
+
+    public void Free(void* ptr)
+    {
+        Internal.StdFree(ptr);
+    }
+
+    public void MarkRequiresDeletion(void* obj)
+    {
+        /* TODO: 在分配器被弃置时调用此对象的析构函数 */
+    }
+}
+</code></pre><p>请注意，如果启用了实时泄漏检查，且自定义分配器使用了泄漏检查器尚未跟踪的内存，则分配器需要报告其内存，以便扫描对象引用。请参阅 corlib BumpAllocator，了解如何与泄漏检查器合作，尤其是 &ldquo;GCMarkMembers &ldquo;方法。</p>
+<p>自定义分配也可以通过
+  <a href="https://www.beeflang.org/docs/language-guide/datatypes/members/#mixins">混合体</a>进行分配，混合体甚至可以有条件地在堆栈上进行分配。例如，ScopedAlloc 混合元素将在堆栈上执行小规模分配，而在堆上执行大规模对象分配。</p>
+<pre tabindex="0"><code>static mixin ScopedAlloc(int size, int align)
+{
+    void* data;
+    if (size &lt;= 128)
+    {
+        data = scope:mixin [Align(align)] uint8[size]* { ? };
+    }
+    else
+    {
+        data = new [Align(align)] uint8[size]* { ? };
+        defer:mixin delete data;
+    }
+    data
+}
+
+void ReadString(int reserveLen)
+{
+    String str = new:ScopedAlloc! String(reserveLen);
+    defer delete:null str;
+    UseString(str);
+}
+</code></pre><p>请注意在上述情况中使用了 delete:null。ScopedAlloc! 调用将释放实际分配的内存，但不会调用字符串析构函数。如果 UseString 向 str 追加了超出 reserveLen 的数据，就会发生堆分配，需要由字符串析构函数释放。删除:null 允许你在不请求释放任何内存的情况下执行销毁。</p>
+<p>许多 corlib 类（如 
+  <a href="https://www.beeflang.org/docs/language-guide/doxygen/corlib/html/class_system_1_1_string.html">System.String</a> 和 
+  <a href="https://www.beeflang.org/docs/language-guide/doxygen/corlib/html/class_system_1_1_collections_1_1_list.html">System.Collections.List</a>）需要动态分配内存。按照惯例，这些类从全局分配器中分配内存，并通过虚拟方法重载（如 String.Alloc 和 String.Free）为内部分配支持自定义分配器。</p>
+<h2 id="全局分配器">
+  全局分配器
+  <a class="anchor" href="#%e5%85%a8%e5%b1%80%e5%88%86%e9%85%8d%e5%99%a8">#</a>
+</h2>
+<p>全局分配器按工作区选择。默认情况下，使用 CRT malloc/free 分配器，但也可以使用任何 C 风格的全局分配器，如 TCMalloc 或 JEMalloc。此外，Beef 还包含一个特殊的调试分配器，可实现实时泄漏检查和热编译等功能。</p>
+<p>Beef 分配器是 C 风格的，因为它们不可重新分配，也没有垃圾回收器。</p>
+<h2 id="释放内存">
+  释放内存
+  <a class="anchor" href="#%e9%87%8a%e6%94%be%e5%86%85%e5%ad%98">#</a>
+</h2>
+<p>作用域分配会在作用域结束时自动释放，但手动分配必须使用 &ldquo;delete &ldquo;关键字手动释放。与自定义分配器分配类似，delete 可以指定一个自定义分配器目标，用于从自定义分配器释放内存。</p>
+<h2 id="追加分配">
+  追加分配
+  <a class="anchor" href="#%e8%bf%bd%e5%8a%a0%e5%88%86%e9%85%8d">#</a>
+</h2>
+<p>追加分配是一类特殊的分配，可以放在构造函数中，在分配拥有对象的内存时，可以手动要求分配额外的内存。这在 corlib 中用于接受 &ldquo;size &ldquo;参数的字符串等。</p>
+<pre tabindex="0"><code>class FloatArray
+{
+    int mLength;
+    float* mPtr;
+
+    [AllowAppend]
+    public this(int length)
+    {
+        let ptr = append float[length]*;        
+        mPtr = ptr;
+        mLength = length;
+    }
+}
+
+/* 追加分配保证紧随对象自身内存之后（与对齐方式有关）。我们可以利用这一知识来计算数组的存储位置，而不是将其存储在内部 */
+class FloatArray
+{
+    int mLength;
+
+    [AllowAppend]
+    public this(int length)
+    {
+        let ptr = append float[length]*;
+        mLength = length;
+    }
+
+    public float* Ptr
+    {
+        get
+        {
+            return (float*)(&amp;mLength + 1);
+        }
+    }
+}
+</code></pre><p>在内部，追加分配是通过创建一个大小计算函数来实现的，该函数会在分配之前被调用。编译器会尝试在调用点对该函数和相关参数执行常量评估，结果可能是一个固定大小的分配，而不是一个动态大小的分配，这样就去除了额外的调用，对于某些堆栈分配来说也会更快。</p>
+<p>追加分配的内存无需显式释放，但仍可通过 delete:append obj 语句调用对象析构函数。</p>
+<h2 id="装箱">
+  装箱
+  <a class="anchor" href="#%e8%a3%85%e7%ae%b1">#</a>
+</h2>
+<p>所有值类型（基元、结构体、元组、指针、枚举）都可以 &ldquo;装箱 &ldquo;到对象中，这对于动态类型处理和接口分派非常有用。所有基元类型都有用于装箱的库定义结构封装器（即：int32 基元会被 System.Int32 封装）。装箱是一种分配操作，它隐式地发生在投向 System.Object 时的临时堆栈分配中，但也可以显式地指定长期装箱和更长时间的堆栈分配。当值类型被装箱时，会静态生成一个特殊的 &ldquo;装箱类型&rdquo;，该类型会包裹给定的值类型。这会导致代码臃肿，这就是为什么这些盒式类型只在每个值类型需要时才生成。</p>
+<pre tabindex="0"><code>// 格式调用依靠装箱来处理输入类型
+Console.WriteLine(&#34;a + b = {}&#34;, a + b);
+Object a = 1.2f; // 堆栈上对当前作用域进行隐式装箱。
+Object b = scope box:: 2.3f; // 将堆栈中的对象显式地框定到方法作用域中
+Object c = new:allok box 4.5f; // 通过自定义分配器 &#34;allok &#34;显式装箱
+</code></pre><h2 id="变体">
+  变体
+  <a class="anchor" href="#%e5%8f%98%e4%bd%93">#</a>
+</h2>
+<p>变体类型 System.Variant 是装箱的另一种选择。变体不是对象类型，因此不能执行动态接口分派，但变体的优点是可以存储小数据类型而无需分配，也不会导致装箱代码臃肿。变体可以通过 Variant.GetBoxed 转换为堆分配的盒式对象，但如果编译器没有为存储的值类型按需生成盒式类型，则转换会失败。可以通过
+  <a href="https://www.beeflang.org/docs/language-guide/reflection/">反射选项</a>特别要求生成盒式类型。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/BeefDoc/LanguageGuide/MemoryManagement.md" target="_blank" rel="noopener">
+      <img src="/BeefDoc/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#内存管理">内存管理</a>
+      <ul>
+        <li><a href="#内存分配">内存分配</a></li>
+        <li><a href="#全局分配器">全局分配器</a></li>
+        <li><a href="#释放内存">释放内存</a></li>
+        <li><a href="#追加分配">追加分配</a></li>
+        <li><a href="#装箱">装箱</a></li>
+        <li><a href="#变体">变体</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

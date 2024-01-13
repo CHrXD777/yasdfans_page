@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="安全特性 # Beef 支持多种可选的安全特性，其中许多特性可在 &ldquo;混合安全 &ldquo;编译时对指定代码组禁用（即：性能关键型代码可禁用某些检查，而性能关键型较低或测试较少的代码则可使用更多安全检查）。
+默认情况下，在调试版本中会对所有代码启用以下检查，而在发布版本中则会禁用这些检查。
+边界检查 # 边界检查是在数组、集合、跨度和字符串的标准库中实现的。在许多情况下，它们是通过一个执行边界检查的 [Checked] 访问器和另一个不进行边界检查的 [Unchecked] 访问器来实现的。这样就可以在调用时选择边界检查，而不是在整个集合范围内决定。
+// 禁用此特定索引的边界检查int val = arr[[Unchecked]i]; // 在此方法中不做任何检查[DisableChecks]void Calculate(){int val = arr[i];} 动态类型转换检查 # 在运行时会捕捉到将对象显式转换为无效派生类型的情况。
+可通过调试内存管理器实时检测内存泄漏。运行时将持续跟踪可触及的内存，如果内存不再可触及但未被正确释放，则会立即报告为泄漏，并同时报告分配发生的代码位置。这种分配跟踪的堆栈跟踪深度是可调的。 双重释放/释放后使用
+启用调试内存管理器后，被请求释放的对象将被标记为 &ldquo;已释放&rdquo;，但内存不会被实际回收，直到不再有对其占用内存的引用。在内存被标记为释放后，任何使用内存的尝试都会立即失败，被释放对象的值及其分配堆栈跟踪都将有效，并在调试器中可见。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="安全特性" />
+<meta property="og:description" content="安全特性 # Beef 支持多种可选的安全特性，其中许多特性可在 &ldquo;混合安全 &ldquo;编译时对指定代码组禁用（即：性能关键型代码可禁用某些检查，而性能关键型较低或测试较少的代码则可使用更多安全检查）。
+默认情况下，在调试版本中会对所有代码启用以下检查，而在发布版本中则会禁用这些检查。
+边界检查 # 边界检查是在数组、集合、跨度和字符串的标准库中实现的。在许多情况下，它们是通过一个执行边界检查的 [Checked] 访问器和另一个不进行边界检查的 [Unchecked] 访问器来实现的。这样就可以在调用时选择边界检查，而不是在整个集合范围内决定。
+// 禁用此特定索引的边界检查int val = arr[[Unchecked]i]; // 在此方法中不做任何检查[DisableChecks]void Calculate(){int val = arr[i];} 动态类型转换检查 # 在运行时会捕捉到将对象显式转换为无效派生类型的情况。
+可通过调试内存管理器实时检测内存泄漏。运行时将持续跟踪可触及的内存，如果内存不再可触及但未被正确释放，则会立即报告为泄漏，并同时报告分配发生的代码位置。这种分配跟踪的堆栈跟踪深度是可调的。 双重释放/释放后使用
+启用调试内存管理器后，被请求释放的对象将被标记为 &ldquo;已释放&rdquo;，但内存不会被实际回收，直到不再有对其占用内存的引用。在内存被标记为释放后，任何使用内存的尝试都会立即失败，被释放对象的值及其分配堆栈跟踪都将有效，并在调试器中可见。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/" /><meta property="article:section" content="docs" />
+
+
+
+<title>安全特性 | Beef编程语言中文文档</title>
+<link rel="manifest" href="/BeefDoc/manifest.json">
+<link rel="icon" href="/BeefDoc/favicon.png" >
+<link rel="stylesheet" href="/BeefDoc/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/BeefDoc/flexsearch.min.js"></script>
+  <script defer src="/BeefDoc/en.search.min.a281027d2709f376cce96e5294fd13cd456b5edc56d7194f79cd9796f640dd1c.js" integrity="sha256-ooECfScJ83bM6W5SlP0TzUVrXtxW1xlPec2XlvZA3Rw=" crossorigin="anonymous"></script>
+
+  <script defer src="/BeefDoc/sw.min.89b13a7b7522b220877004dab47a2b42357ef552aa5f44e9edd3b7f2fb33ed38.js" integrity="sha256-ibE6e3UisiCHcATatHorQjV&#43;9VKqX0Tp7dO38vsz7Tg=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/BeefDoc/"><img src="/BeefDoc/logo.png" alt="Logo" /><span>Beef编程语言中文文档</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>目录</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/introduction/" class="">介绍</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/License/" class="">许可证</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-82b6b8e8badf47122f2da9c56cfaf61f" class="toggle"  />
+    <label for="section-82b6b8e8badf47122f2da9c56cfaf61f" class="flex justify-between">
+      <a href="/BeefDoc/docs/BeefDoc/GettingStart/" class="">入门</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/Install/" class="">安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/GettingStart/BuildingfromSource/" class="">从源代码构建</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle" checked />
+    <label for="section-20251dc04252ec6d9a90f1df2b4d865b" class="flex justify-between">
+      <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/" class="">语言指南</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/" class="">基础知识</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/SafetyFeatrues/" class="active">安全特性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/MemoryManagement/" class="">内存管理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/BeefDoc/posts/"  >
+        笔记
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/CHrXD777/yasdfans_page/tree/main/BeefDoc"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+<span>🥩© 2023 Ravsoch . All rights reserved.</span>
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/BeefDoc/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>安全特性</strong>
+
+  <label for="toc-control">
+    
+    <img src="/BeefDoc/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#安全特性">安全特性</a>
+      <ul>
+        <li><a href="#边界检查">边界检查</a></li>
+        <li><a href="#动态类型转换检查">动态类型转换检查</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="安全特性">
+  安全特性
+  <a class="anchor" href="#%e5%ae%89%e5%85%a8%e7%89%b9%e6%80%a7">#</a>
+</h1>
+<p>Beef 支持多种可选的安全特性，其中许多特性可在 &ldquo;混合安全 &ldquo;编译时对指定代码组禁用（即：性能关键型代码可禁用某些检查，而性能关键型较低或测试较少的代码则可使用更多安全检查）。</p>
+<p>默认情况下，在调试版本中会对所有代码启用以下检查，而在发布版本中则会禁用这些检查。</p>
+<h2 id="边界检查">
+  边界检查
+  <a class="anchor" href="#%e8%be%b9%e7%95%8c%e6%a3%80%e6%9f%a5">#</a>
+</h2>
+<p>边界检查是在数组、集合、跨度和字符串的标准库中实现的。在许多情况下，它们是通过一个执行边界检查的 [Checked] 访问器和另一个不进行边界检查的 [Unchecked] 访问器来实现的。这样就可以在调用时选择边界检查，而不是在整个集合范围内决定。</p>
+<pre tabindex="0"><code>// 禁用此特定索引的边界检查
+    int val = arr[[Unchecked]i];
+</code></pre><pre tabindex="0"><code>// 在此方法中不做任何检查
+[DisableChecks]
+void Calculate()
+{
+    int val = arr[i];
+}
+</code></pre><h2 id="动态类型转换检查">
+  动态类型转换检查
+  <a class="anchor" href="#%e5%8a%a8%e6%80%81%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2%e6%a3%80%e6%9f%a5">#</a>
+</h2>
+<p>在运行时会捕捉到将对象显式转换为无效派生类型的情况。</p>
+<p>可通过调试内存管理器实时检测内存泄漏。运行时将持续跟踪可触及的内存，如果内存不再可触及但未被正确释放，则会立即报告为泄漏，并同时报告分配发生的代码位置。这种分配跟踪的堆栈跟踪深度是可调的。
+双重释放/释放后使用</p>
+<p>启用调试内存管理器后，被请求释放的对象将被标记为 &ldquo;已释放&rdquo;，但内存不会被实际回收，直到不再有对其占用内存的引用。在内存被标记为释放后，任何使用内存的尝试都会立即失败，被释放对象的值及其分配堆栈跟踪都将有效，并在调试器中可见。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/BeefDoc/LanguageGuide/SafetyFeatrues.md" target="_blank" rel="noopener">
+      <img src="/BeefDoc/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#安全特性">安全特性</a>
+      <ul>
+        <li><a href="#边界检查">边界检查</a></li>
+        <li><a href="#动态类型转换检查">动态类型转换检查</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="基础知识 # 编译模型 # 牛肉编译上下文是一个工作区(workspace)，由多个项目(projects)组成。一个项目可以是一个库，也可以是一个二进制文件，如可执行文件或 dll。对源代码进行解析，通过有限的预处理器进行编译，并为引用的类型和方法创建对象文件集，然后将其链接到目标二进制文件中。工作区范围的编译模式允许每个工作区设置影响特定方法或类型组的编译，即使代码包含在引用的第三方库中，也能修改预处理器和编译设置（即：优化级别）。
+支持增量编译，通过依赖关系图只重建可能受影响的对象，并通过后台缓存避免重建无功能变化的对象。为创建可重现的编译，可禁用增量编译。
+Beef 支持多种编译器后端，包括 LLVM 和自定义的 &ldquo;增强调试&rdquo;（Og&#43;）后端，后者执行了一些代码优化，但不会对调试性产生不利影响，而且与 LLVM 相比，在发布调试信息方面也有一些改进。
+支持多种链接器，包括系统链接器和可用于链接时优化构建（LLVM LTO/ThinLTO）的 LLVM 链接器。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="笔记" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://yasd.fans/BeefDoc/posts/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="基础知识" />
+<meta property="og:description" content="基础知识 # 编译模型 # 牛肉编译上下文是一个工作区(workspace)，由多个项目(projects)组成。一个项目可以是一个库，也可以是一个二进制文件，如可执行文件或 dll。对源代码进行解析，通过有限的预处理器进行编译，并为引用的类型和方法创建对象文件集，然后将其链接到目标二进制文件中。工作区范围的编译模式允许每个工作区设置影响特定方法或类型组的编译，即使代码包含在引用的第三方库中，也能修改预处理器和编译设置（即：优化级别）。
+支持增量编译，通过依赖关系图只重建可能受影响的对象，并通过后台缓存避免重建无功能变化的对象。为创建可重现的编译，可禁用增量编译。
+Beef 支持多种编译器后端，包括 LLVM 和自定义的 &ldquo;增强调试&rdquo;（Og&#43;）后端，后者执行了一些代码优化，但不会对调试性产生不利影响，而且与 LLVM 相比，在发布调试信息方面也有一些改进。
+支持多种链接器，包括系统链接器和可用于链接时优化构建（LLVM LTO/ThinLTO）的 LLVM 链接器。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasd.fans/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/" /><meta property="article:section" content="docs" />
 
-<title>笔记 | Beef编程语言中文文档</title>
+
+
+<title>基础知识 | Beef编程语言中文文档</title>
 <link rel="manifest" href="/BeefDoc/manifest.json">
 <link rel="icon" href="/BeefDoc/favicon.png" >
 <link rel="stylesheet" href="/BeefDoc/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
@@ -19,7 +27,6 @@
   <script defer src="/BeefDoc/en.search.min.a281027d2709f376cce96e5294fd13cd456b5edc56d7194f79cd9796f640dd1c.js" integrity="sha256-ooECfScJ83bM6W5SlP0TzUVrXtxW1xlPec2XlvZA3Rw=" crossorigin="anonymous"></script>
 
   <script defer src="/BeefDoc/sw.min.89b13a7b7522b220877004dab47a2b42357ef552aa5f44e9edd3b7f2fb33ed38.js" integrity="sha256-ibE6e3UisiCHcATatHorQjV&#43;9VKqX0Tp7dO38vsz7Tg=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://yasd.fans/BeefDoc/posts/index.xml" title="Beef编程语言中文文档" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -157,7 +164,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle"  />
+    <input type="checkbox" id="section-20251dc04252ec6d9a90f1df2b4d865b" class="toggle" checked />
     <label for="section-20251dc04252ec6d9a90f1df2b4d865b" class="flex justify-between">
       <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/" class="">语言指南</a>
     </label>
@@ -173,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/" class="">基础知识</a>
+    <a href="/BeefDoc/docs/BeefDoc/LanguageGuide/TheBasic/" class="active">基础知识</a>
   
 
         </li>
@@ -275,7 +282,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/BeefDoc/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>笔记</strong>
+  <strong>基础知识</strong>
 
   <label for="toc-control">
     
@@ -288,29 +295,17 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#基础知识">基础知识</a>
       <ul>
-      
+        <li><a href="#编译模型">编译模型</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
 
   </aside>
@@ -320,29 +315,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/BeefDoc/posts/MemoryManagement/">笔记 | 内存管理</a>
-    </h2>
-    
-  <h5>January 2, 2024</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p> 笔记 | 内存管理 # 
-    </p>
-  </article>
-  
-
-  
+  <article class="markdown book-article"><h1 id="基础知识">
+  基础知识
+  <a class="anchor" href="#%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86">#</a>
+</h1>
+<h2 id="编译模型">
+  编译模型
+  <a class="anchor" href="#%e7%bc%96%e8%af%91%e6%a8%a1%e5%9e%8b">#</a>
+</h2>
+<p>牛肉编译上下文是一个工作区(workspace)，由多个项目(projects)组成。一个项目可以是一个库，也可以是一个二进制文件，如可执行文件或 dll。对源代码进行解析，通过有限的预处理器进行编译，并为引用的类型和方法创建对象文件集，然后将其链接到目标二进制文件中。工作区范围的编译模式允许每个工作区设置影响特定方法或类型组的编译，即使代码包含在引用的第三方库中，也能修改预处理器和编译设置（即：优化级别）。</p>
+<p>支持增量编译，通过依赖关系图只重建可能受影响的对象，并通过后台缓存避免重建无功能变化的对象。为创建可重现的编译，可禁用增量编译。</p>
+<p>Beef 支持多种编译器后端，包括 LLVM 和自定义的 &ldquo;增强调试&rdquo;（Og+）后端，后者执行了一些代码优化，但不会对调试性产生不利影响，而且与 LLVM 相比，在发布调试信息方面也有一些改进。</p>
+<p>支持多种链接器，包括系统链接器和可用于链接时优化构建（LLVM LTO/ThinLTO）的 LLVM 链接器。</p>
+</article>
  
       
 
@@ -354,7 +339,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/posts/_index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/docs/BeefDoc/LanguageGuide/TheBasic.md" target="_blank" rel="noopener">
       <img src="/BeefDoc/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -374,6 +359,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -383,29 +372,17 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#基础知识">基础知识</a>
       <ul>
-      
+        <li><a href="#编译模型">编译模型</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
  
       </div>
