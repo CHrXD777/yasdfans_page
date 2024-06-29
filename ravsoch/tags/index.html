@@ -6,17 +6,23 @@
 <meta name="description" content="">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://yasd.fans/ravsoch/tags/" />
-
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yasd.fans/ravsoch/tags/">
+  <meta property="og:site_name" content="Ravsoch主页">
+  <meta property="og:title" content="Tags">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 <title>Tags | Ravsoch主页</title>
 <link rel="manifest" href="/ravsoch/manifest.json">
 <link rel="icon" href="/ravsoch/favicon.png" >
-<link rel="stylesheet" href="/ravsoch/book.min.a5cbd6089cbb141cc6fc5e635ceba244c44ee2c9a4aee883ca998e473639f93d.css" integrity="sha256-pcvWCJy7FBzG/F5jXOuiRMRO4smkruiDypmORzY5&#43;T0=" crossorigin="anonymous">
-  <script defer src="/ravsoch/flexsearch.min.js"></script>
-  <script defer src="/ravsoch/en.search.min.b6661ca50719cf74ed228359ad68e99139b0fed660f8b52f75e207cc94f27b83.js" integrity="sha256-tmYcpQcZz3TtIoNZrWjpkTmw/tZg&#43;LUvdeIHzJTye4M=" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://yasd.fans/ravsoch/tags/">
+<link rel="stylesheet" href="/ravsoch/book.min.8afd7b8e4ab01aaa70e6f3dede8f7d455d7e93a852cbb922327607ec145262f2.css" integrity="sha256-iv17jkqwGqpw5vPe3o99RV1&#43;k6hSy7kiMnYH7BRSYvI=" crossorigin="anonymous">
+  <script defer src="/ravsoch/fuse.min.js"></script>
+  <script defer src="/ravsoch/en.search.min.420f76ea7cc51fc92e05118aed09893c8c10867d4a83ccf4bc0582f0327a3eb8.js" integrity="sha256-Qg926nzFH8kuBRGK7QmJPIwQhn1Kg8z0vAWC8DJ6Prg=" crossorigin="anonymous"></script>
+
+  <script defer src="/ravsoch/sw.min.6f0e29ee8adf7682bfa3a0563b89799987352e714d8b38f1c7f4df7b1e305449.js" integrity="sha256-bw4p7orfdoK/o6BWO4l5mYc1LnFNizjxx/Tfex4wVEk=" crossorigin="anonymous"></script>
+
+  
+
 <link rel="alternate" type="application/rss+xml" href="https://yasd.fans/ravsoch/tags/index.xml" title="Ravsoch主页" />
 <!--
 Made with Book Theme
@@ -38,11 +44,12 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -56,17 +63,14 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><a href="/ravsoch/docs/"><strong>导 航</strong></a>
+<li><strong>导 航</strong>
 <ul>
-<li><a href="/ravsoch/posts/">文章列表</a></li>
-</ul>
-</li>
-<li><strong>链 接</strong>
-<ul>
-<li><strong>[友情链接]</strong></li>
-<li><strong>[买我一咖啡]</strong></li>
-<li><a href="">◉支付二维码</a></li>
-<li><strong>[资源]</strong></li>
+<li><strong>
+  <a href="/ravsoch/">欢迎页</a></strong></li>
+<li><strong>
+  <a href="/ravsoch/">画廊</a></strong></li>
+<li><strong>
+  <a href="/ravsoch/">文章</a></strong></li>
 </ul>
 </li>
 </ul>
@@ -80,13 +84,13 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="https://github.com/CHrXD777/yasdfans_page/tree/main/ravsoch"  target="_blank" rel="noopener">
+    <a href="https://github.com/CHrXD777/yasdfans_page"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
   
   <li>
-    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
         Hugo Themes
       </a>
   </li>
@@ -99,7 +103,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 </nav>
-<span>🐸 2023 Roguelike fans CN . All rights unreserved(CC0).</span>
+
 
 
 

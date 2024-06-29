@@ -1,1 +1,0 @@
-navigator.serviceWorker&&navigator.serviceWorker.register("/BeefDoc/sw.js",{scope:"/BeefDoc/"})

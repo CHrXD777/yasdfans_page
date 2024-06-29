@@ -1,89 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>介绍 on Roguelike fans CN</title>
+    <title>欢迎 on YASD.fans</title>
     <link>https://yasd.fans/</link>
-    <description>Recent content in 介绍 on Roguelike fans CN</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in 欢迎 on YASD.fans</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Dec 2023 02:37:20 +0800</lastBuildDate>
     <atom:link href="https://yasd.fans/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RL资源页面</title>
-      <link>https://yasd.fans/posts/resource/</link>
-      <pubDate>Mon, 04 Dec 2023 02:37:20 +0800</pubDate>
-      <guid>https://yasd.fans/posts/resource/</guid>
-      <description>各种RL游戏的资源仓库</description>
-    </item>
-    <item>
-      <title>Roadwarden汉化</title>
-      <link>https://yasd.fans/posts/roadwarden_zh/</link>
-      <pubDate>Mon, 04 Dec 2023 02:12:50 +0800</pubDate>
-      <guid>https://yasd.fans/posts/roadwarden_zh/</guid>
-      <description>文字冒险游戏Roadwarden的非官方汉化</description>
-    </item>
-    <item>
-      <title>投稿说明</title>
-      <link>https://yasd.fans/posts/about_detail/</link>
-      <pubDate>Thu, 23 Nov 2023 02:15:22 +0800</pubDate>
-      <guid>https://yasd.fans/posts/about_detail/</guid>
-      <description>关于投稿的详细说明</description>
-    </item>
-    <item>
-      <title>小站正在搭建中...</title>
-      <link>https://yasd.fans/posts/test/</link>
-      <pubDate>Wed, 15 Nov 2023 16:15:08 +0800</pubDate>
-      <guid>https://yasd.fans/posts/test/</guid>
-      <description> ;) # </description>
-    </item>
-    <item>
-      <title>画廊</title>
-      <link>https://yasd.fans/gallery/</link>
-      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
-      <guid>https://yasd.fans/gallery/</guid>
-      <description>&#xD;</description>
-    </item>
-    <item>
-      <title>画廊</title>
-      <link>https://yasd.fans/posts/gallery/</link>
-      <pubDate>Wed, 15 Nov 2023 14:47:50 +0800</pubDate>
-      <guid>https://yasd.fans/posts/gallery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://yasd.fans/menu/site/</link>
+      <title>公告板</title>
+      <link>https://yasd.fans/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/menu/site/</guid>
-      <description> 导 航 文章时间线 画 廊 寻找游戏 社区贡献 我群呢？ 链 接 索引页 [友情链接] ◉最强中文rl图书馆: Archive RL Silencess ◉怒独僧的个人主页 ◉站长个人主页 ◉Beef编程语言中文文档 [买我一咖啡] ◉支付二维码 </description>
+      <guid>https://yasd.fans/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/</guid>
+      <description>&#xD;## haha&#xD;</description>
     </item>
     <item>
-      <title>RL开发资源页面</title>
-      <link>https://yasd.fans/posts/resource_dev/</link>
+      <title>相关资源</title>
+      <link>https://yasd.fans/posts/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/resource_dev/</guid>
-      <description>RL游戏开发的资源仓库，主要来源于Reddit/r/Roguelikedev</description>
+      <guid>https://yasd.fans/posts/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</guid>
+      <description>&#xD;- 资源发布于[123网盘](https://www.123pan.com/s/EugQjv-0kml.html)(提取码yasd)&#xD;名称 路径\文件名 描述\备注 像素画指南 \书\Michael Azzi - Pixel Logic_ A Guide to Pixel Art-Independent (2019).pdf 英文版pdf </description>
     </item>
     <item>
-      <title>我群呢？</title>
-      <link>https://yasd.fans/posts/findgroups/</link>
+      <title>社区</title>
+      <link>https://yasd.fans/posts/%E7%A4%BE%E5%8C%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/findgroups/</guid>
-      <description>&amp;ndash;炸群防走丢列表&amp;ndash;&#xA;群列表： # Roguelike fans: 144321649 xxx群：xxxxxxx xxx群：xxxxxxx </description>
-    </item>
-    <item>
-      <title>检索</title>
-      <link>https://yasd.fans/posts/findgames/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/findgames/</guid>
-      <description>&amp;ndash;用的是office Online，加载不出来可能需要加速&amp;ndash; 找到喜欢的游戏了？到网盘搜搜看！（表中可能会标记上资源是否在网盘中;提取码:yasd）</description>
-    </item>
-    <item>
-      <title>社区贡献</title>
-      <link>https://yasd.fans/posts/contribution/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/contribution/</guid>
-      <description>&amp;ndash;为中文RL社区的做出贡献(汉化项目等)&amp;ndash;</description>
+      <guid>https://yasd.fans/posts/%E7%A4%BE%E5%8C%BA/</guid>
+      <description>&#xD;国内外网站&#xD;#&#xD;群聊&#xD;#&#xD;Roguelike fans: 144321649 </description>
     </item>
   </channel>
 </rss>

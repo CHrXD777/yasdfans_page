@@ -6,18 +6,24 @@
 <meta name="description" content="">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://yasd.fans/tags/" />
-
-<title>Tags | Roguelike fans CN</title>
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yasd.fans/tags/">
+  <meta property="og:site_name" content="YASD.fans">
+  <meta property="og:title" content="Tags">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<title>Tags | YASD.fans</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="stylesheet" href="/book.min.fe7af798e55dac3cc0f484dacd6f3d53b761d77dc3d5e5e378c75c7678a5ffd4.css" integrity="sha256-/nr3mOVdrDzA9ITazW89U7dh133D1eXjeMdcdnil/9Q=" crossorigin="anonymous">
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e3f6e0a107f357715e419048380f2dc0f503da11931b0a1b44cb4d3ef1a70718.js" integrity="sha256-4/bgoQfzV3FeQZBIOA8twPUD2hGTGwobRMtNPvGnBxg=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://yasd.fans/tags/index.xml" title="Roguelike fans CN" />
+<link rel="canonical" href="https://yasd.fans/tags/">
+<link rel="stylesheet" href="/book.min.a17ed118510ac6513027124363e905b9e5b788ea998732936807c95a250735f4.css" integrity="sha256-oX7RGFEKxlEwJxJDY&#43;kFueW3iOqZhzKTaAfJWiUHNfQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.15f61aa465b8156ad9db3bf0e73b0564703eddc03e838144633abefbc3c27d6c.js" integrity="sha256-FfYapGW4FWrZ2zvw5zsFZHA&#43;3cA&#43;g4FEYzq&#43;&#43;8PCfWw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+  
+
+<link rel="alternate" type="application/rss+xml" href="https://yasd.fans/tags/index.xml" title="YASD.fans" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -33,16 +39,17 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Roguelike fans CN</span>
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>YASD.fans</span>
   </a>
 </h2>
 
 
-<div class="book-search">
+<div class="book-search hidden">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
 
 
@@ -58,23 +65,16 @@ https://github.com/alex-shpak/hugo-book
   <ul>
 <li><strong>导 航</strong>
 <ul>
-<li><a href="/posts/">文章时间线</a></li>
-<li><a href="/posts/gallery/">画    廊</a></li>
-<li><a href="/posts/findgames/">寻找游戏</a></li>
-<li><a href="/categories/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/">社区贡献</a></li>
-<li><a href="/posts/findgroups/">我群呢？</a></li>
-</ul>
-</li>
-<li><strong>链 接</strong>
-<ul>
-<li><strong><a href="/">索引页</a></strong></li>
-<li><strong>[友情链接]</strong></li>
-<li><a href="https://www.ephesus.top/roguelike">◉最强中文rl图书馆: Archive RL Silencess</a></li>
-<li><a href="http://nuduseng.com/">◉怒独僧的个人主页</a></li>
-<li><a href="/ravsoch">◉站长个人主页</a></li>
-<li><a href="/BeefDoc">◉Beef编程语言中文文档</a></li>
-<li><strong>[买我一咖啡]</strong></li>
-<li><a href="">◉支付二维码</a></li>
+<li><strong>
+  <a href="/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/">冒险者工会公告板</a></strong></li>
+<li><strong>
+  <a href="/">欢迎页</a></strong></li>
+<li><strong>
+  <a href="/">聊天室(在建)</a></strong></li>
+<li><strong>
+  <a href="/">论坛(在建)</a></strong></li>
+<li><strong>
+  <a href="/">画廊</a></strong></li>
 </ul>
 </li>
 </ul>
@@ -88,13 +88,13 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="https://github.com/CHrXD777/yasdfans_page/tree/main/"  target="_blank" rel="noopener">
+    <a href="https://github.com/CHrXD777/yasdfans_page"  target="_blank" rel="noopener">
         Github
       </a>
   </li>
   
   <li>
-    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
         Hugo Themes
       </a>
   </li>
@@ -107,7 +107,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 </nav>
-<span>🐷 2023 Roguelike fans CN . All rights unreserved(CC0).</span>
+
 
 
 
@@ -146,11 +146,6 @@ https://github.com/alex-shpak/hugo-book
     <li class="book-section-flat">
       <strong>Categories</strong>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/">社区贡献</a>
-          <span>1</span>
-        </li>
       
       </ul>
     </li>
@@ -219,11 +214,6 @@ https://github.com/alex-shpak/hugo-book
     <li class="book-section-flat">
       <strong>Categories</strong>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/">社区贡献</a>
-          <span>1</span>
-        </li>
       
       </ul>
     </li>
