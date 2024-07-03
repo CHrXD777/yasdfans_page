@@ -6,6 +6,14 @@
     <description>Recent content in 欢迎 on Ravsoch主页</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://yasd.fans/ravsoch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>聪明绝顶Shader教程</title>
+      <link>https://yasd.fans/ravsoch/posts/ShadertoyTutorial/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/ShadertoyTutorial/</guid>
+      <description>Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记</description>
+    </item>
   </channel>
 </rss>

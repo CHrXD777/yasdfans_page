@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yasd.fans/ravsoch/posts/ShadertoyTutorial/">
+  <meta property="og:site_name" content="Ravsoch主页">
+  <meta property="og:title" content="聪明绝顶Shader教程">
+  <meta property="og:description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-04T00:00:00+00:00">
+    <meta property="article:tag" content="Shader">
+    <meta property="article:tag" content="Shadertoy">
+<title>聪明绝顶Shader教程 | Ravsoch主页</title>
+<link rel="manifest" href="/ravsoch/manifest.json">
+<link rel="icon" href="/ravsoch/favicon.png" >
+<link rel="canonical" href="https://yasd.fans/ravsoch/posts/ShadertoyTutorial/">
+<link rel="stylesheet" href="/ravsoch/book.min.76ca006418ba73953a1d7c0bef5aef69bdcab7306febf1353b38a1392e9ad385.css" integrity="sha256-dsoAZBi6c5U6HXwL71rvab3KtzBv6/E1OzihOS6a04U=" crossorigin="anonymous">
+  <script defer src="/ravsoch/fuse.min.js"></script>
+  <script defer src="/ravsoch/en.search.min.6db5801907c90bed46900099a2b0b747b6bb5e9c74b358f12f597ff578012b16.js" integrity="sha256-bbWAGQfJC&#43;1GkACZorC3R7a7Xpx0s1jxL1l/9XgBKxY=" crossorigin="anonymous"></script>
+
+  <script defer src="/ravsoch/sw.min.6f0e29ee8adf7682bfa3a0563b89799987352e714d8b38f1c7f4df7b1e305449.js" integrity="sha256-bw4p7orfdoK/o6BWO4l5mYc1LnFNizjxx/Tfex4wVEk=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/ravsoch/"><img src="/ravsoch/logo.png" alt="Logo" /><span>Ravsoch主页</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><strong>导 航</strong>
+<ul>
+<li><strong>
+  <a href="/ravsoch/">欢迎页</a></strong></li>
+<li><strong>
+  <a href="/ravsoch/">画廊</a></strong></li>
+<li><strong>
+  <a href="/ravsoch/posts/">文章</a></strong></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/CHrXD777/yasdfans_page"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/ravsoch/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>聪明绝顶Shader教程</strong>
+
+  <label for="toc-control">
+    
+    <img src="/ravsoch/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#part1just-a-circle">PART1.JUST A CIRCLE</a>
+          <ul>
+            <li><a href="#part1完整代码">PART1完整代码</a></li>
+          </ul>
+        </li>
+        <li><a href="#part2building-stuff-with-circle">PART2.BUILDING STUFF WITH CIRCLE</a>
+          <ul>
+            <li><a href="#part2完整代码">PART2完整代码</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown book-post">
+  <h1>
+    <a href="/ravsoch/posts/ShadertoyTutorial/">聪明绝顶Shader教程</a>
+  </h1>
+  
+  <h5>2024-07-04</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/ravsoch/tags/shader/">Shader</a>, 
+      <a href="/ravsoch/tags/shadertoy/">Shadertoy</a>
+  </div>
+  
+
+
+
+<h2 id="part1just-a-circle">
+  PART1.JUST A CIRCLE
+  <a class="anchor" href="#part1just-a-circle">#</a>
+</h2>
+<ul>
+<li>片段着色器通过输入 <em>像素坐标(fragCoord)</em> 并输出对应像素的 <em>rgba值(fragcolor)</em> 来生成图像</li>
+<li>uv的常见操作：
+<ol>
+<li>归一化(标准化)：<code>vec2 uv = fragCoord/iResolution.xy;</code>将屏幕分辨率转化为从0到1的uv坐标</li>
+<li>中心化(移动原点)：<code>uv -= 0.5;</code>将uv坐标的(0, 0)位置移动到屏幕中央</li>
+<li>屏幕比例调整：<code>uv.x *= iResolution.x/iResolution.y;</code>如果屏幕比为1，则对uv坐标的x轴无影响，如果屏幕比大于或小于1,会将uv.x拉伸或压缩，以适应不同的屏幕分辨率</li>
+</ol>
+</li>
+<li>距离场：
+<ul>
+<li>
+  <a href="https://iquilezles.org/articles/distfunctions2d/">https://iquilezles.org/articles/distfunctions2d/</a></li>
+</ul>
+</li>
+<li>平滑过度函数：
+<ul>
+<li>T smoothstep(T edge0, T edge1, T x)</li>
+</ul>
+</li>
+</ul>
+<h3 id="part1完整代码">
+  PART1完整代码
+  <a class="anchor" href="#part1%e5%ae%8c%e6%95%b4%e4%bb%a3%e7%a0%81">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">void</span> mainImage( <span style="color:#ff79c6">out</span> <span style="color:#ff79c6">vec4</span> fragColor, <span style="color:#ff79c6">in</span> <span style="color:#ff79c6">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> d <span style="color:#ff79c6">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> r <span style="color:#ff79c6">=</span><span style="color:#bd93f9">0.3</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> c <span style="color:#ff79c6">=</span> smoothstep(r<span style="color:#ff79c6">+</span><span style="color:#bd93f9">0.1</span>,r,d);
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec4</span>(<span style="color:#ff79c6">vec3</span>(c),<span style="color:#bd93f9">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>PART1截图：
+  <img src="https://s2.loli.net/2024/07/04/FjqoIp2lSbfWx4U.png" alt="shadertoyTutorialPart1.png" /></li>
+</ul>
+<h2 id="part2building-stuff-with-circle">
+  PART2.BUILDING STUFF WITH CIRCLE
+  <a class="anchor" href="#part2building-stuff-with-circle">#</a>
+</h2>
+<ul>
+<li>整理出来Circle函数</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">float</span> Circle(<span style="color:#ff79c6">vec2</span> uv, <span style="color:#ff79c6">vec2</span> p, <span style="color:#ff79c6">float</span> r, <span style="color:#ff79c6">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> d <span style="color:#ff79c6">=</span> length(uv<span style="color:#ff79c6">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> c <span style="color:#ff79c6">=</span> smoothstep(r<span style="color:#ff79c6">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>使用circle函数画出脸和眼睛(多个圆相减)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>	<span style="color:#ff79c6">float</span> mask <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.4</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
+</span></span></code></pre></div><ul>
+<li>创建一个颜色，然后与musk取交集</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#ff79c6">vec3</span> col <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec3</span>(<span style="color:#bd93f9">.5</span>,<span style="color:#bd93f9">0.4</span>,<span style="color:#bd93f9">.6</span>)<span style="color:#ff79c6">*</span>mask; 
+</span></span></code></pre></div><ul>
+<li>创建嘴巴，经过标准化处理后加入musk中</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>	<span style="color:#ff79c6">float</span> mouth <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.3</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.45</span>), <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> smoothstep(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">1.</span>,mouth); <span style="color:#6272a4">//标准化，将值置于0到1之间</span>
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> mouth;
+</span></span></code></pre></div><h3 id="part2完整代码">
+  PART2完整代码
+  <a class="anchor" href="#part2%e5%ae%8c%e6%95%b4%e4%bb%a3%e7%a0%81">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">float</span> Circle(<span style="color:#ff79c6">vec2</span> uv, <span style="color:#ff79c6">vec2</span> p, <span style="color:#ff79c6">float</span> r, <span style="color:#ff79c6">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> d <span style="color:#ff79c6">=</span> length(uv<span style="color:#ff79c6">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> c <span style="color:#ff79c6">=</span> smoothstep(r<span style="color:#ff79c6">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">void</span> mainImage( <span style="color:#ff79c6">out</span> <span style="color:#ff79c6">vec4</span> fragColor, <span style="color:#ff79c6">in</span> <span style="color:#ff79c6">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mask <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.4</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mouth <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.3</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.45</span>), <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> smoothstep(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">1.</span>,mouth);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> mouth;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec3</span> col <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec3</span>(<span style="color:#bd93f9">.5</span>,<span style="color:#bd93f9">0.4</span>,<span style="color:#bd93f9">.6</span>)<span style="color:#ff79c6">*</span>mask; 
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec4</span>(col,<span style="color:#bd93f9">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>PART2截图：
+  <img src="https://s2.loli.net/2024/07/04/cSUo4lsKa6dezMZ.png" alt="shadertoyTutorialPart2.png" /></p>
+<hr>
+<ul>
+<li>保留所有版权</li>
+<li>首次上传：2024年07月04日</li>
+<li>最后修改：2024年07月04日</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#part1just-a-circle">PART1.JUST A CIRCLE</a>
+          <ul>
+            <li><a href="#part1完整代码">PART1完整代码</a></li>
+          </ul>
+        </li>
+        <li><a href="#part2building-stuff-with-circle">PART2.BUILDING STUFF WITH CIRCLE</a>
+          <ul>
+            <li><a href="#part2完整代码">PART2完整代码</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
