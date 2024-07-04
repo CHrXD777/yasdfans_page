@@ -1,6 +1,6 @@
 {
-  "name": "Ravsoch主页",
-  "short_name": "Ravsoch主页",
+  "name": "RAVSOCH’s PAGE",
+  "short_name": "RAVSOCH’s PAGE",
   "start_url": "/ravsoch/",
   "scope": "/ravsoch/",
   "display": "standalone",
