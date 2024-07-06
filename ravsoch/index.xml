@@ -6,14 +6,21 @@
     <description>Recent content in 欢迎 on RAVSOCH’s PAGE</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://yasd.fans/ravsoch/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>聪明绝顶Shader教程</title>
+      <title>在Shadertoy中制作笑脸[The Art of Code(5)]</title>
+      <link>https://yasd.fans/ravsoch/posts/Making-a-smiley-in-ShaderToy/</link>
+      <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/Making-a-smiley-in-ShaderToy/</guid>
+      <description>Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记 - (Making a smiley in ShaderToy PART1)</description>
+    </item>
+    <item>
+      <title>聪明绝顶Shader教程[The Art of Code(1-4)]</title>
       <link>https://yasd.fans/ravsoch/posts/ShadertoyTutorial/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://yasd.fans/ravsoch/posts/ShadertoyTutorial/</guid>
-      <description>Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记</description>
+      <description>Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记 - (ShadertoyTutorial PART1-PART4)</description>
     </item>
   </channel>
 </rss>

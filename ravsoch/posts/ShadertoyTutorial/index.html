@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记">
+<meta name="description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记 - (ShadertoyTutorial PART1-PART4)">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yasd.fans/ravsoch/posts/ShadertoyTutorial/">
   <meta property="og:site_name" content="RAVSOCH’s PAGE">
-  <meta property="og:title" content="聪明绝顶Shader教程">
-  <meta property="og:description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记">
+  <meta property="og:title" content="聪明绝顶Shader教程[The Art of Code(1-4)]">
+  <meta property="og:description" content="Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记 - (ShadertoyTutorial PART1-PART4)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -17,13 +17,13 @@
     <meta property="article:modified_time" content="2024-07-04T00:00:00+00:00">
     <meta property="article:tag" content="Shader">
     <meta property="article:tag" content="Shadertoy">
-<title>聪明绝顶Shader教程 | RAVSOCH’s PAGE</title>
+<title>聪明绝顶Shader教程[The Art of Code(1-4)] | RAVSOCH’s PAGE</title>
 <link rel="manifest" href="/ravsoch/manifest.json">
 <link rel="icon" href="/ravsoch/favicon.png" >
 <link rel="canonical" href="https://yasd.fans/ravsoch/posts/ShadertoyTutorial/">
 <link rel="stylesheet" href="/ravsoch/book.min.7a75bb873f46b5ed9f186daa2490c4c5241ffeec7a5daf21c1aace2bfa1b9131.css" integrity="sha256-enW7hz9Gte2fGG2qJJDExSQf/ux6Xa8hwarOK/obkTE=" crossorigin="anonymous">
   <script defer src="/ravsoch/fuse.min.js"></script>
-  <script defer src="/ravsoch/en.search.min.9772c32949100867c05ffa4cdf8c7702b025cc0c9197eee06c12584cada68be9.js" integrity="sha256-l3LDKUkQCGfAX/pM34x3ArAlzAyRl&#43;7gbBJYTK2mi&#43;k=" crossorigin="anonymous"></script>
+  <script defer src="/ravsoch/en.search.min.f13ca0c36faed086b4a0c2a5b6f5aa5ae40d6b758f2bd71f72643d2d5bcc828a.js" integrity="sha256-8Tygw2&#43;u0Ia0oMKltvWqWuQNa3WPK9cfcmQ9LVvMgoo=" crossorigin="anonymous"></script>
 
   <script defer src="/ravsoch/sw.min.6f0e29ee8adf7682bfa3a0563b89799987352e714d8b38f1c7f4df7b1e305449.js" integrity="sha256-bw4p7orfdoK/o6BWO4l5mYc1LnFNizjxx/Tfex4wVEk=" crossorigin="anonymous"></script>
 
@@ -127,7 +127,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/ravsoch/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>聪明绝顶Shader教程</strong>
+  <strong>聪明绝顶Shader教程[The Art of Code(1-4)]</strong>
 
   <label for="toc-control">
     
@@ -184,7 +184,7 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown book-post">
   <h1>
-    <a href="/ravsoch/posts/ShadertoyTutorial/">聪明绝顶Shader教程</a>
+    <a href="/ravsoch/posts/ShadertoyTutorial/">聪明绝顶Shader教程[The Art of Code(1-4)]</a>
   </h1>
   
   <h5>2024-07-04</h5>
@@ -212,10 +212,10 @@ https://github.com/alex-shpak/hugo-book
 <p>Shadertoy中只有片段着色器，通过输入 <em>像素坐标(fragCoord)</em> 并输出对应像素的 <em>rgba值(fragcolor)</em> 来生成图像。</p>
 <p>在
   <a href="https://www.shadertoy.com/new">Shadertoy</a> 上新建项目后，将本部分完整代码粘贴到shadertoy中，按下代码编辑器下方的播放键(或Alt + Enter)，图像输出区会显示一个边缘模糊的圆形。</p>
-<p>阅读代码不难理解主函数通过输入像素坐标(fragCoord)，和输出像素颜色(fragColor)来逐一处理每一个像素的值。</p>
-<p>uv的常见操作：</p>
+<p>阅读代码不难理解主函数通过输入像素坐标(fragCoord)，和输出像素颜色(fragColor)来逐一处理每一个像素。</p>
+<p>坐标系的常见操作：</p>
 <ul>
-<li><code>vec2 uv = fragCoord/iResolution.xy;</code> 将屏幕像素坐标归一化，方便后续操作</li>
+<li><code>vec2 uv = fragCoord/iResolution.xy;</code> 将屏幕像素坐标归一化，方便后续操作，iResolution是Shadertoy定义的屏幕尺寸变量</li>
 <li><code>uv -= 0.5;</code> 将uv坐标系的原点移动到屏幕中心</li>
 <li><code> uv.x *= iResolution.x/iResolution.y;</code> 拉伸uv.x坐标，如果屏幕比为1，则对uv坐标的x轴无影响，如果屏幕比大于或小于1,会将uv.x拉伸或压缩，以适应不同的屏幕分辨率</li>
 </ul>
@@ -235,8 +235,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
-</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">// -0.5 to 0.5</span>
 </span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> d <span style="color:#ff79c6">=</span> length(uv);
@@ -253,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#part2building-stuff-with-circle">#</a>
 </h2>
 <ul>
-<li>整理出来Circle函数</li>
+<li>把上一部分的Circle函数整理出来</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">float</span> Circle(<span style="color:#ff79c6">vec2</span> uv, <span style="color:#ff79c6">vec2</span> p, <span style="color:#ff79c6">float</span> r, <span style="color:#ff79c6">float</span> blur)
 </span></span><span style="display:flex;"><span>{
@@ -262,13 +261,15 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> c;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
-<li>使用circle函数画出脸和眼睛(多个圆相减)</li>
+<li>使用Circle函数画出脸和眼睛(多个圆相减)</li>
+<li>可以尝试改变圆的位置和改变符号，比如<code>mask += Circle()</code>, 因为圆的部分值为1，两个圆相减后交集值为0，从而实现相减效果</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mask <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.4</span>, <span style="color:#bd93f9">.03</span>);
 </span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
 </span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
 </span></span></code></pre></div><ul>
 <li>创建一个颜色，然后与musk取交集</li>
+<li>mask是0到1之间的数，rgb值也是0到1之间的数，相乘后即可在屏幕中留下mask&gt;0的部分</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#ff79c6">vec3</span> col <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec3</span>(<span style="color:#bd93f9">.5</span>,<span style="color:#bd93f9">0.4</span>,<span style="color:#bd93f9">.6</span>)<span style="color:#ff79c6">*</span>mask;
 </span></span></code></pre></div><ul>
@@ -276,7 +277,7 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mouth <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.3</span>, <span style="color:#bd93f9">.03</span>);
 </span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.45</span>), <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.03</span>);
-</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> smoothstep(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">1.</span>,mouth); <span style="color:#6272a4">//标准化，将值置于0到1之间</span>
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> clamp(mouth, <span style="color:#bd93f9">0.</span>, <span style="color:#bd93f9">1.</span>); <span style="color:#6272a4">//将值置于0到1之间</span>
 </span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> mouth;
 </span></span></code></pre></div><h3 id="part2完整代码">
   PART2完整代码
@@ -294,7 +295,6 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
 </span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
 </span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
 </span></span><span style="display:flex;"><span>
@@ -303,7 +303,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mouth <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.3</span>, <span style="color:#bd93f9">.03</span>);
 </span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.45</span>), <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.03</span>);
-</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> smoothstep(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">1.</span>,mouth);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> clamp(mouth, <span style="color:#bd93f9">0.</span>, <span style="color:#bd93f9">1.</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> mouth;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec3</span> col <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">vec3</span>(<span style="color:#bd93f9">.5</span>,<span style="color:#bd93f9">0.4</span>,<span style="color:#bd93f9">.6</span>)<span style="color:#ff79c6">*</span>mask;
@@ -452,7 +452,6 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
 </span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
 </span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> scale <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1.</span><span style="color:#ff79c6">+</span><span style="color:#bd93f9">.5</span><span style="color:#ff79c6">*</span>sin(iTime);
@@ -474,21 +473,21 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#part4domain-distortion">#</a>
 </h2>
 <ul>
-<li>通过操作uv(即元素自己的坐标系)，实现变形效果</li>
-<li>注：这一PART使用的是上下左右传参的Rect()函数(上一部分已给出)</li>
+<li>通过操作坐标系，实现变形效果</li>
+<li>注：这一PART使用的是上下左右传参的Rect()(上一部分已给出)</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#6272a4">//为了看起来方便一些</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#6272a4">//为了操作方便</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">float</span> x <span style="color:#ff79c6">=</span> uv.x;
 </span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">float</span> y <span style="color:#ff79c6">=</span> uv.y;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#6272a4">//剪切,使x值上的线倾斜，y同理</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">//以下操作可以实现剪切,使x值上的线倾斜，y同理</span>
 </span></span><span style="display:flex;"><span>	x <span style="color:#ff79c6">+=</span> y<span style="color:#ff79c6">*</span><span style="color:#bd93f9">0.2</span>;
 </span></span><span style="display:flex;"><span><span style="color:#6272a4">//对边进行操作可以实现不同的四边形</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">float</span> mask <span style="color:#ff79c6">=</span> Rect(<span style="color:#ff79c6">vec2</span>(x, y),<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.3</span><span style="color:#ff79c6">+</span>y<span style="color:#ff79c6">*</span><span style="color:#bd93f9">.2</span>, <span style="color:#bd93f9">.3</span><span style="color:#ff79c6">-</span>y<span style="color:#ff79c6">*</span><span style="color:#bd93f9">.2</span>, <span style="color:#ff79c6">-</span><span style="color:#bd93f9">.2</span>, <span style="color:#bd93f9">.2</span>, <span style="color:#bd93f9">.01</span>);<span style="color:#6272a4">//比如梯形</span>
 </span></span></code></pre></div><p>下面的代码实现了矩形的弯曲</p>
 <ul>
 <li>使用图形计算器
-  <a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a>可以方便的找到图形函数，应用到shader中</li>
+  <a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a> 可以方便的找到图形函数，应用到shader中</li>
 <li>因为y减去对应的m，图形在屏幕上的位置会对应上移</li>
 <li>比如点uv.y:(0.5,0), 减去该位置m后，y:(0.5,-0.25), 而矩形函数中这个点应该画在(0.5,0)位置，而原先的位置已经变为(0.5,-0.25)，所以图形上移。</li>
 </ul>
@@ -496,7 +495,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> y <span style="color:#ff79c6">=</span> uv.y <span style="color:#ff79c6">-</span> m;
 </span></span></code></pre></div><ul>
 <li>使用sin()和iTime，操作矩形周期运动</li>
-<li>操控sin函数的幅值和频率，找到好的显示效果</li>
+<li>设定sin函数的幅值和频率，找到好的显示效果</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> m <span style="color:#ff79c6">=</span> sin(iTime<span style="color:#ff79c6">+</span>x<span style="color:#ff79c6">*</span><span style="color:#bd93f9">8.</span>)<span style="color:#ff79c6">*</span><span style="color:#bd93f9">.1</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> y <span style="color:#ff79c6">=</span> uv.y <span style="color:#ff79c6">-</span> m;
@@ -505,16 +504,21 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e9%87%8d%e6%98%a0%e5%b0%84">#</a>
 </h3>
 <ul>
-<li>重映射是一个常见的操作，映射一个值从一个域到另一个域</li>
+<li>重映射是一个常见的操作，从一个域映射一个值到另一个域</li>
 <li>归一化和重映射：(很简单，但为了理解这个我还画了一个图)</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap01(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> t)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap01(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> t)<span style="color:#6272a4">//映射到01之间</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> (t<span style="color:#ff79c6">-</span>a)<span style="color:#ff79c6">/</span>(b<span style="color:#ff79c6">-</span>a);
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> c, <span style="color:#ff79c6">float</span> d, <span style="color:#ff79c6">float</span> t)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> c, <span style="color:#ff79c6">float</span> d, <span style="color:#ff79c6">float</span> t)<span style="color:#6272a4">//映射到目标域</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> c <span style="color:#ff79c6">+</span> (d<span style="color:#ff79c6">-</span>c)<span style="color:#ff79c6">*</span>remap01(a, b, t);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">//可以化简为一个函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> c, <span style="color:#ff79c6">float</span> d, <span style="color:#ff79c6">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> c<span style="color:#ff79c6">+</span> (d<span style="color:#ff79c6">-</span>c)<span style="color:#ff79c6">*</span>(t<span style="color:#ff79c6">-</span>a)<span style="color:#ff79c6">/</span>(b<span style="color:#ff79c6">-</span>a);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
 <li>将矩形设置为长条状并让它像旗子一样🚩飘起来</li>
@@ -552,28 +556,6 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> band1 <span style="color:#ff79c6">*</span> band2;
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">float</span> Smiley(<span style="color:#ff79c6">vec2</span> uv, <span style="color:#ff79c6">vec2</span> p, <span style="color:#ff79c6">float</span> size, <span style="color:#ff79c6">float</span> angle, <span style="color:#ff79c6">float</span> scale)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">//这里的uv相当于小元素自己的坐标系统</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> p;<span style="color:#6272a4">//translating</span>
-</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">/=</span> size;<span style="color:#6272a4">//scaling</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">/=</span> scale;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv_orig <span style="color:#ff79c6">=</span> uv;<span style="color:#6272a4">//旋转算法分为两步，需要保存原始uv值备用</span>
-</span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">=</span> uv_orig.x<span style="color:#ff79c6">*</span>cos(angle) <span style="color:#ff79c6">-</span> uv_orig.y<span style="color:#ff79c6">*</span>sin(angle);<span style="color:#6272a4">//rotate</span>
-</span></span><span style="display:flex;"><span>    uv.y <span style="color:#ff79c6">=</span> uv_orig.y<span style="color:#ff79c6">*</span>cos(angle) <span style="color:#ff79c6">+</span> uv_orig.x<span style="color:#ff79c6">*</span>sin(angle);
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mask <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.4</span>, <span style="color:#bd93f9">.03</span>);
-</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
-</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">.15</span>,<span style="color:#bd93f9">.12</span>), <span style="color:#bd93f9">.07</span>, <span style="color:#bd93f9">.02</span>);
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> mouth <span style="color:#ff79c6">=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.</span>), <span style="color:#bd93f9">.3</span>, <span style="color:#bd93f9">.03</span>);
-</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">-=</span> Circle(uv, <span style="color:#ff79c6">vec2</span>(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">0.45</span>), <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.03</span>);
-</span></span><span style="display:flex;"><span>    mouth <span style="color:#ff79c6">=</span> smoothstep(<span style="color:#bd93f9">0.</span>,<span style="color:#bd93f9">1.</span>,mouth);
-</span></span><span style="display:flex;"><span>    mask <span style="color:#ff79c6">-=</span> mouth;
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> mask;
-</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff79c6">float</span> remap01(<span style="color:#ff79c6">float</span> a, <span style="color:#ff79c6">float</span> b, <span style="color:#ff79c6">float</span> t)
 </span></span><span style="display:flex;"><span>{
@@ -588,16 +570,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Normalized pixel coordinates (from 0 to 1)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">vec2</span> uv <span style="color:#ff79c6">=</span> fragCoord<span style="color:#ff79c6">/</span>iResolution.xy;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Output to screen</span>
 </span></span><span style="display:flex;"><span>    uv <span style="color:#ff79c6">-=</span> <span style="color:#bd93f9">0.5</span>;<span style="color:#6272a4">//remap to -0.5 to 0.5</span>
 </span></span><span style="display:flex;"><span>    uv.x <span style="color:#ff79c6">*=</span> iResolution.x<span style="color:#ff79c6">/</span>iResolution.y;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> x <span style="color:#ff79c6">=</span> uv.x;
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> m <span style="color:#ff79c6">=</span> sin(iTime<span style="color:#ff79c6">+</span>x<span style="color:#ff79c6">*</span><span style="color:#bd93f9">8.</span>)<span style="color:#ff79c6">*</span><span style="color:#bd93f9">.1</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> y <span style="color:#ff79c6">=</span> uv.y <span style="color:#ff79c6">-</span> m;
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">//float scale = 1.+.5*sin(iTime);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">//float mask = Smiley(uv, vec2(0., .0), 1., iTime, scale);//Roto-Zooming</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">//float mask = Rect(uv,-.5, .5, -.1, .1, .01);</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">float</span> blur <span style="color:#ff79c6">=</span> remap(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.5</span>, <span style="color:#bd93f9">.01</span>, <span style="color:#bd93f9">.25</span>, x);
 </span></span><span style="display:flex;"><span>    blur <span style="color:#ff79c6">=</span> pow(blur<span style="color:#ff79c6">*</span><span style="color:#bd93f9">4.</span>, <span style="color:#bd93f9">2.</span>);
@@ -619,9 +597,9 @@ https://github.com/alex-shpak/hugo-book
 <p>这个教程是The Art Of Code的系列教程
   <a href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5">Shadertoy Tutorial</a> 播放列表中的第一个小部分，之后会把这个系列的所有视频的笔记都发上来。本篇的重点总结：</p>
 <ol>
-<li>搞懂Shader是什么，以片元着色器来说，对每一个像素，传入该像素的坐标值，传出该像素的颜色值，形成图像。</li>
-<li>对uv的基础操作，比如归一化、中心化、屏幕比例调整。以及出现位置不同的uv代表什么，比如对具体元素来说，是调整它自己的坐标系。</li>
-<li>重映射经常会用到，将一个值从一个域映射到另一个域，归一化01映射和线性映射后，可以操作映射后的值实现非线性映射。</li>
+<li>搞懂Shader是什么，以片元着色器来说，对每一个像素，传入该像素的坐标值，传出该像素的颜色值，组成图像。</li>
+<li>对坐标系的基础操作，比如归一化、中心化、屏幕比例调整。以及代码中uv的具体含义。</li>
+<li>重映射是常用操作，将一个值从一个域映射到另一个域，归一化01映射和线性映射后，可以操作映射后的值实现非线性映射。</li>
 </ol>
 <p>Shadertoy(
   <a href="https://www.shadertoy.com/new">https://www.shadertoy.com/new</a> )</p>
@@ -629,7 +607,7 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>保留所有版权</li>
 <li>首次上传：2024年07月04日</li>
-<li>最后修改：2024年07月04日</li>
+<li>最后修改：2024年07月05日</li>
 </ul>
 </article>
  
