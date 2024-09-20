@@ -6,8 +6,15 @@
     <description>Recent content in posts on RAVSOCH’s PAGE</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://yasd.fans/ravsoch/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sunshine &#43; moonlight &#43; 皎月连实现远程串流</title>
+      <link>https://yasd.fans/ravsoch/posts/RemoteStreaming/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/RemoteStreaming/</guid>
+      <description>通过sunshine moonlight 皎月连实现远程串流游戏(本地wifi环境和外网环境)</description>
+    </item>
     <item>
       <title>在Shadertoy中制作笑脸[The Art of Code(5)]</title>
       <link>https://yasd.fans/ravsoch/posts/Making-a-smiley-in-ShaderToy/</link>
