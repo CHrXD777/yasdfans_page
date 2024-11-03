@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>欢迎 on RAVSOCH’s PAGE</title>
+    <title>欢迎 on RAVSoCH.blogs</title>
     <link>https://yasd.fans/ravsoch/</link>
-    <description>Recent content in 欢迎 on RAVSOCH’s PAGE</description>
+    <description>Recent content in 欢迎 on RAVSoCH.blogs</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
@@ -28,6 +28,13 @@
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://yasd.fans/ravsoch/posts/ShadertoyTutorial/</guid>
       <description>Youtube上优秀Shadertoy教程(by The Art Of Code)的学习笔记 - (ShadertoyTutorial PART1-PART4)</description>
+    </item>
+    <item>
+      <title>Memoshit</title>
+      <link>https://yasd.fans/ravsoch/posts/memos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/ravsoch/posts/memos/</guid>
+      <description>文字片段</description>
     </item>
   </channel>
 </rss>

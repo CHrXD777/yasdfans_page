@@ -1,6 +1,6 @@
 {
-  "name": "RAVSOCH’s PAGE",
-  "short_name": "RAVSOCH’s PAGE",
+  "name": "RAVSoCH.blogs",
+  "short_name": "RAVSoCH.blogs",
   "start_url": "/ravsoch/",
   "scope": "/ravsoch/",
   "display": "standalone",
