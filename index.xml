@@ -1,53 +1,189 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>欢迎 on YASD.fans</title>
-    <link>https://yasd.fans/</link>
-    <description>Recent content in 欢迎 on YASD.fans</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://yasd.fans/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Roguelike游戏</title>
-      <link>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F/</guid>
-      <description>&#xD;- 资源发布于[123网盘](https://www.123pan.com/s/EugQjv-0kml.html)(提取码yasd)&#xD;名称 路径\文件名 描述\备注 Path Of Achra \path of achra.zip Tome4抖音版，蓝猫汉化，PC Path Of Achra \poa.apk Tome4抖音版，蓝猫汉化，Android </description>
-    </item>
-    <item>
-      <title>Roguelike游戏开发</title>
-      <link>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
-      <description>&#xD;2024&#xD;#&#xD;站外&#xD;#&#xD;站内&#xD;#&#xD;</description>
-    </item>
-    <item>
-      <title>公告板</title>
-      <link>https://yasd.fans/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/</guid>
-      <description>&#xD;Roadwarden汉化招募贴&#xD;文字冒险游戏Roadwarden的非官方汉化&#xD;steam商店&#xD;项目网站&#xD;Roguelike For Roguelike Fans&#xD;Roguelikefans 群友自制fun游火热开发中！&#xD;期待ing&#xD;</description>
-    </item>
-    <item>
-      <title>文章区导航</title>
-      <link>https://yasd.fans/posts/postsNav/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/postsNav/</guid>
-      <description>&#xD;2024&#xD;#&#xD;站外&#xD;#&#xD;2024-06-20 | @机核网@耳机刺猬：记一场ToMENet中的死亡 2024-05-22 | @机核网@耳机刺猬：《Avanor》游记丨从充满恶性bug的粪作中艰难通关 站内&#xD;#&#xD;</description>
-    </item>
-    <item>
-      <title>相关资源</title>
-      <link>https://yasd.fans/posts/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</guid>
-      <description>&#xD;资源发布于123网盘：123pan(提取码yasd)&#xD;名称 路径\文件名 描述\备注 像素画指南 \书\Michael Azzi - Pixel Logic_ A Guide to Pixel Art-Independent (2019).pdf 英文版pdf </description>
-    </item>
-    <item>
-      <title>社区</title>
-      <link>https://yasd.fans/posts/%E7%A4%BE%E5%8C%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yasd.fans/posts/%E7%A4%BE%E5%8C%BA/</guid>
-      <description>&#xD;国内外网站&#xD;#&#xD;群聊&#xD;#&#xD;Roguelike fans: 144321649 </description>
-    </item>
-  </channel>
+	<channel>
+		<title>@YASD FANS@</title>
+		<link>https://yasd.fans/</link>
+		<description>Recent content on @YASD FANS@</description>
+		<generator>Hugo 0.138.0</generator>
+		<language>zh</language>
+		<managingEditor>yasd.fans@outlook.com (Ravso)</managingEditor>
+		<webMaster>yasd.fans@outlook.com (Ravso)</webMaster>
+		<copyright>ravso &amp; yasd.fans  — All rights reserved.</copyright>
+		<lastBuildDate>Sat, 09 Sep 2023 15:00:00 +0800</lastBuildDate>
+		<atom:link href="https://yasd.fans/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>About.关于</title>
+			<link>https://yasd.fans/posts/about/</link>
+			<pubDate>Wed, 01 Feb 2023 15:00:00 +0000</pubDate>
+			<author>yasd.fans@outlook.com (Ravso)</author>
+			<guid isPermaLink="true">https://yasd.fans/posts/about/</guid>
+			<description>&lt;img src=&#34;https://yasd.fans/assets/img/dt1.png&#34; alt=&#34;幽灵问号&#34;  style=&#34;float:right; height:120px&#34;&gt;
+- 维护了一个网盘
+- 维护了一个游戏列表和一个资源列表
+- 接受投稿
+- 投稿邮箱: yasd.fans@outlook.com
+- 投稿请显眼的注明作者和分类(群刊、文章、画廊、资源)并提供源文件(或以链接形式转载)
+- 投稿内容本站不主动声明任何版权，投稿者须注明版权声明，默认CC0
+&lt;p&gt;网站主要内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/posts/postsnav&#34;&gt;文章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/posts/links&#34;&gt;RL相关链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+		</item>
+		<item>
+			<title>Nav.文章导航</title>
+			<link>https://yasd.fans/posts/postsnav/</link>
+			<pubDate>Wed, 01 Mar 2023 15:00:00 +0000</pubDate>
+			<author>yasd.fans@outlook.com (Ravso)</author>
+			<guid isPermaLink="true">https://yasd.fans/posts/postsnav/</guid>
+			<description>&lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;
+&lt;h3 id=&#34;站外&#34;&gt;站外&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gcores.com/articles/190254&#34;&gt;2024-10-31 | @机核网@耳机刺猬：《Elin》丨北提里斯成神手札&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/opus/695970828656836649&#34;&gt;2024-08-01 | @Bilibili@飞虎233-放置游戏【RogueBasin】Roguelike 基本功系列文章(目录查看其他文章)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gcores.com/articles/183757&#34;&gt;2024-06-20 | @机核网@耳机刺猬：记一场ToMENet中的死亡&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gcores.com/articles/182223&#34;&gt;2024-05-22 | @机核网@耳机刺猬：《Avanor》游记丨从充满恶性bug的粪作中艰难通关&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;站内&#34;&gt;站内&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;暂无&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+		</item>
+		<item>
+			<title>Links.Roguelike相关链接</title>
+			<link>https://yasd.fans/posts/links/</link>
+			<pubDate>Thu, 02 Mar 2023 15:00:00 +0000</pubDate>
+			<author>yasd.fans@outlook.com (Ravso)</author>
+			<guid isPermaLink="true">https://yasd.fans/posts/links/</guid>
+			<description>&lt;blockquote&gt;
+    集合了Roguelike相关的链接
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
+&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/hamu&#34;&gt;Roguelike tools | 工具向链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roguelikes--%E6%B8%B8%E6%88%8F%E5%88%97%E8%A1%A8%E4%B8%8B%E8%BD%BD&#34;&gt;Roguelikes | 游戏列表(下载)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roguelike-dev--%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91&#34;&gt;Roguelike dev | 游戏开发&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roguelike-community--%E7%A4%BE%E5%8C%BA&#34;&gt;Roguelike Community | 社区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roguelike-resource--rl%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90&#34;&gt;Roguelike resource | RL相关资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#links--%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5&#34;&gt;Links | 友情链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;roguelikes--游戏列表下载&#34;&gt;Roguelikes | 游戏列表(下载)&lt;/h1&gt;
+&lt;blockquote&gt;
+    roguelike 游戏资源，提供网盘和索引以供下载
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://yasd.fans/assets/img/dt2.png&#34; alt=&#34;大灯与黄衣&#34; style=&#34;float:right; height:120px&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;资源发布于&lt;a href=&#34;https://www.123pan.com/s/EugQjv-0kml.html&#34;&gt;123网盘&lt;/a&gt;(提取码yasd)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;路径\文件名&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;描述\备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Path Of Achra&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;邪境之路-Path of Achra 汉化\path of achra.zip&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Tome4抖音版，蓝猫汉化，PC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Path Of Achra&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;邪境之路-Path of Achra 汉化\poa.apk&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Tome4抖音版，蓝猫汉化，Android&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Your Only Move Is HUSTLE&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\YourOnlyMoveIsHUSTLE.rar&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;回合制格斗游戏，pc&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;rift wizard 1 汉化版&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\rift_wizard_cn_0.2.0.zip&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;群友汉化，pc&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;rift wizard 2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\RiftWizard2.zip&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;pc&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;roguelike-dev--游戏开发&#34;&gt;Roguelike dev | 游戏开发&lt;/h1&gt;
+&lt;blockquote&gt;
+    与roguelike游戏开发的相关的资源
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;roguelike-community--社区&#34;&gt;Roguelike Community | 社区&lt;/h1&gt;
+&lt;blockquote&gt;
+    与roguelike相关的社区
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;国内外网站&#34;&gt;国内外网站&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;qq群聊&#34;&gt;QQ群聊&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Roguelike fans: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=tmiiVK34gsrOfaEAMle3tNV0GkukY-h8&amp;amp;authKey=PHXf6gIChLalwPo9Cl4Azm9YzhMH1EiYrrAQvURTb9RVZeBsFKkvDCOAuoJ51lr4&amp;amp;noverify=0&amp;amp;group_code=144321649&#34;&gt;144321649&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;roguelike-resource--rl相关资源&#34;&gt;Roguelike resource | RL相关资源&lt;/h1&gt;
+&lt;blockquote&gt;
+    与roguelike相关的资源，提供网盘和索引以供下载
+&lt;/blockquote&gt;
+与roguelike相关的资源，资源发布于123网盘：&lt;a href=&#34;https://www.123pan.com/s/EugQjv-0kml.html&#34;&gt;123pan&lt;/a&gt;(提取码yasd)
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;路径\文件名&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;描述\备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;像素画指南&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;\书\Michael Azzi - Pixel Logic_ A Guide to Pixel Art-Independent (2019).pdf&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;英文版pdf&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;links--友情链接&#34;&gt;Links | 友情链接&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ephesus.top/roguelike&#34;&gt;◉神言静之神谕: Archive RL Silencess&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://nuduseng.com/&#34;&gt;◉怒独僧的个人主页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/ravsoch/&#34;&gt;◉站长个人页&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+		</item>
+		<item>
+			<title>Roguelike快速链接</title>
+			<link>https://yasd.fans/hamu/</link>
+			<pubDate>Sat, 09 Sep 2023 15:00:00 +0800</pubDate>
+			<author>yasd.fans@outlook.com (Ravso)</author>
+			<guid isPermaLink="true">https://yasd.fans/hamu/</guid>
+			<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://starsapphirex.github.io/tometips/#talents&#34;&gt;ToME 速查手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.douban.com/review/15008875/&#34;&gt;DCSS 设置中文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/frogcomposbandhelpfile/start&#34;&gt;frogband 在线文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+		</item>
+	</channel>
 </rss>

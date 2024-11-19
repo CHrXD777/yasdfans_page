@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tool on @YASD FANS@</title>
+		<link>https://yasd.fans/tags/tool/</link>
+		<description>Recent content in Tool on @YASD FANS@</description>
+		<generator>Hugo 0.138.0</generator>
+		<language>zh</language>
+		<managingEditor>yasd.fans@outlook.com (Ravso)</managingEditor>
+		<webMaster>yasd.fans@outlook.com (Ravso)</webMaster>
+		<copyright>ravso &amp; yasd.fans  — All rights reserved.</copyright>
+		<lastBuildDate>Sat, 09 Sep 2023 15:00:00 +0800</lastBuildDate>
+		<atom:link href="https://yasd.fans/tags/tool/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Roguelike快速链接</title>
+			<link>https://yasd.fans/hamu/</link>
+			<pubDate>Sat, 09 Sep 2023 15:00:00 +0800</pubDate>
+			<author>yasd.fans@outlook.com (Ravso)</author>
+			<guid isPermaLink="true">https://yasd.fans/hamu/</guid>
+			<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://starsapphirex.github.io/tometips/#talents&#34;&gt;ToME 速查手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.douban.com/review/15008875/&#34;&gt;DCSS 设置中文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/frogcomposbandhelpfile/start&#34;&gt;frogband 在线文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+		</item>
+	</channel>
+</rss>

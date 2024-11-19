@@ -2,26 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yasd.fans/categories/</loc>
+    <loc>https://yasd.fans/</loc>
+    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F/</loc>
-  </url><url>
-    <loc>https://yasd.fans/posts/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://yasd.fans/hamu/</loc>
+    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://yasd.fans/tags/</loc>
+    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/posts/%E5%85%AC%E5%91%8A%E6%9D%BF/</loc>
+    <loc>https://yasd.fans/tags/tool/</loc>
+    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/posts/postsNav/</loc>
-  </url><url>
-    <loc>https://yasd.fans/</loc>
-  </url><url>
-    <loc>https://yasd.fans/gallery/</loc>
+    <loc>https://yasd.fans/posts/links/</loc>
+    <lastmod>2023-03-02T15:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://yasd.fans/posts/</loc>
+    <lastmod>2023-03-02T15:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/posts/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</loc>
+    <loc>https://yasd.fans/posts/postsnav/</loc>
+    <lastmod>2023-03-01T15:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/posts/%E7%A4%BE%E5%8C%BA/</loc>
+    <loc>https://yasd.fans/posts/about/</loc>
+    <lastmod>2023-02-01T15:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://yasd.fans/categories/</loc>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://yasd.fans/series/</loc>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

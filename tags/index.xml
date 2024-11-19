@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on YASD.fans</title>
-    <link>https://yasd.fans/tags/</link>
-    <description>Recent content in Tags on YASD.fans</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://yasd.fans/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+	<channel>
+		<title>Tags on @YASD FANS@</title>
+		<link>https://yasd.fans/tags/</link>
+		<description>Recent content in Tags on @YASD FANS@</description>
+		<generator>Hugo 0.138.0</generator>
+		<language>zh</language>
+		<managingEditor>yasd.fans@outlook.com (Ravso)</managingEditor>
+		<webMaster>yasd.fans@outlook.com (Ravso)</webMaster>
+		<copyright>ravso &amp; yasd.fans  — All rights reserved.</copyright>
+		<lastBuildDate>Sat, 09 Sep 2023 15:00:00 +0800</lastBuildDate>
+		<atom:link href="https://yasd.fans/tags/index.xml" rel="self" type="application/rss+xml"/>
+	</channel>
 </rss>
