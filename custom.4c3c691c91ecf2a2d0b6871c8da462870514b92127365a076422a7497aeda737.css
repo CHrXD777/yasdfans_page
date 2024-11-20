@@ -42,3 +42,8 @@ a.pure-menu-link:hover {
     color: #C8C093;
     background-color: #8a9a7b;
 }
+
+::selection {
+    color: #262734;
+    background-color: #87a987d0;
+}
