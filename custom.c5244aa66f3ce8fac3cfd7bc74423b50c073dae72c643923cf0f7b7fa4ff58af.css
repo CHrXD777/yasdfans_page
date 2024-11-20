@@ -47,3 +47,11 @@ a.pure-menu-link:hover {
     color: #262734;
     background-color: #87a987d0;
 }
+
+.pure-menu-item.pure-menu-selected a.pure-menu-link {
+    color: #87a987;
+}
+.pure-menu-item a.pure-menu-link {
+    color: #C8C093;
+
+}
