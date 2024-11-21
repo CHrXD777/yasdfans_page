@@ -29,6 +29,7 @@
 &lt;p&gt;网站主要内容：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;./posts/postsnav&#34;&gt;文章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./posts/links/#roguelikes--%E6%B8%B8%E6%88%8F%E5%88%97%E8%A1%A8%E4%B8%8B%E8%BD%BD&#34;&gt;游戏&lt;/a&gt;和&lt;a href=&#34;./posts/links/#roguelike-resource--rl%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90&#34;&gt;相关资源&lt;/a&gt;分享&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./posts/links&#34;&gt;RL相关链接&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -41,6 +42,10 @@
 			<author>yasd.fans@outlook.com (Ravso)</author>
 			<guid isPermaLink="true">https://yasd.fans/posts/postsnav/</guid>
 			<description>&lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ephesus.top/roguelike&#34;&gt;置顶 | ◉镇互联网之宝、roguelike发展脉络和游戏介绍、神言静之神谕: Archive RL Silencess&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roguebasin.com/index.php/Articles&#34;&gt;置顶 | ◉大量内容，偏向开发：RogueBasin Articles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;站外&#34;&gt;站外&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.gcores.com/articles/190254&#34;&gt;2024-10-31 | @机核网@耳机刺猬：《Elin》丨北提里斯成神手札&lt;/a&gt;&lt;/li&gt;
@@ -62,7 +67,7 @@
 			<author>yasd.fans@outlook.com (Ravso)</author>
 			<guid isPermaLink="true">https://yasd.fans/posts/links/</guid>
 			<description>&lt;blockquote&gt;
-    集合了Roguelike相关的链接
+    集合了 Roguelike 相关的链接
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
 &lt;ol start=&#34;0&#34;&gt;
@@ -76,10 +81,10 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;roguelike-broadcast--rl广播&#34;&gt;Roguelike broadcast | RL广播&lt;/h1&gt;
 &lt;blockquote&gt;
-    Roadwarden汉化招募贴
+    Roadwarden 汉化招募贴
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;文字冒险游戏Roadwarden的非官方汉化&lt;/li&gt;
+&lt;li&gt;文字冒险游戏 Roadwarden 的非官方汉化&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://store.steampowered.com/app/1155970/Roadwarden/&#34;&gt;steam商店&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://paratranz.cn/projects/8749&#34;&gt;项目网站&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;(给超威蓝猫v50加快进度！)&lt;/li&gt;
@@ -138,34 +143,67 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;roguelike-dev--游戏开发&#34;&gt;Roguelike dev | 游戏开发&lt;/h1&gt;
 &lt;blockquote&gt;
-    与roguelike游戏开发的相关的资源
+    与 roguelike 游戏开发的相关的资源
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;TODO&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/roguelikedev/&#34;&gt;Reddit-r/Roguelikedev&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;很活跃的RL开发者社区。了解如何制作并分享制作 roguelike 的进度，包含广泛而大量的RL相关主题资源。&lt;/li&gt;
+&lt;li&gt;侧栏链接有丰富的 roguelike 开发教程(多种语言，多种引擎)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gridsagegames.com/blog/2018/10/how-to-make-a-roguelike/&#34;&gt;How to Make a Roguelike&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;cogmind开发日志也值得一看：&lt;a href=&#34;https://www.gridsagegames.com/blog/&#34;&gt;cogmind dev blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roguebasin.com/index.php/Articles&#34;&gt;RogueBasin Articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/roguelikedev/wiki/tilesets&#34;&gt;Roguelike Tilesets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dwarffortresswiki.org/Tileset_repository&#34;&gt;DF Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://roguelikeradio.com/&#34;&gt;Roguelike Radio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pcg.wikidot.com/&#34;&gt;PCG Wiki&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;程序生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gameprogrammingpatterns.com/&#34;&gt;Game Programming Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.redblobgames.com/&#34;&gt;Red Blob (pathfinding and more)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;roguelike-community--社区&#34;&gt;Roguelike Community | 社区&lt;/h1&gt;
 &lt;blockquote&gt;
-    与roguelike相关的社区
+    与 roguelike 相关的社区
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;国内外网站&#34;&gt;国内外网站&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;TODO&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://angband.live/&#34;&gt;angband live&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;一个关于 Angband 及其变体的非常活跃的网站。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discord.gg/Hq8wPcs&#34;&gt;roguelikes discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/roguelikes/&#34;&gt;r/roguelikes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forums.roguetemple.com/index.php&#34;&gt;Temple of the Roguelike Forum&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;曾非常活跃的 roguelike 社区论坛。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;qq群聊&#34;&gt;QQ群聊&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;TODO&lt;/li&gt;
-&lt;/ul&gt;
 &lt;img src=&#34;./assets/img/rlf.jpg&#34; alt=&#34;大灯与黄衣&#34; style=&#34;float:right; height:60px&#34;&gt;
 &lt;ul&gt;
+&lt;li&gt;Caves of Qud卡德洞窟: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=FvLqZNS29Ju2rpQXJmCneLRvGr8-nSOO&amp;amp;authKey=%2BiombaP0FUg3GgVHYpA1a7pSGf2uXg8Pt5I43gnzZ72PfHBTCpknDghLd9WmEhwn&amp;amp;noverify=0&amp;amp;group_code=532654569&#34;&gt;532654569&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nethack: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=3tHifRGyqKh0d6_pj3QCUbyixbKHxPgr&amp;amp;authKey=9UvPgQiluH2hQqm2y3gcuxZfVRFcqKE8WoqD9MJFwFPP%2F%2Fl5dSpzvouGTxQ9Fn8v&amp;amp;noverify=0&amp;amp;group_code=562997757&#34;&gt;562997757&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ToME4讨论群: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=HNewymv8qf2YYEo4DBO4xFp6O49BREIX&amp;amp;authKey=3v17F8yPMIzRvApAD7lXzYX2fyedFSdmeKlR407NDphyS9x0VkGlI5ME6WDqNP%2B9&amp;amp;noverify=0&amp;amp;group_code=542163596&#34;&gt;542163596&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Roguelike fans: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=tmiiVK34gsrOfaEAMle3tNV0GkukY-h8&amp;amp;authKey=PHXf6gIChLalwPo9Cl4Azm9YzhMH1EiYrrAQvURTb9RVZeBsFKkvDCOAuoJ51lr4&amp;amp;noverify=0&amp;amp;group_code=144321649&#34;&gt;144321649&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DF中文研不究会: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=v1Vf-R5nEvtoPdZvs7eA9rX87VJWtV3E&amp;amp;authKey=kh8mXJ6LfSuNhx7ku8u9AnLVjfUq%2BWGo6JNUgtKncSArGnGRnpbz%2FbQ%2Fv9%2FPp3pF&amp;amp;noverify=0&amp;amp;group_code=786550928&#34;&gt;786550928&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;roguelike-resource--rl相关资源&#34;&gt;Roguelike resource | RL相关资源&lt;/h1&gt;
 &lt;blockquote&gt;
-    与roguelike相关的资源，提供网盘和索引以供下载
+    与 roguelike 相关的资源，提供网盘和索引以供下载
 &lt;/blockquote&gt;
-与roguelike相关的资源，资源发布于123网盘：&lt;a href=&#34;https://www.123pan.com/s/EugQjv-0kml.html&#34;&gt;123pan&lt;/a&gt;(提取码yasd)
+与 roguelike 相关的资源，资源发布于123网盘：&lt;a href=&#34;https://www.123pan.com/s/EugQjv-0kml.html&#34;&gt;123pan&lt;/a&gt;(提取码yasd)
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -185,9 +223,9 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;links--友情链接&#34;&gt;Links | 友情链接&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ephesus.top/roguelike&#34;&gt;◉神言静之神谕: Archive RL Silencess&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ephesus.top/&#34;&gt;◉你体验到一种不寻常的和平的感觉&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://nuduseng.com/&#34;&gt;◉怒独僧的个人主页&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://yasd.fans/ravsoch/&#34;&gt;◉站长个人页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yasd.fans/ravsoch/&#34;&gt;◉Ravsoch个人页&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 </description>
