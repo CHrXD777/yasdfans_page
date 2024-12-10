@@ -4,7 +4,7 @@
 		<title>Posts on @YASD FANS@</title>
 		<link>https://yasd.fans/posts/</link>
 		<description>Recent content in Posts on @YASD FANS@</description>
-		<generator>Hugo 0.138.0</generator>
+		<generator>Hugo 0.139.2</generator>
 		<language>zh</language>
 		<managingEditor>yasd.fans@outlook.com (Ravso)</managingEditor>
 		<webMaster>yasd.fans@outlook.com (Ravso)</webMaster>
@@ -69,6 +69,12 @@
 			<description>&lt;blockquote&gt;
     集合了 Roguelike 相关的链接
 &lt;/blockquote&gt;
+&lt;style&gt;
+h3 {
+    /* color: blue; */
+    background-color: #363646;
+}
+&lt;/style&gt;
 &lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
 &lt;ol start=&#34;0&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;#roguelike-broadcast--rl%E5%B9%BF%E6%92%AD&#34;&gt;Roguelike broadcast | RL广播&lt;/a&gt;&lt;/li&gt;
@@ -79,7 +85,13 @@
 &lt;li&gt;&lt;a href=&#34;#links--%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5&#34;&gt;Links | 友情链接&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;roguelike-broadcast--rl广播&#34;&gt;Roguelike broadcast | RL广播&lt;/h1&gt;
+&lt;h3 id=&#34;roguelike-broadcast--rl广播&#34;&gt;Roguelike broadcast | RL广播&lt;/h3&gt;
+&lt;blockquote&gt;
+    Slice &amp; dice | 切骰子汉化(PC和安卓［甚至是竖屏！］)
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#qq%E7%BE%A4%E8%81%8A&#34;&gt;roguelike fans群文件获取&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
     Roadwarden 汉化招募贴
 &lt;/blockquote&gt;
@@ -96,7 +108,7 @@
 &lt;li&gt;Roguelikefans 群友自制fun游火热开发中！&lt;/li&gt;
 &lt;li&gt;期待捏&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;roguelikes--游戏列表下载&#34;&gt;Roguelikes | 游戏列表(下载)&lt;/h1&gt;
+&lt;h3 id=&#34;roguelikes--游戏列表下载&#34;&gt;Roguelikes | 游戏列表(下载)&lt;/h3&gt;
 &lt;img src=&#34;../assets/img/dt2.png&#34; alt=&#34;大灯与黄衣&#34; style=&#34;float:right; height:60px&#34;&gt;
 &lt;blockquote&gt;
     roguelike 游戏资源，提供网盘和索引以供下载
@@ -141,7 +153,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;roguelike-dev--游戏开发&#34;&gt;Roguelike dev | 游戏开发&lt;/h1&gt;
+&lt;h3 id=&#34;roguelike-dev--游戏开发&#34;&gt;Roguelike dev | 游戏开发&lt;/h3&gt;
 &lt;blockquote&gt;
     与 roguelike 游戏开发的相关的资源
 &lt;/blockquote&gt;
@@ -170,11 +182,11 @@
 &lt;li&gt;&lt;a href=&#34;http://www.redblobgames.com/&#34;&gt;Red Blob (pathfinding and more)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;roguelike-community--社区&#34;&gt;Roguelike Community | 社区&lt;/h1&gt;
+&lt;h3 id=&#34;roguelike-community--社区&#34;&gt;Roguelike Community | 社区&lt;/h3&gt;
 &lt;blockquote&gt;
     与 roguelike 相关的社区
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;国内外网站&#34;&gt;国内外网站&lt;/h3&gt;
+&lt;h4 id=&#34;国内外网站&#34;&gt;国内外网站&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://angband.live/&#34;&gt;angband live&lt;/a&gt;
 &lt;ul&gt;
@@ -189,7 +201,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;qq群聊&#34;&gt;QQ群聊&lt;/h3&gt;
+&lt;h4 id=&#34;qq群聊&#34;&gt;QQ群聊&lt;/h4&gt;
 &lt;img src=&#34;../assets/img/rlf.jpg&#34; alt=&#34;大灯与黄衣&#34; style=&#34;float:right; height:60px&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;Caves of Qud卡德洞窟: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=FvLqZNS29Ju2rpQXJmCneLRvGr8-nSOO&amp;amp;authKey=%2BiombaP0FUg3GgVHYpA1a7pSGf2uXg8Pt5I43gnzZ72PfHBTCpknDghLd9WmEhwn&amp;amp;noverify=0&amp;amp;group_code=532654569&#34;&gt;532654569&lt;/a&gt;&lt;/li&gt;
@@ -199,7 +211,7 @@
 &lt;li&gt;DF中文研不究会: &lt;a href=&#34;http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;amp;k=v1Vf-R5nEvtoPdZvs7eA9rX87VJWtV3E&amp;amp;authKey=kh8mXJ6LfSuNhx7ku8u9AnLVjfUq%2BWGo6JNUgtKncSArGnGRnpbz%2FbQ%2Fv9%2FPp3pF&amp;amp;noverify=0&amp;amp;group_code=786550928&#34;&gt;786550928&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;roguelike-resource--rl相关资源&#34;&gt;Roguelike resource | RL相关资源&lt;/h1&gt;
+&lt;h3 id=&#34;roguelike-resource--rl相关资源&#34;&gt;Roguelike resource | RL相关资源&lt;/h3&gt;
 &lt;blockquote&gt;
     与 roguelike 相关的资源，提供网盘和索引以供下载
 &lt;/blockquote&gt;
@@ -221,7 +233,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;links--友情链接&#34;&gt;Links | 友情链接&lt;/h1&gt;
+&lt;h3 id=&#34;links--友情链接&#34;&gt;Links | 友情链接&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.ephesus.top/&#34;&gt;◉你体验到一种不寻常的和平的感觉&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://nuduseng.com/&#34;&gt;◉怒独僧的个人主页&lt;/a&gt;&lt;/li&gt;
