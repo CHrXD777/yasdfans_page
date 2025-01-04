@@ -3,41 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yasd.fans/</loc>
-    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-01-03T21:30:04+08:00</lastmod>
   </url><url>
-    <loc>https://yasd.fans/hamu/</loc>
-    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url><url>
-    <loc>https://yasd.fans/tags/</loc>
-    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url><url>
-    <loc>https://yasd.fans/tags/tool/</loc>
-    <lastmod>2023-09-09T15:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url><url>
-    <loc>https://yasd.fans/posts/links/</loc>
-    <lastmod>2023-03-02T15:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://yasd.fans/posts/2025/2025post02/</loc>
+    <lastmod>2025-01-03T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/posts/</loc>
-    <lastmod>2023-03-02T15:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-01-03T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yasd.fans/posts/postsnav/</loc>
-    <lastmod>2023-03-01T15:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://yasd.fans/posts/2025/2025post01/</loc>
+    <lastmod>2025-01-03T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yasd.fans/posts/hamu/</loc>
+    <lastmod>2025-01-03T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yasd.fans/posts/han/</loc>
+    <lastmod>2025-01-03T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/posts/about/</loc>
-    <lastmod>2023-02-01T15:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>1985-06-01T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yasd.fans/posts/postsnav/</loc>
+    <lastmod>1985-06-01T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yasd.fans/posts/links/</loc>
+    <lastmod>1985-06-01T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yasd.fans/categories/</loc>
-    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://yasd.fans/series/</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://yasd.fans/tags/</loc>
   </url>
 </urlset>
