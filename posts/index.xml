@@ -6,8 +6,15 @@
     <description>Recent content in Posts on @YASD_FANS</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 May 2025 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jun 2025 05:00:00 +0000</lastBuildDate>
     <atom:link href="https://yasd.fans/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>异步联机Roguelike:Frogcomposbandnet</title>
+      <link>https://yasd.fans/posts/2025/05/</link>
+      <pubDate>Sun, 01 Jun 2025 05:00:00 +0000</pubDate>
+      <guid>https://yasd.fans/posts/2025/05/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://yasd.fans/img/frognet_eva.jpg&#34; alt=&#34;Frognet_eva&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;由roguelike fans群友(&lt;strong&gt;1iuh&lt;/strong&gt;)发起的基于Frogcomposband的异步联机roguelike &amp;mdash;- Frogcomposbandnet 火热开发中！&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/1iuh/frogcomposbandnet&#34;&gt;github仓库&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;主要异步联机特性：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;玩家交易市场，在线交易刷出的物品！&lt;/li&gt;&#xA;&lt;li&gt;bone file救援，让你的朋友为你抢救奄奄一息的存档吧！&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;同时，Frogcomposband汉化项目也在进行中，&lt;a href=&#34;https://zh.crowdin.com/project/frogcomposband&#34;&gt;项目地址&lt;/a&gt;，感兴趣的人类可以积极参与&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>CoQ - Caves of qud (猜想之穴、卡德洞窟) 汉化发布</title>
       <link>https://yasd.fans/posts/2025/04/</link>
@@ -27,7 +34,7 @@
       <link>https://yasd.fans/posts/games/</link>
       <pubDate>Fri, 21 Feb 2025 08:00:00 +0000</pubDate>
       <guid>https://yasd.fans/posts/games/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yasd.fans/games/ponyrl/&#34;&gt;ponyrl&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yasd.fans/games/dragonsweeper/&#34;&gt;dragonsweeper(v1.0.0)&lt;/a&gt;(暂不可用)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yasd.fans/games/ponyrl/&#34;&gt;ponyrl&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yasd.fans/games/dragonsweeper/&#34;&gt;dragonsweeper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>nethack guide</title>
