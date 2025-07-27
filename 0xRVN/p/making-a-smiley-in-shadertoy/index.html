@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><style>*:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)){all:unset;display:revert}*,*::before,*::after{box-sizing:border-box}html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none}a,button{cursor:revert}ol,ul,menu,summary{list-style:none}img{max-inline-size:100%;max-block-size:100%}table{border-collapse:collapse}input,textarea{-webkit-user-select:auto}textarea{white-space:revert}meter{-webkit-appearance:revert;appearance:revert}:where(pre){all:revert;box-sizing:border-box}::placeholder{color:unset}:where([hidden]){display:none}:where([contenteditable]:not([contenteditable=false])){-moz-user-modify:read-write;-webkit-user-modify:read-write;overflow-wrap:break-word;-webkit-line-break:after-white-space;-webkit-user-select:auto}:where([draggable=true]){-webkit-user-drag:element}:where(dialog:modal){all:revert;box-sizing:border-box}@font-face{font-family:geist;src:url(/lib/fonts/GeistVF.woff2)format("woff2 supports variations"),url(/lib/fonts/GeistVF.woff2)format("woff2-variations");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk sc;src:url(/lib/fonts/NotoSansCJKsc-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk tc;src:url(/lib/fonts/NotoSansCJKtc-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk jp;src:url(/lib/fonts/NotoSansCJKjp-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk kr;src:url(/lib/fonts/NotoSansCJKkr-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans;src:url(/lib/fonts/NotoSans-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:fw;src:url(/lib/fonts/fw.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans;src:url(/lib/fonts/NotoSansTamil-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}body{line-height:1.2;font-size:16px;font-family:sans-serif}body button{font-family:fw}@media(min-width:768px){body{font-size:18px}}@media(min-width:1024px){body{font-size:19px}}body:lang(en){font-family:geist,sans-serif}body:lang(de){font-family:geist,sans-serif}body:lang(es){font-family:geist,sans-serif}body:lang(fr){font-family:geist,sans-serif}body:lang(it){font-family:geist,sans-serif}body:lang(zh-cn){font-family:noto sans,noto sans cjk sc,sans-serif}body:lang(zh-sg){font-family:noto sans,noto sans cjk sc,sans-serif}body:lang(zh-hk){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(zh-mo){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(zh-tw){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(ja){font-family:noto sans,noto sans cjk jp,sans-serif}body:lang(ko){font-family:noto sans,noto sans cjk kr,sans-serif}:root{--window-height:100vh;--nav-height:2rem;--space-standard:0.625rem;--z-curtain:200;--z-nav-gallery:500;--z-cursor:600;--z-nav:800}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{user-select:none;background:#fff}html,body{overscroll-behavior-y:none}a,button{cursor:pointer}nav{display:flex;justify-content:space-between;align-items:center;width:100%;height:var(--nav-height);padding:0 var(--space-standard);position:fixed;bottom:0;background:#fff;z-index:var(--z-nav);pointer-events:all}.num{width:.625em;display:inline-block;text-align:center}.current{font-style:italic;text-decoration:underline}@media(max-width:767px),(hover:none){nav{top:0}.index,.threshold{display:none}}article{padding:var(--space-standard);max-width:25em}article p{margin-bottom:1em}article u{text-decoration:underline}article>h1{font-size:1.6em}article>h2{font-size:1.5em}article>h3{font-size:1.375em}article>h4{font-size:1.25em}article>h5{font-size:1.125em}article h1,article h2,article h3,article h4,article h5,article h6{font-weight:700;margin:1.2rem 0}@media(max-width:767px),(hover:none){article{margin-top:var(--nav-height)}}@media(max-width:767px),(hover:none){.container{position:fixed;top:0;z-index:0;width:100vw;height:var(--window-height);overflow-y:scroll;overflow-x:hidden;background:#fff;overscroll-behavior:none;-webkit-overflow-scrolling:none}.disableScroll{pointer-events:none}}</style><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/bundled/css/main.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/bundled/css/main.css"
+        
+    /></noscript>
+<script>
+  function z() {
+    const r = document.querySelector(':root')
+    r.style.setProperty('--window-height', `${window.innerHeight}px`)
+  }
+  z()
+  window.addEventListener('resize', z, { passive: true })
+</script>
+
+<script
+    type="module"
+    src="/bundled/js/main.js"
+    defer
+  ></script>
+<link rel="preload" href="/lib/fonts/fw.woff2" as="font" crossorigin /><link rel="preload" href="/lib/fonts/NotoSans-Regular.woff2" as="font" crossorigin />
+  <link
+    rel="preload"
+    href="/lib/fonts/NotoSansCJKsc-Regular.woff2"
+    as="font"
+    crossorigin
+  /><title>404 | 0xRVN-WPG0</title>
+
+
+<meta name="Description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+<meta name="application-name" content="404 | 0xRVN-WPG0" />
+<meta name="apple-mobile-web-app-title" content="404 | 0xRVN-WPG0" />
+
+
+<meta property="og:title" content="404 | 0xRVN-WPG0" />
+<meta name="twitter:title" content="404 | 0xRVN-WPG0" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yasd.fans/0xRVN/p/making-a-smiley-in-shadertoy/" />
+<meta property="og:description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+<meta name="twitter:description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+
+
+<meta name="generator" content="Hugo 0.148.1">
+<link rel="icon" type="image/svg+xml" href="/dot.svg" /><link rel="icon" type="image/png" href="/dot.png" /></head>
+  <body lang="zh-cn">
+    <div id="main"><div
+    class="container"
+    data-next="前进"
+    data-prev="后退"
+    data-close="关闭"
+    data-loading="加载中..."
+  ><article><hr>
+<h2 id="基础框架">基础框架</h2>
+<p>对坐标轴基操一下</p>
+<p>然后逐一完成各个部分代码</p>
+<ol>
+<li>基础框架</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">#define S(a, b, t) smoothstep(a, b, t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define sat(x) clamp(x, 0., 1.)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Brow(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Eye(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Mouth(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Head(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Smiley(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>; 
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Output to screen</span>
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> Smiley(uv);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="辅助函数">辅助函数</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">//01映射</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap01(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat((t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//重映射</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat((t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a)<span style="color:#f92672">*</span>(d<span style="color:#f92672">-</span>c) <span style="color:#f92672">+</span> c);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//二维重映射</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec2</span> inBox(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec4</span> rect)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (uv<span style="color:#f92672">-</span>rect.xy)<span style="color:#f92672">/</span>(rect.zw<span style="color:#f92672">-</span>rect.xy);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="头">头</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>Smiley()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> head <span style="color:#f92672">=</span> Head(uv);
+</span></span><span style="display:flex;"><span>	col <span style="color:#f92672">=</span> mix(col, head, head.a);<span style="color:#75715e">//以head透明度为参数混合col和head的颜色</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Head(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>	col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);<span style="color:#75715e">//透明的通道用圆形距离场框个半径为.5的圆</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//两种颜色中心渐变</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec3</span> aCol <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>), <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), <span style="color:#f92672">-</span>d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> bCol <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">0.</span>), <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(aCol, bCol, <span style="color:#ae81ff">.4</span>);<span style="color:#75715e">//调整到合适的渐变参数</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//阴影</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> edgeShade <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.5</span>, d);<span style="color:#75715e">//调整渐变范围</span>
+</span></span><span style="display:flex;"><span>    edgeShade <span style="color:#f92672">*=</span> edgeShade;<span style="color:#75715e">//x^2曲线能更好的模拟阴影</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">-</span> edgeShade<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>;<span style="color:#75715e">//调整曲线强度和方向并作用于col.rgb</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//高光</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.41</span>, <span style="color:#ae81ff">.405</span>, d);<span style="color:#75715e">//范围</span>
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> remap(<span style="color:#ae81ff">.41</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.65</span>, <span style="color:#ae81ff">0.</span>, uv.y);<span style="color:#75715e">//调整渐变</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">////眼眶</span>
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.19</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.20</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.0</span>)));<span style="color:#75715e">//范围和位置</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), highlight);<span style="color:#75715e">//混合颜色到col.rgb中</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//大脸盘子外轮廓</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>), S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.48</span>, d));<span style="color:#75715e">//直接在外轮廓区域混想要的颜色</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//腮红</span>
+</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> length(uv <span style="color:#f92672">-</span> <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.25</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.08</span>));<span style="color:#75715e">//位置</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> cheek <span style="color:#f92672">=</span>  S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.01</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.4</span>;<span style="color:#75715e">//范围和强度</span>
+</span></span><span style="display:flex;"><span>    cheek <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.15</span>, d);<span style="color:#75715e">//将腮红边缘稍微卡一下，不是完全淡出</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>), cheek);<span style="color:#75715e">//把腮红颜色在腮红范围里与col.rgb混合</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="眼睛">眼睛</h2>
+<p>加一个二维重映射函数，可以将坐标重映射到想要的区域，原理和一维的重映射函数相同</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">vec2</span> inBox(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec4</span> rect)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (uv<span style="color:#f92672">-</span>rect.xy)<span style="color:#f92672">/</span>(rect.zw<span style="color:#f92672">-</span>rect.xy);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>完善代码</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>Smiley()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> eye <span style="color:#f92672">=</span> Eye(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.03</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>, <span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.17</span>)));<span style="color:#75715e">//将坐标系重映射到给定的矩形中再传入Eye()</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	col <span style="color:#f92672">=</span> mix(col, eye, eye.a);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Eye(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;<span style="color:#75715e">//因为重映射了uv，原点在给定矩形左下角，所以重新中心化</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//眼球</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> irisCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">1.</span>);<span style="color:#75715e">//设定虹膜颜色</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>), <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">1.</span>), S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.7</span>, d));<span style="color:#75715e">//眼白部分稍微来点渐变，更好看</span>
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);<span style="color:#75715e">//设定透明度范围</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//虹膜边框</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.28</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//虹膜</span>
+</span></span><span style="display:flex;"><span>    irisCol.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">+</span> S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.05</span>, d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, irisCol.rgb, S(<span style="color:#ae81ff">.28</span>, <span style="color:#ae81ff">.25</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//瞳孔</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.14</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//高光</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//float highlight = S(.1, .09, length(uv-vec2(-.15,.15)));//因为是愤怒的表情，所以我不想要上方的高光，看着凶一点</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.05</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.08</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">.08</span>)));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), highlight);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//鼻梁</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">-</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.5</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span> <span style="color:#f92672">*</span> sat(<span style="color:#f92672">-</span>uv.y<span style="color:#f92672">-</span>uv.x);<span style="color:#75715e">//sat返回0--1之间的数，对uv来说就是只返回正数，因为加了个负号所以取反</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="嘴">嘴</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>Smiley()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> mouth <span style="color:#f92672">=</span> Mouth(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>)));
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	col <span style="color:#f92672">=</span> mix(col, mouth, mouth.a);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Mouth(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//中心化和调整嘴巴的形状</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">*=</span> <span style="color:#ae81ff">3.</span>;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> uv.x<span style="color:#f92672">*</span>uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">3.</span>;<span style="color:#75715e">//上一个教程有提到uv.y是怎么被影响的</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.05</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);<span style="color:#75715e">//嘴透明度范围</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> td <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">.4</span>));<span style="color:#75715e">//牙齿位置</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> toothCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>) <span style="color:#f92672">*</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.35</span>, d);<span style="color:#75715e">//牙齿颜色</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, toothCol, S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.28</span>, td));<span style="color:#75715e">//应用牙齿</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//下面这部分是笑脸的舌头代码，但我做的事怒脸，就没用上来</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//原理都差不多，设定位置、范围、颜色然后混合</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//td = length(uv+vec2(0., .5));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//col.rgb = mix(col.rgb, vec3(1., .5, .5), S(.4, .2, td));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//col.a = S(.5, .48, d);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="眉毛">眉毛</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>Smiley()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">vec4</span> brow <span style="color:#f92672">=</span> Brow(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.0</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.43</span>)));
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	col <span style="color:#f92672">=</span> mix(col, brow, brow.a);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Brow(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//调整眉毛位置和变形</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">-=</span> uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1.1</span>; 
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> blur <span style="color:#f92672">=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//眉毛，用两个“圆”相减得到</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> browMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//提亮一部分眉毛，更立体好看一些</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> colMask <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.3</span>, y)<span style="color:#f92672">*</span><span style="color:#ae81ff">.3</span>;
+</span></span><span style="display:flex;"><span>    colMask <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.9</span>, browMask);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> browCol <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">1.</span>), <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.75</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">1.</span>), colMask);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//眉毛的阴影，微调了位置和虚化程度</span>
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    blur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> shadowMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">1.</span>), S(<span style="color:#ae81ff">.0</span>, <span style="color:#ae81ff">1.</span>, shadowMask)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, browCol, S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.4</span>, browMask));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="截图">截图</h2>
+<p><img src="https://s2.loli.net/2024/07/06/E4is2FePnG89o1w.png" alt="MakingASmileyinShadertoyPart1.png"></p>
+<p style="text-align: center;">笑脸</p>
+<p><img src="https://s2.loli.net/2024/07/06/FSLtMb5y3o19pCm.png" alt="MakingASmileyinShadertoyPart1n.png"></p>
+<p style="text-align: center;">愤怒</p>
+<h2 id="完整代码">完整代码</h2>
+<h3 id="笑完整代码">笑·完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">#define S(a, b, t) smoothstep(a, b, t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define sat(x) clamp(x, 0., 1.)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap01(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat((t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a));<span style="color:#75715e">//防止t不在ab范围内</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat(c <span style="color:#f92672">+</span> (d<span style="color:#f92672">-</span>c)<span style="color:#f92672">*</span>(t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//二维remap01</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec2</span> within(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec4</span> rect)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (uv<span style="color:#f92672">-</span>rect.xy)<span style="color:#f92672">/</span>(rect.zw<span style="color:#f92672">-</span>rect.xy);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//如果uv坐标在rect区域左下角,则输出uv为(0., 0.),右上角输出uv为(1., 1.) </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//和一维的一个道理</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Brow(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//uv.x -= .1;</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> blur <span style="color:#f92672">=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> browMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> colMask <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.7</span>, <span style="color:#ae81ff">.8</span>, y)<span style="color:#f92672">*</span><span style="color:#ae81ff">.75</span>;
+</span></span><span style="display:flex;"><span>    colMask <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.9</span>, browMask);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> browCol <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">1.</span>), <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.75</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">1.</span>), colMask);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.15</span>;
+</span></span><span style="display:flex;"><span>    blur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> shadowMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">1.</span>), S(<span style="color:#ae81ff">.0</span>, <span style="color:#ae81ff">1.</span>, shadowMask)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, browCol, S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.4</span>, browMask));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Eye(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> irisCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>), irisCol, S(<span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.7</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">-</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.5</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span> <span style="color:#f92672">*</span> sat(<span style="color:#f92672">-</span>uv.y<span style="color:#f92672">-</span>uv.x);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.28</span>, d));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    irisCol.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">+</span> S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.05</span>, d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, irisCol.rgb, S(<span style="color:#ae81ff">.28</span>, <span style="color:#ae81ff">.25</span>, d));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.14</span>, d));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.05</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.08</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">.08</span>)));
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">+=</span> S(<span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.09</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.15</span>)));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>),highlight);
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d); 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Mouth(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.05</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.5</span>;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">-=</span> uv.x<span style="color:#f92672">*</span>uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">2.</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> td <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">.6</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> toothCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>) <span style="color:#f92672">*</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.35</span>, d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, toothCol, S(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.37</span>, td));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    td <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">+</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">.5</span>));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span>), S(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.2</span>, td));
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Head(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.49</span>, d);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> edgeShade <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.5</span>, d);
+</span></span><span style="display:flex;"><span>    edgeShade <span style="color:#f92672">*=</span> edgeShade;    
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span><span style="color:#f92672">-</span> edgeShade<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.8</span>), S(<span style="color:#ae81ff">.47</span>, <span style="color:#ae81ff">.48</span>, d));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.41</span>, <span style="color:#ae81ff">.405</span>, d);
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> remap(<span style="color:#ae81ff">.41</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.75</span>, <span style="color:#ae81ff">0.</span>, uv.y);
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.19</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.21</span>, <span style="color:#ae81ff">.09</span>)));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//将0-.41部分的y值重映射到0-.75,再与highlight的1范围相乘,结果为纵向渐变</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), highlight);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.25</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> cheek <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.01</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.4</span>;
+</span></span><span style="display:flex;"><span>    cheek <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.15</span>, d);<span style="color:#75715e">//大于.16压黑</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.6</span>), cheek); 
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Smiley(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">=</span> abs(uv.x);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> head <span style="color:#f92672">=</span> Head(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> eye <span style="color:#f92672">=</span> Eye(within(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.03</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.36</span>, <span style="color:#ae81ff">.25</span>)));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> mouth <span style="color:#f92672">=</span> Mouth(within(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.3</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.3</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>)));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> brow <span style="color:#f92672">=</span> Brow(within(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.03</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.43</span>)));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, head, head.a);<span style="color:#75715e">//根据head的透明度混合col和head?</span>
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, eye, eye.a);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, mouth, mouth.a);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, brow, brow.a);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>; 
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Output to screen</span>
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> Smiley(uv);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="怒完整代码">怒·完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">#define S(a, b, t) smoothstep(a, b, t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define sat(x) clamp(x, 0., 1.)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap01(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat((t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sat((t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a)<span style="color:#f92672">*</span>(d<span style="color:#f92672">-</span>c) <span style="color:#f92672">+</span> c);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec2</span> inBox(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec4</span> rect)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (uv<span style="color:#f92672">-</span>rect.xy)<span style="color:#f92672">/</span>(rect.zw<span style="color:#f92672">-</span>rect.xy);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Brow(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">-=</span> uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1.1</span>; 
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> blur <span style="color:#f92672">=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> browMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> colMask <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.3</span>, y)<span style="color:#f92672">*</span><span style="color:#ae81ff">.3</span>;
+</span></span><span style="display:flex;"><span>    colMask <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.9</span>, browMask);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> browCol <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">1.</span>), <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.75</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">1.</span>), colMask);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    blur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    d1 <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    s1 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.45</span><span style="color:#f92672">-</span>blur, d1);
+</span></span><span style="display:flex;"><span>    d2 <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.7</span>);
+</span></span><span style="display:flex;"><span>    s2 <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span><span style="color:#f92672">-</span>blur, d2);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> shadowMask <span style="color:#f92672">=</span> sat(s1<span style="color:#f92672">-</span>s2);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">1.</span>), S(<span style="color:#ae81ff">.0</span>, <span style="color:#ae81ff">1.</span>, shadowMask)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, browCol, S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.4</span>, browMask));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Eye(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//眼球</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> irisCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>), <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">1.</span>), S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.7</span>, d));
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//虹膜边框</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.28</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//虹膜</span>
+</span></span><span style="display:flex;"><span>    irisCol.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">+</span> S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.05</span>, d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, irisCol.rgb, S(<span style="color:#ae81ff">.28</span>, <span style="color:#ae81ff">.25</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//瞳孔</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0.</span>), S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.14</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//高光</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//float highlight = S(.1, .09, length(uv-vec2(-.15,.15)));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.05</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.08</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">.08</span>)));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), highlight);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//鼻梁</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">-</span> S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.5</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span> <span style="color:#f92672">*</span> sat(<span style="color:#f92672">-</span>uv.y<span style="color:#f92672">-</span>uv.x);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Mouth(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">*=</span> <span style="color:#ae81ff">3.</span>;
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">+=</span> uv.x<span style="color:#f92672">*</span>uv.x<span style="color:#f92672">*</span><span style="color:#ae81ff">3.</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.05</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> td <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">.4</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> toothCol <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>) <span style="color:#f92672">*</span> S(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">.35</span>, d);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, toothCol, S(<span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.28</span>, td));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Head(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    col.a <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.48</span>, d);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//渐变</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> Cola <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>), <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), <span style="color:#f92672">-</span>d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> Colb <span style="color:#f92672">=</span> mix(<span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">1.</span>, <span style="color:#ae81ff">0.</span>), <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(Cola, Colb, <span style="color:#ae81ff">.4</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//阴影</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> edgeShade <span style="color:#f92672">=</span> remap01(<span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.5</span>, d);
+</span></span><span style="display:flex;"><span>    edgeShade <span style="color:#f92672">*=</span> edgeShade;
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1.</span> <span style="color:#f92672">-</span> edgeShade<span style="color:#f92672">*</span><span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//高光</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> highlight <span style="color:#f92672">=</span> S(<span style="color:#ae81ff">.41</span>, <span style="color:#ae81ff">.405</span>, d);
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> remap(<span style="color:#ae81ff">.41</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.65</span>, <span style="color:#ae81ff">0.</span>, uv.y);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">////眼眶</span>
+</span></span><span style="display:flex;"><span>    highlight <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.18</span>, <span style="color:#ae81ff">.19</span>, length(uv<span style="color:#f92672">-</span><span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.20</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.0</span>)));
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">1.</span>), highlight);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//轮廓</span>
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>), S(<span style="color:#ae81ff">.45</span>, <span style="color:#ae81ff">.48</span>, d));
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//腮红</span>
+</span></span><span style="display:flex;"><span>    d <span style="color:#f92672">=</span> length(uv <span style="color:#f92672">-</span> <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.25</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.08</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> cheek <span style="color:#f92672">=</span>  S(<span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.01</span>, d)<span style="color:#f92672">*</span><span style="color:#ae81ff">.4</span>;
+</span></span><span style="display:flex;"><span>    cheek <span style="color:#f92672">*=</span> S(<span style="color:#ae81ff">.16</span>, <span style="color:#ae81ff">.15</span>, d);
+</span></span><span style="display:flex;"><span>    col.rgb <span style="color:#f92672">=</span> mix(col.rgb, <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.8</span>, <span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>), cheek);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">vec4</span> Smiley(<span style="color:#66d9ef">vec2</span> uv)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">0.</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> head <span style="color:#f92672">=</span> Head(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> eye <span style="color:#f92672">=</span> Eye(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.03</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>, <span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.17</span>)));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> mouth <span style="color:#f92672">=</span> Mouth(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.05</span>)));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> brow <span style="color:#f92672">=</span> Brow(inBox(uv, <span style="color:#66d9ef">vec4</span>(<span style="color:#ae81ff">.0</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.35</span>, <span style="color:#ae81ff">.43</span>)));
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, head, head.a);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, eye, eye.a);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, mouth, mouth.a);
+</span></span><span style="display:flex;"><span>    col <span style="color:#f92672">=</span> mix(col, brow, brow.a);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> col;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">.5</span>;
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">=</span> abs(uv.x);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Output to screen</span>
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> Smiley(uv);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="总结">总结</h2>
+<p>这个教程是The Art Of Code的系列教程<a href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5">Shadertoy Tutorial</a> 播放列表中的第二个小部分，包括制作笑脸和让笑脸动起来两集，之后会把这个系列的所有视频的笔记都发上来。本篇的重点总结：</p>
+<ol>
+<li>在制作笑脸这集中没讲啥新东西，主要就是二维重映射的应用和操作坐标系的具体实践</li>
+</ol>
+<ul>
+<li>Shadertoy(<a href="https://www.shadertoy.com/new">https://www.shadertoy.com/new</a> )</li>
+<li>本集原始链接 <a href="https://www.youtube.com/watch?v=ZlNnrpM0TRg&amp;list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5&amp;index=5">Youtube</a></li>
+</ul>
+<hr>
+<ul>
+<li>保留所有版权</li>
+<li>首次上传：2024年07月06日</li>
+<li>最后修改：2024年07月06日</li>
+</ul>
+</article><nav>
+  <div class="navArtist">
+    <a href="/">0xRVN-WPG0</a>
+  </div>
+  <div class="links"><a
+          href="/0xRVN/"
+          class="link"
+          >Artworks</a
+        >,&nbsp<a
+          href="/0xRVN/article/"
+          class="link"
+          >Article</a
+        >,&nbsp<a
+          href="/0xRVN/photography/"
+          class="link"
+          >Photography</a
+        >,&nbsp<a
+          href="/0xRVN/Info/"
+          class="link"
+          >Info</a
+        ></div>
+  <div class="threshold"><span>阈值:</span>
+    <span>
+      <button class="dec">&#xFF0D;</button>
+      <span class="num"></span><span class="num"></span><span class="num"></span
+      ><span class="num"></span>
+      <button class="inc">&#xFF0B;</button>
+    </span>
+  </div>
+  <div class="index">
+    <span class="num">0</span><span class="num">0</span><span class="num">0</span
+    ><span class="num">0</span>
+    <span>/</span>
+    <span class="num">0</span
+    ><span class="num">0</span
+    ><span class="num">0</span
+    ><span class="num">0</span>
+  </div>
+</nav><script>
+  i = 2
+  const s = sessionStorage.getItem('thresholdsIndex')
+  if (s !== null) {
+    i = parseInt(s)
+  }
+  var t = ''
+  switch (i) {
+    case 0:
+      t = '0020'
+      break
+    case 1:
+      t = '0040'
+      break
+    case 2:
+      t = '0080'
+      break
+    case 3:
+      t = '0140'
+      break
+    case 4:
+      t = '0200'
+      break
+  }
+  Array.from(
+    document.getElementsByClassName('threshold').item(0).getElementsByClassName('num')
+  ).forEach((e, i) => {
+    e.innerText = t[i]
+  })
+</script>
+</div></div>
+    <div class="analytics"></div>
+  </body>
+</html>

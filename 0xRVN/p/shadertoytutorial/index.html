@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><style>*:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)){all:unset;display:revert}*,*::before,*::after{box-sizing:border-box}html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none}a,button{cursor:revert}ol,ul,menu,summary{list-style:none}img{max-inline-size:100%;max-block-size:100%}table{border-collapse:collapse}input,textarea{-webkit-user-select:auto}textarea{white-space:revert}meter{-webkit-appearance:revert;appearance:revert}:where(pre){all:revert;box-sizing:border-box}::placeholder{color:unset}:where([hidden]){display:none}:where([contenteditable]:not([contenteditable=false])){-moz-user-modify:read-write;-webkit-user-modify:read-write;overflow-wrap:break-word;-webkit-line-break:after-white-space;-webkit-user-select:auto}:where([draggable=true]){-webkit-user-drag:element}:where(dialog:modal){all:revert;box-sizing:border-box}@font-face{font-family:geist;src:url(/lib/fonts/GeistVF.woff2)format("woff2 supports variations"),url(/lib/fonts/GeistVF.woff2)format("woff2-variations");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk sc;src:url(/lib/fonts/NotoSansCJKsc-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk tc;src:url(/lib/fonts/NotoSansCJKtc-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk jp;src:url(/lib/fonts/NotoSansCJKjp-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans cjk kr;src:url(/lib/fonts/NotoSansCJKkr-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans;src:url(/lib/fonts/NotoSans-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:fw;src:url(/lib/fonts/fw.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:noto sans;src:url(/lib/fonts/NotoSansTamil-Regular.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}body{line-height:1.2;font-size:16px;font-family:sans-serif}body button{font-family:fw}@media(min-width:768px){body{font-size:18px}}@media(min-width:1024px){body{font-size:19px}}body:lang(en){font-family:geist,sans-serif}body:lang(de){font-family:geist,sans-serif}body:lang(es){font-family:geist,sans-serif}body:lang(fr){font-family:geist,sans-serif}body:lang(it){font-family:geist,sans-serif}body:lang(zh-cn){font-family:noto sans,noto sans cjk sc,sans-serif}body:lang(zh-sg){font-family:noto sans,noto sans cjk sc,sans-serif}body:lang(zh-hk){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(zh-mo){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(zh-tw){font-family:noto sans,noto sans cjk tc,sans-serif}body:lang(ja){font-family:noto sans,noto sans cjk jp,sans-serif}body:lang(ko){font-family:noto sans,noto sans cjk kr,sans-serif}:root{--window-height:100vh;--nav-height:2rem;--space-standard:0.625rem;--z-curtain:200;--z-nav-gallery:500;--z-cursor:600;--z-nav:800}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{user-select:none;background:#fff}html,body{overscroll-behavior-y:none}a,button{cursor:pointer}nav{display:flex;justify-content:space-between;align-items:center;width:100%;height:var(--nav-height);padding:0 var(--space-standard);position:fixed;bottom:0;background:#fff;z-index:var(--z-nav);pointer-events:all}.num{width:.625em;display:inline-block;text-align:center}.current{font-style:italic;text-decoration:underline}@media(max-width:767px),(hover:none){nav{top:0}.index,.threshold{display:none}}article{padding:var(--space-standard);max-width:25em}article p{margin-bottom:1em}article u{text-decoration:underline}article>h1{font-size:1.6em}article>h2{font-size:1.5em}article>h3{font-size:1.375em}article>h4{font-size:1.25em}article>h5{font-size:1.125em}article h1,article h2,article h3,article h4,article h5,article h6{font-weight:700;margin:1.2rem 0}@media(max-width:767px),(hover:none){article{margin-top:var(--nav-height)}}@media(max-width:767px),(hover:none){.container{position:fixed;top:0;z-index:0;width:100vw;height:var(--window-height);overflow-y:scroll;overflow-x:hidden;background:#fff;overscroll-behavior:none;-webkit-overflow-scrolling:none}.disableScroll{pointer-events:none}}</style><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/bundled/css/main.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/bundled/css/main.css"
+        
+    /></noscript>
+<script>
+  function z() {
+    const r = document.querySelector(':root')
+    r.style.setProperty('--window-height', `${window.innerHeight}px`)
+  }
+  z()
+  window.addEventListener('resize', z, { passive: true })
+</script>
+
+<script
+    type="module"
+    src="/bundled/js/main.js"
+    defer
+  ></script>
+<link rel="preload" href="/lib/fonts/fw.woff2" as="font" crossorigin /><link rel="preload" href="/lib/fonts/NotoSans-Regular.woff2" as="font" crossorigin />
+  <link
+    rel="preload"
+    href="/lib/fonts/NotoSansCJKsc-Regular.woff2"
+    as="font"
+    crossorigin
+  /><title>404 | 0xRVN-WPG0</title>
+
+
+<meta name="Description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+<meta name="application-name" content="404 | 0xRVN-WPG0" />
+<meta name="apple-mobile-web-app-title" content="404 | 0xRVN-WPG0" />
+
+
+<meta property="og:title" content="404 | 0xRVN-WPG0" />
+<meta name="twitter:title" content="404 | 0xRVN-WPG0" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yasd.fans/0xRVN/p/shadertoytutorial/" />
+<meta property="og:description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+<meta name="twitter:description" content="Bridget is a minimal Hugo theme designed for photographers/visual artists." />
+
+
+<meta name="generator" content="Hugo 0.148.1">
+<link rel="icon" type="image/svg+xml" href="/dot.svg" /><link rel="icon" type="image/png" href="/dot.png" /></head>
+  <body lang="zh-cn">
+    <div id="main"><div
+    class="container"
+    data-next="前进"
+    data-prev="后退"
+    data-close="关闭"
+    data-loading="加载中..."
+  ><article><hr>
+<h2 id="part1just-a-circle">PART1.JUST A CIRCLE</h2>
+<p>Shadertoy 是一个通过 WebGL 创建和共享着色器的在线社区和工具，用于在网络浏览器中学习和教授 3D 计算机图形。</p>
+<p>Shadertoy中只有片段着色器，通过输入 <em>像素坐标(fragCoord)</em> 并输出对应像素的 <em>rgba值(fragcolor)</em> 来生成图像。</p>
+<p>在<a href="https://www.shadertoy.com/new">Shadertoy</a> 上新建项目后，将本部分完整代码粘贴到shadertoy中，按下代码编辑器下方的播放键(或Alt + Enter)，图像输出区会显示一个边缘模糊的圆形。</p>
+<p>阅读代码不难理解主函数通过输入像素坐标(fragCoord)，和输出像素颜色(fragColor)来逐一处理每一个像素。</p>
+<p>坐标系的常见操作：</p>
+<ul>
+<li><code>vec2 uv = fragCoord/iResolution.xy;</code> 将屏幕像素坐标归一化，方便后续操作，iResolution是Shadertoy定义的屏幕尺寸变量</li>
+<li><code>uv -= 0.5;</code> 将uv坐标系的原点移动到屏幕中心</li>
+<li><code> uv.x *= iResolution.x/iResolution.y;</code> 拉伸uv.x坐标，如果屏幕比为1，则对uv坐标的x轴无影响，如果屏幕比大于或小于1,会将uv.x拉伸或压缩，以适应不同的屏幕分辨率</li>
+</ul>
+<p><code>float d = length(uv);</code> 取uv矢量的长度，并使用smoothstep函数<code>float c = smoothstep(r+0.1,r,d);</code> 实现圆形距离场。</p>
+<ul>
+<li>更多2D距离场:<a href="https://iquilezles.org/articles/distfunctions2d/">2D distance functions</a></li>
+<li>函数使用方法查看<a href="https://github.com/wshxbqq/GLSL-Card#%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E5%BA%93">内置函数库</a></li>
+</ul>
+<h3 id="part1完整代码">PART1完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.5</span>;<span style="color:#75715e">// -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> r <span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> smoothstep(r<span style="color:#f92672">+</span><span style="color:#ae81ff">0.1</span>,r,d);
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(<span style="color:#66d9ef">vec3</span>(c),<span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>PART1截图：<img src="https://s2.loli.net/2024/07/04/FjqoIp2lSbfWx4U.png" alt="shadertoyTutorialPart1.png"></li>
+</ul>
+<h2 id="part2building-stuff-with-circle">PART2.BUILDING STUFF WITH CIRCLE</h2>
+<ul>
+<li>把上一部分的Circle函数整理出来</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Circle(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> r, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> smoothstep(r<span style="color:#f92672">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>使用Circle函数画出脸和眼睛(多个圆相减)</li>
+<li>可以尝试改变圆的位置和改变符号，比如<code>mask += Circle()</code>, 因为圆的部分值为1，两个圆相减后交集值为0，从而实现相减效果</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span></code></pre></div><ul>
+<li>创建一个颜色，然后与musk取交集</li>
+<li>mask是0到1之间的数，rgb值也是0到1之间的数，相乘后即可在屏幕中留下mask&gt;0的部分</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.5</span>,<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">.6</span>)<span style="color:#f92672">*</span>mask;
+</span></span></code></pre></div><ul>
+<li>创建嘴巴，经过标准化处理后加入musk中</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mouth <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.45</span>), <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">=</span> clamp(mouth, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">1.</span>); <span style="color:#75715e">//将值置于0到1之间</span>
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> mouth;
+</span></span></code></pre></div><h3 id="part2完整代码">PART2完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Circle(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> r, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> smoothstep(r<span style="color:#f92672">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.5</span>;<span style="color:#75715e">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mouth <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.45</span>), <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">=</span> clamp(mouth, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">1.</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> mouth;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.5</span>,<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">.6</span>)<span style="color:#f92672">*</span>mask;
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(col,<span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>PART2截图：<img src="https://s2.loli.net/2024/07/04/cSUo4lsKa6dezMZ.png" alt="shadertoyTutorialPart2.png"></p>
+<h2 id="part3roto-zooming-smiley--making-a-rectangle">PART3.ROTO-ZOOMING SMILEY &amp; MAKING A RECTANGLE</h2>
+<h3 id="roto-zooming">Roto-Zooming</h3>
+<ul>
+<li>详细的Roto-Zooming原理查看<a href="https://www.flipcode.com/archives/The_Art_of_Demomaking-Issue_10_Roto-Zooming.shtml">The Art of Demomaking - Issue 10 - Roto-Zooming</a></li>
+<li>首先打包笑脸函数，并实现位置、大小、旋转角度的控制</li>
+<li>要注意旋转算法分为两步，都需要原始的uv值，如果计算<code>uv.y</code>时使用了更新后的<code>uv.x</code>，会导致结果出错，图像失真拉伸。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Smiley(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> size, <span style="color:#66d9ef">float</span> angle)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//这里的uv相当于小元素自己的坐标系统</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv_orig <span style="color:#f92672">=</span> uv;<span style="color:#75715e">//旋转算法分为两步，需要保存原始uv值备用</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">=</span> uv_orig.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> uv_orig.y<span style="color:#f92672">*</span>sin(angle);<span style="color:#75715e">//rotate</span>
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">=</span> uv_orig.y<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">+</span> uv_orig.x<span style="color:#f92672">*</span>sin(angle);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> p;<span style="color:#75715e">//translating</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">/=</span> size;<span style="color:#75715e">//scaling</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mouth <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.45</span>), <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">=</span> smoothstep(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">1.</span>,mouth);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> mouth;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> mask;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>在Smiley函数中添加Scale，可以实现Roto-Zooming效果</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>Smiley()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	uv <span style="color:#f92672">/=</span> scale;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mainImage()<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span> scale <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.</span><span style="color:#f92672">+</span><span style="color:#ae81ff">.5</span><span style="color:#f92672">*</span>sin(iTime);<span style="color:#75715e">//简单的周期函数，返回值随时间变化，实现“Zooming”部分</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//角度参数传入iTime(Shadertoy定义的时间变量，等于显示区下方的那个数字，实现“Roto-”部分)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Smiley(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">.0</span>), <span style="color:#ae81ff">1.</span>, iTime, scale);
+</span></span></code></pre></div><ul>
+<li>实现矩形函数：</li>
+<li>带子函数：
+<ul>
+<li>smoothstep(a, b, t), t &lt; a, 返回0.0， t &gt; b, 返回1.0, 否则返回Hermite插值，当a &gt; b时，smoothstep函数将反转</li>
+<li>运用两个smoothstep函数结果求交集，将显示给定边缘的“带子”</li>
+</ul>
+</li>
+<li>矩形函数：
+<ul>
+<li>运用两个band函数结果求交集，将显示给定边缘的矩形</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">//带子函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Band(<span style="color:#66d9ef">float</span> t, <span style="color:#66d9ef">float</span> start, <span style="color:#66d9ef">float</span> end, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//PART4中为了显示效果，blur不再/2.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step1 <span style="color:#f92672">=</span> smoothstep(start<span style="color:#f92672">-</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, start<span style="color:#f92672">+</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, t);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step2 <span style="color:#f92672">=</span> smoothstep(end<span style="color:#f92672">+</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, end<span style="color:#f92672">-</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, t);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> step1<span style="color:#f92672">*</span>step2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//矩形函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Rect(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">vec2</span> size, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> p;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band1 <span style="color:#f92672">=</span> Band(uv.x, <span style="color:#f92672">-</span>size.x<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, size.x<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, blur);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band2 <span style="color:#f92672">=</span> Band(uv.y, <span style="color:#f92672">-</span>size.y<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, size.y<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, blur);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> band1 <span style="color:#f92672">*</span> band2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//也可以传入上下左右来定义矩形</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//下一部分会使用这个版本的矩形函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Rect(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">float</span> left, <span style="color:#66d9ef">float</span> right, <span style="color:#66d9ef">float</span> bottom, <span style="color:#66d9ef">float</span> top, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band1 <span style="color:#f92672">=</span> Band(uv.x, left, right, blur);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band2 <span style="color:#f92672">=</span> Band(uv.y, bottom, top, blur);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> band1 <span style="color:#f92672">*</span> band2;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="part3完整代码">PART3完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Circle(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> r, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> smoothstep(r<span style="color:#f92672">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Band(<span style="color:#66d9ef">float</span> t, <span style="color:#66d9ef">float</span> start, <span style="color:#66d9ef">float</span> end, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step1 <span style="color:#f92672">=</span> smoothstep(start<span style="color:#f92672">-</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, start<span style="color:#f92672">+</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, t);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step2 <span style="color:#f92672">=</span> smoothstep(end<span style="color:#f92672">+</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, end<span style="color:#f92672">-</span>blur<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, t);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> step1<span style="color:#f92672">*</span>step2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Rect(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">vec2</span> size, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> p;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band1 <span style="color:#f92672">=</span> Band(uv.x, <span style="color:#f92672">-</span>size.x<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, size.x<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, blur);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band2 <span style="color:#f92672">=</span> Band(uv.y, <span style="color:#f92672">-</span>size.y<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, size.y<span style="color:#f92672">/</span><span style="color:#ae81ff">2.</span>, blur);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> band1 <span style="color:#f92672">*</span> band2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Smiley(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> size, <span style="color:#66d9ef">float</span> angle, <span style="color:#66d9ef">float</span> scale)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//这里的uv相当于小元素自己的坐标系统</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> p;<span style="color:#75715e">//translating</span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">/=</span> size;<span style="color:#75715e">//scaling</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">/=</span> scale;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv_orig <span style="color:#f92672">=</span> uv;<span style="color:#75715e">//旋转算法分为两步，需要保存原始uv值备用</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">=</span> uv_orig.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> uv_orig.y<span style="color:#f92672">*</span>sin(angle);<span style="color:#75715e">//rotate</span>
+</span></span><span style="display:flex;"><span>    uv.y <span style="color:#f92672">=</span> uv_orig.y<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">+</span> uv_orig.x<span style="color:#f92672">*</span>sin(angle);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.15</span>,<span style="color:#ae81ff">.12</span>), <span style="color:#ae81ff">.07</span>, <span style="color:#ae81ff">.02</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mouth <span style="color:#f92672">=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#ae81ff">.3</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">-=</span> Circle(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">0.45</span>), <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.03</span>);
+</span></span><span style="display:flex;"><span>    mouth <span style="color:#f92672">=</span> smoothstep(<span style="color:#ae81ff">0.</span>,<span style="color:#ae81ff">1.</span>,mouth);
+</span></span><span style="display:flex;"><span>    mask <span style="color:#f92672">-=</span> mouth;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> mask;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.5</span>;<span style="color:#75715e">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> scale <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.</span><span style="color:#f92672">+</span><span style="color:#ae81ff">.5</span><span style="color:#f92672">*</span>sin(iTime);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//float mask = Smiley(uv, vec2(0., .0), 1., iTime, scale);//Roto-Zooming</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Rect(uv, <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.4</span>,<span style="color:#ae81ff">0.</span>), <span style="color:#66d9ef">vec2</span>(<span style="color:#ae81ff">.4</span>, <span style="color:#ae81ff">.3</span>), <span style="color:#ae81ff">.01</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.5</span>,<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">.6</span>)<span style="color:#f92672">*</span>mask; 
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(col,<span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>PART3截图
+<img src="https://s2.loli.net/2024/07/04/MzvdXKgmJtEq5hs.png" alt="shadertoyTutorialPart3.1.png"></p>
+<p style="text-align: center;">Roto-Zooming Smiley</p>
+<p><img src="https://s2.loli.net/2024/07/04/qEVdnwPCeTmO5uA.png" alt="shadertoyTutorialPart3.2.png"></p>
+<p style="text-align: center;">Rectangle</p>
+<h2 id="part4domain-distortion">PART4.DOMAIN DISTORTION</h2>
+<ul>
+<li>通过操作坐标系，实现变形效果</li>
+<li>注：这一PART使用的是上下左右传参的Rect()(上一部分已给出)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">//为了操作方便</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span> x <span style="color:#f92672">=</span> uv.x;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//以下操作可以实现剪切,使x值上的线倾斜，y同理</span>
+</span></span><span style="display:flex;"><span>	x <span style="color:#f92672">+=</span> y<span style="color:#f92672">*</span><span style="color:#ae81ff">0.2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//对边进行操作可以实现不同的四边形</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Rect(<span style="color:#66d9ef">vec2</span>(x, y),<span style="color:#f92672">-</span><span style="color:#ae81ff">.3</span><span style="color:#f92672">+</span>y<span style="color:#f92672">*</span><span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.3</span><span style="color:#f92672">-</span>y<span style="color:#f92672">*</span><span style="color:#ae81ff">.2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.2</span>, <span style="color:#ae81ff">.01</span>);<span style="color:#75715e">//比如梯形</span>
+</span></span></code></pre></div><p>下面的代码实现了矩形的弯曲</p>
+<ul>
+<li>使用图形计算器<a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos</a> 可以方便的找到图形函数，应用到shader中</li>
+<li>因为y减去对应的m，图形在屏幕上的位置会对应上移</li>
+<li>比如点uv.y:(0.5,0), 减去该位置m后，y:(0.5,-0.25), 而矩形函数中这个点应该画在(0.5,0)位置，而原先的位置已经变为(0.5,-0.25)，所以图形上移。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> m <span style="color:#f92672">=</span> x<span style="color:#f92672">*</span>x;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y <span style="color:#f92672">-</span> m;
+</span></span></code></pre></div><ul>
+<li>使用sin()和iTime，操作矩形周期运动</li>
+<li>设定sin函数的幅值和频率，找到好的显示效果</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> m <span style="color:#f92672">=</span> sin(iTime<span style="color:#f92672">+</span>x<span style="color:#f92672">*</span><span style="color:#ae81ff">8.</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y <span style="color:#f92672">-</span> m;
+</span></span></code></pre></div><h3 id="重映射">重映射</h3>
+<ul>
+<li>重映射是一个常见的操作，从一个域映射一个值到另一个域</li>
+<li>归一化和重映射：(很简单，但为了理解这个我还画了一个图)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap01(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> t)<span style="color:#75715e">//映射到01之间</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)<span style="color:#75715e">//映射到目标域</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c <span style="color:#f92672">+</span> (d<span style="color:#f92672">-</span>c)<span style="color:#f92672">*</span>remap01(a, b, t);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//可以化简为一个函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c<span style="color:#f92672">+</span> (d<span style="color:#f92672">-</span>c)<span style="color:#f92672">*</span>(t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>将矩形设置为长条状并让它像旗子一样🚩飘起来</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> m <span style="color:#f92672">=</span> sin(iTime<span style="color:#f92672">+</span>x<span style="color:#f92672">*</span><span style="color:#ae81ff">8.</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Rect(<span style="color:#66d9ef">vec2</span>(x,y),<span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>, blur);
+</span></span></code></pre></div><ul>
+<li>将像素坐标x值(-.5, .5)从坐标轴映射到模糊程度(.01, .25)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> blur <span style="color:#f92672">=</span> remap(<span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.01</span>, <span style="color:#ae81ff">.25</span>, x);<span style="color:#75715e">//线性映射</span>
+</span></span><span style="display:flex;"><span>    blur <span style="color:#f92672">=</span> pow(blur<span style="color:#f92672">*</span><span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">2.</span>);<span style="color:#75715e">//非线性映射</span>
+</span></span></code></pre></div><h3 id="part4完整代码">PART4完整代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Circle(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">vec2</span> p, <span style="color:#66d9ef">float</span> r, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> d <span style="color:#f92672">=</span> length(uv<span style="color:#f92672">-</span>p);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> smoothstep(r<span style="color:#f92672">+</span>blur,r,d);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Band(<span style="color:#66d9ef">float</span> t, <span style="color:#66d9ef">float</span> start, <span style="color:#66d9ef">float</span> end, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//float step1 = smoothstep(start-blur/2., start+blur/2., t);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//float step2 = smoothstep(end+blur/2., end-blur/2., t);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step1 <span style="color:#f92672">=</span> smoothstep(start<span style="color:#f92672">-</span>blur, start<span style="color:#f92672">+</span>blur, t);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> step2 <span style="color:#f92672">=</span> smoothstep(end<span style="color:#f92672">+</span>blur, end<span style="color:#f92672">-</span>blur, t);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> step1<span style="color:#f92672">*</span>step2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> Rect(<span style="color:#66d9ef">vec2</span> uv, <span style="color:#66d9ef">float</span> left, <span style="color:#66d9ef">float</span> right, <span style="color:#66d9ef">float</span> bottom, <span style="color:#66d9ef">float</span> top, <span style="color:#66d9ef">float</span> blur)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band1 <span style="color:#f92672">=</span> Band(uv.x, left, right, blur);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> band2 <span style="color:#f92672">=</span> Band(uv.y, bottom, top, blur);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> band1 <span style="color:#f92672">*</span> band2;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap01(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (t<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>(b<span style="color:#f92672">-</span>a);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> remap(<span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> b, <span style="color:#66d9ef">float</span> c, <span style="color:#66d9ef">float</span> d, <span style="color:#66d9ef">float</span> t)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c <span style="color:#f92672">+</span> (d<span style="color:#f92672">-</span>c)<span style="color:#f92672">*</span>remap01(a, b, t);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> mainImage( <span style="color:#66d9ef">out</span> <span style="color:#66d9ef">vec4</span> fragColor, <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">vec2</span> fragCoord )
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Normalized pixel coordinates (from 0 to 1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> uv <span style="color:#f92672">=</span> fragCoord<span style="color:#f92672">/</span>iResolution.xy;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    uv <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.5</span>;<span style="color:#75715e">//remap to -0.5 to 0.5</span>
+</span></span><span style="display:flex;"><span>    uv.x <span style="color:#f92672">*=</span> iResolution.x<span style="color:#f92672">/</span>iResolution.y;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> x <span style="color:#f92672">=</span> uv.x;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> m <span style="color:#f92672">=</span> sin(iTime<span style="color:#f92672">+</span>x<span style="color:#f92672">*</span><span style="color:#ae81ff">8.</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> y <span style="color:#f92672">=</span> uv.y <span style="color:#f92672">-</span> m;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> blur <span style="color:#f92672">=</span> remap(<span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.01</span>, <span style="color:#ae81ff">.25</span>, x);
+</span></span><span style="display:flex;"><span>    blur <span style="color:#f92672">=</span> pow(blur<span style="color:#f92672">*</span><span style="color:#ae81ff">4.</span>, <span style="color:#ae81ff">2.</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> mask <span style="color:#f92672">=</span> Rect(<span style="color:#66d9ef">vec2</span>(x,y),<span style="color:#f92672">-</span><span style="color:#ae81ff">.5</span>, <span style="color:#ae81ff">.5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">.1</span>, <span style="color:#ae81ff">.1</span>, blur);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> col <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">.5</span>,<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">.6</span>)<span style="color:#f92672">*</span>mask; 
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    fragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(col,<span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>PART4截图</p>
+<p><img src="https://s2.loli.net/2024/07/04/XQxEZPTWiYOpHN5.png" alt="shadertoyTutorialPart4.1.png"><p style="text-align: center;">变形和重映射的理解</p></p>
+<p><img src="https://s2.loli.net/2024/07/04/ZOp26o5bkMBHuFj.png" alt="shadertoyTutorialPart4.2.png"></p>
+<p style="text-align: center;">最终效果</p>
+<h2 id="总结">总结</h2>
+<p>这个教程是The Art Of Code的系列教程<a href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5">Shadertoy Tutorial</a> 播放列表中的第一个小部分，之后会把这个系列的所有视频的笔记都发上来。本篇的重点总结：</p>
+<ol>
+<li>搞懂Shader是什么，以片元着色器来说，对每一个像素，传入该像素的坐标值，传出该像素的颜色值，组成图像。</li>
+<li>对坐标系的基础操作，比如归一化、中心化、屏幕比例调整。以及代码中uv的具体含义。</li>
+<li>重映射是常用操作，将一个值从一个域映射到另一个域，归一化01映射和线性映射后，可以操作映射后的值实现非线性映射。</li>
+</ol>
+<p>Shadertoy(<a href="https://www.shadertoy.com/new">https://www.shadertoy.com/new</a> )</p>
+<hr>
+<ul>
+<li>保留所有版权</li>
+<li>首次上传：2024年07月04日</li>
+<li>最后修改：2024年07月05日</li>
+</ul>
+</article><nav>
+  <div class="navArtist">
+    <a href="/">0xRVN-WPG0</a>
+  </div>
+  <div class="links"><a
+          href="/0xRVN/"
+          class="link"
+          >Artworks</a
+        >,&nbsp<a
+          href="/0xRVN/article/"
+          class="link"
+          >Article</a
+        >,&nbsp<a
+          href="/0xRVN/photography/"
+          class="link"
+          >Photography</a
+        >,&nbsp<a
+          href="/0xRVN/Info/"
+          class="link"
+          >Info</a
+        ></div>
+  <div class="threshold"><span>阈值:</span>
+    <span>
+      <button class="dec">&#xFF0D;</button>
+      <span class="num"></span><span class="num"></span><span class="num"></span
+      ><span class="num"></span>
+      <button class="inc">&#xFF0B;</button>
+    </span>
+  </div>
+  <div class="index">
+    <span class="num">0</span><span class="num">0</span><span class="num">0</span
+    ><span class="num">0</span>
+    <span>/</span>
+    <span class="num">0</span
+    ><span class="num">0</span
+    ><span class="num">0</span
+    ><span class="num">0</span>
+  </div>
+</nav><script>
+  i = 2
+  const s = sessionStorage.getItem('thresholdsIndex')
+  if (s !== null) {
+    i = parseInt(s)
+  }
+  var t = ''
+  switch (i) {
+    case 0:
+      t = '0020'
+      break
+    case 1:
+      t = '0040'
+      break
+    case 2:
+      t = '0080'
+      break
+    case 3:
+      t = '0140'
+      break
+    case 4:
+      t = '0200'
+      break
+  }
+  Array.from(
+    document.getElementsByClassName('threshold').item(0).getElementsByClassName('num')
+  ).forEach((e, i) => {
+    e.innerText = t[i]
+  })
+</script>
+</div></div>
+    <div class="analytics"></div>
+  </body>
+</html>
